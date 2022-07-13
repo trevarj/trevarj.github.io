@@ -1,0 +1,14 @@
+{
+   "list": [
+      {
+         "name":"Arctic 7 Controls",
+         "url":"https://github.com/trevarj/arctis7_controls",
+         "desc":"Simple software to control Steelseries Arctis 7 wireless headset."
+      },
+      {
+         "name":"tiny",
+         "url":"https://github.com/osa1/tiny",
+         "desc":"A terminal IRC client that I contribute to."
+      }
+   ]
+}

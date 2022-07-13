@@ -6,14 +6,19 @@ copyright = "Trevor Arjeski"
 
 [params]
 colortheme = "dark"
-description = "I am a programmer."
-mainSection = "about"
-mainSectionTitle = "About"
+description = "I am a programmer working in the crypto (wait, don't leave...) industry. I am interested in Rust, programming languages & compilers (learning) and open source software."
+mainSection = "posts"
+mainSectionTitle = "Posts"
 rss = true
+showProjectsList = true
 
 [[params.social]]
   name = "github"
   link = "https://github.com/trevarj"
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/trevor-crypto"
 
 [[params.social]]
   name = "linkedin"
@@ -42,3 +47,15 @@ weight = 3
 name = "About"
 url = "/about"
 weight = 4
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "solarized-dark"
+    tabWidth = 4
