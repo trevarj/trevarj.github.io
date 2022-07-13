@@ -1,4 +1,4 @@
-baseURL = 'https://trevarj.github.io/'
+baseURL = 'https://trevarj.github.io'
 languageCode = 'en-us'
 title = "Trevor Arjeski's Site"
 theme = "cactus"
