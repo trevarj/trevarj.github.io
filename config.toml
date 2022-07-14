@@ -6,7 +6,10 @@ copyright = "Trevor Arjeski"
 
 [params]
 colortheme = "dark"
-description = "I am a programmer working in the crypto (wait, don't leave...) industry. I am interested in Rust, programming languages & compilers (learning) and open source software."
+description = """
+I am a programmer working in the crypto industry. 
+I like Rust, Linux, programming languages & compilers (learning) and open source software.
+"""
 mainSection = "posts"
 mainSectionTitle = "Posts"
 rss = true
