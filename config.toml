@@ -7,8 +7,9 @@ copyright = "Trevor Arjeski"
 [params]
 colortheme = "dark"
 description = """
-I am a programmer working in the crypto industry. 
-I like Rust, Linux, programming languages & compilers (learning) and open source software.
+I am a programmer working with Rust in the crypto industry.
+
+GPG Key: A6C20D0C2AD838F949070EA3A52D68794EBED758
 """
 mainSection = "posts"
 mainSectionTitle = "Posts"
