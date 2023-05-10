@@ -8,17 +8,22 @@
     {
       "name": "Arctic 7 Controls",
       "url": "https://github.com/trevarj/arctis7_controls",
-      "desc": "Simple software to control Steelseries Arctis 7 wireless headset."
+      "desc": "Simple CLI to control Steelseries Arctis 7 wireless headset."
     },
     {
-      "name": "roxt",
-      "url": "https://github.com/trevarj/roxt",
-      "desc": "A toy interpreter and compiler written in Rust from the book Crafting Interpreters"
+      "name": "dotris",
+      "url": "https://github.com/trevarj/dotris",
+      "desc": "A ncurses Tetris clone using Braille characters"
     },
     {
       "name": "tiny",
       "url": "https://github.com/osa1/tiny",
       "desc": "A terminal IRC client that I contribute to."
+    },
+    {
+      "name": "roxt",
+      "url": "https://github.com/trevarj/roxt",
+      "desc": "A toy interpreter and compiler written in Rust from the book Crafting Interpreters"
     },
     {
       "name": "My Repositories",
