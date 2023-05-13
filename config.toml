@@ -32,6 +32,10 @@ showProjectsList = true
   name = "email"
   link = "tmarjeski@gmail.com" # no need for "mailto:" at the start
 
+[[params.social]]
+  name = "rss"
+  link = "https://trevarj.github.com/index.xml"
+
 [[menu.main]]
 name = "Home"
 url = "/"
