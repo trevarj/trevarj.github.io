@@ -45,7 +45,7 @@ body {
   overflow-wrap: break-word;
 
   p {
-    @include hyphens(auto);
+    // @include hyphens(auto);
   }
   code {
     @include hyphens(manual);
