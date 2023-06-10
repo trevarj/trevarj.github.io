@@ -1,7 +1,0 @@
-#+title: Org-mode Test
-#+date: <2023-05-13 Sat>
-#+draft: false
-#+tags[]:
-
-* Test 2
-Checking to see if an org mode file will render
