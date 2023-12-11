@@ -13,7 +13,7 @@ requires careful planning and a specific behavior.
 
 ## Overview
 This has been beaten like a dead horse by #learn2code tweets and Youtube
-videos, but these are the two main goals to become a general application
+videos, but these are the main goals to become a general application
 programmer:
 
 1. Learn the fundamentals of programming and the basics of how a computer works
