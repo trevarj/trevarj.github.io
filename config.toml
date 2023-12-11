@@ -19,24 +19,24 @@ rss = true
 showProjectsList = true
 
 [[params.social]]
-  name = "github"
-  link = "https://github.com/trevarj"
+name = "github"
+link = "https://github.com/trevarj"
 
 [[params.social]]
-  name = "github"
-  link = "https://github.com/trevor-crypto"
+name = "github"
+link = "https://github.com/trevor-crypto"
 
 [[params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/arjeski"
+name = "linkedin"
+link = "https://www.linkedin.com/in/arjeski"
 
 [[params.social]]
-  name = "email"
-  link = "tmarjeski@gmail.com" # no need for "mailto:" at the start
+name = "email"
+link = "tmarjeski@gmail.com" # no need for "mailto:" at the start
 
 [[params.social]]
-  name = "rss"
-  link = "https://trevarj.github.com/index.xml"
+name = "rss"
+link = "https://trevarj.github.com/index.xml"
 
 [[menu.main]]
 name = "Home"
@@ -59,13 +59,13 @@ url = "/about"
 weight = 4
 
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "solarized-dark"
-    tabWidth = 4
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "solarized-dark"
+tabWidth = 4
