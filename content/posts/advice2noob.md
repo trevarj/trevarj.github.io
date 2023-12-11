@@ -78,7 +78,7 @@ CONTRIBUTING.md and start tinkering or looking at issues and seeing if you can
 be mentored into fixing or adding something. This will also teach the soft
 skills of collaborating on software.
 
-### Personal Project
+## Personal Project
 It's pretty obvious that you need a portfolio to look employable nowadays.
 There's nothing better than having an open source project that you maintain and
 improve. It's a plus if other people use it or contribute to it.
