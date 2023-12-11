@@ -45,15 +45,15 @@ courses](https://github.com/ossu/computer-science) to gather this knowledge.
 
 Stay away from too many video tutorials. Read through course material and do
 the homework and projects as if you were in a class. People love to skip over
-all this "boring" stuff because it doesn't yield results and, well, feels like
-school. This will establish confidence and adaptability.
+all this "boring" stuff because it doesn't yield immediate results and, well,
+feels like school. This will establish confidence and adaptability.
 
 ## Writing Programs
 Nowadays it's trendy to obsess over which programming language to learn and get
 good at, but this is not something a noob dev needs to think about. The most
 important thing is picking one programming language and writing programs in it
 (obvious?). If you are concerned about the job hunt, it may be useful to go
-onto a job site and see what languages are being used at companies in your
+to a job site and see what languages are being used at companies in your
 area.
 
 1. Pick a language
