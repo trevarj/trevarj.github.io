@@ -68,10 +68,10 @@ social media.
 
 ## A Realistic Scenario
 
-Obviously, the first and second scenarios are not exactly probable or possible
-for everyone to do.
+Obviously, the second scenario is not exactly probable or possible for everyone
+to do.
 
-I speculate that the third scenario can become more mainstream in the future, at
+I speculate that the first scenario can become more mainstream in the future, at
 least for a seasoned developer (10+ years, or 10Xer) who prefers to not be in
 the death grip of a software company. I suppose this scenario is analogous to
 being a contractor and accepting a grant to work on an open source project that
