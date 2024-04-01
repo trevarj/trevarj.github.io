@@ -11,4 +11,3 @@ Favorite programming languages:
 Current technical aspirations:
 1. Make a commit to a Unix-like operating system
 2. Work full-time on open source software
-3. Be a maintainer of a large open source project

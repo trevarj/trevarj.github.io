@@ -23,10 +23,6 @@ name = "github"
 link = "https://github.com/trevarj"
 
 [[params.social]]
-name = "github"
-link = "https://github.com/trevor-crypto"
-
-[[params.social]]
 name = "linkedin"
 link = "https://www.linkedin.com/in/arjeski"
 
