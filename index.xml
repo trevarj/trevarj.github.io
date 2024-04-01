@@ -10,4 +10,4 @@ $ hugo new posts/[title].md</description></item><item><title/><link>https://trev
 My technological interests include: FOSS, Linux, Unix tools / philosophy, various programming languages, text editors, tinkering.
 Favorite programming languages:
 C (best overall) Rust (best strongly typed) Haskell (best purely functional) Current technical aspirations:
-Make a commit to a Unix-like operating system Work full-time on open source software Be a maintainer of a large open source project</description></item></channel></rss>
+Make a commit to a Unix-like operating system Work full-time on open source software</description></item></channel></rss>
