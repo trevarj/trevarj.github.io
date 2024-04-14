@@ -53,8 +53,8 @@ I'm not entirely sure how I feel about the influence these content creators have
 on young programmers. I have certain opinions about the format in which the
 content is delivered. For example, if done incorrectly, a stream can be a huge
 waste of time for the viewer, even if it is entertaining. Maybe no one wants to
-admit that though and would stay that the engagement factor is important for
-learning. 
+admit that though and would say that the engagement factor is important for
+learning.
 
 Will young programmers want to just become a tech influencer instead of putting
 in the time working a terrible office job at least once like the rest of us? My
