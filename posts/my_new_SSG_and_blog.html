@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+          <head>
+            <link rel="stylesheet" href="/static/style.css">
+            <title>My New SSG and Blog</title>
+          </head>
+          <html>
+          <body>
+          <header><div class="markdown-heading"><h1 class="heading-element">trev's website</h1><a id="user-content-trevs-website" class="anchor" aria-label="Permalink: trev's website" href="#trevs-website"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><a href="/index.html">Home</a>
+<a href="/posts/index.html">Posts</a>
+<a href="/about/index.html">About</a></p></header>
+            <div class="markdown-heading"><h1 class="heading-element">My New SSG and Blog</h1><a id="user-content-my-new-ssg-and-blog" class="anchor" aria-label="Permalink: My New SSG and Blog" href="#my-new-ssg-and-blog"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+
+<p>Welcome to my revamped blog that I made with my latest tinker project,
+<a href="https://github.com/trevarj/poogo">poogo</a>.</p>
+<p>Poogo is a static-site generator written in bash, which utilizes the <a href="https://docs.github.com/en/rest/markdown">Github
+markdown API</a> to convert Markdown into
+HTML.</p>
+<div class="markdown-heading"><h2 class="heading-element">Hugo -&gt; Poogo</h2><a id="user-content-hugo---poogo" class="anchor" aria-label="Permalink: Hugo -&gt; Poogo" href="#hugo---poogo"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>With this I can say goodbye to <a href="https://gohugo.io/" rel="nofollow">Hugo</a> (<code>sudo emerge --unmerge hugo</code>) and stop complaining about how I don't want to learn Hugo
+themes or figure out how to work it. I will say that Hugo is quite nice and
+simple enough, but I don't even need such power for my blog that has zero
+readers and is hosted on Github Pages. So, I finally convinced myself to
+frantically slap together a single <code>bash(1)</code> script that can do everything I
+need.</p>
+<div class="markdown-heading"><h2 class="heading-element">Requirements</h2><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>I wanted to create a simple tool for a simple blog. Also, it's pretty fun to
+push Unix tools to the limit and scour StackOverflow looking for the coolest
+one-liners and tricks.</p>
+<p>Here is what I needed:</p>
+<ol>
+<li>Take Markdown files and convert them to HTML</li>
+<li>Ability to regenerate on new Markdown changes</li>
+<li>Generate a RSS feed for all the posts</li>
+<li>Minimal CSS that works with the generated HTML</li>
+</ol>
+<p>Solutions:</p>
+<ol>
+<li>Github's Markdown API to convert MD-&gt;HTML. Instead of using GH Pages built-in
+MD-&gt;Jekyll, this allows me to be able to take my site anywhere else.</li>
+<li>Bash <code>-ot / -nt</code> on files</li>
+<li>Simple substitution stuff and inspiration from
+<a href="https://github.com/LukeSmithxyz/lb/blob/master/sup"><code>lb</code></a>
+</li>
+<li>A quick search for minimal CSS led me to <a href="https://github.com/kevquirk/simple.css">Simple
+CSS</a>, and of course <a href="https://nordtheme.com" rel="nofollow">Nord color
+palette</a>
+</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element">Reflections</h2><a id="user-content-reflections" class="anchor" aria-label="Permalink: Reflections" href="#reflections"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>I got to the MVP after only tinkering on and off for a few days. Basically using
+shell-driven development (not as cool as a REPL, but pretty good!) and hacking
+stuff together until it works. I am not super proud of the code itself, but I
+didn't set out to write the most beautiful and robust bash SSG (one probably
+exists).</p>
+<p>It was really relaxing to not have to to care about code cleanliness or whether
+or not someone else can read it. Just coding to get something done. Perhaps this
+is a side effect of using a language that lets you bend the rules and do wacky
+stuff.</p>
+<p>There is also something satisfying about solving something using
+a Unix Philosophy way instead of just installing some new tool and having to
+learn the ecosystem. Spending time learning more <code>sed(1)</code> is pretty amazing,
+even if it sometimes feels inelegant or the solution is cryptic at first glance.</p>
+<p>Here's a weird <code>sed</code> line that I learned:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> extract the "title" of a post for a HTML &lt;title&gt;, a markdown '#' header from a</span>
+<span class="pl-c"><span class="pl-c">#</span> file, or fallback to the title found in the &lt;header&gt; markdown file</span>
+<span class="pl-en">extract_title</span>() {
+	s=<span class="pl-s"><span class="pl-pds">'</span>/# .*/{s/# (.*)/\1/p;Q};q1<span class="pl-pds">'</span></span> <span class="pl-c"><span class="pl-c">#</span> returns 1 on a non-match</span>
+    <span class="pl-c"><span class="pl-c">#</span> now we can fallback if the first match fails</span>
+	sed -rn <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$s</span><span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$1</span><span class="pl-pds">"</span></span> <span class="pl-k">||</span> sed -rn <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$s</span><span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$HEADER_MD</span><span class="pl-pds">"</span></span>
+}</pre></div>
+<p>Since <code>sed</code> doesn't have a return code of <code>1</code> when there is no match, you have
+to do a little trick using <code>/matchRegex/s command/options</code> instead of the
+traditional <code>s/find/replace/options</code>.</p>
+          <footer><p><a href="https://craftering.systemcrafters.net/@trev/previous" rel="nofollow">&lt;</a>
+<a href="https://craftering.systemcrafters.net/" rel="nofollow">Craftering (System Crafters)</a>
+<a href="https://craftering.systemcrafters.net/@trev/next" rel="nofollow">&gt;</a></p>
+<p>Trevor Arjeski -
+<a href="https://github.com/trevarj">git</a>
+<a href="https://linkedin.com/arjeski" rel="nofollow">linkedin</a>
+<a href="mailto:tmarjeski@gmail.com">mail</a>
+<a href="/rss.xml">rss</a></p></footer>
+          </html>
