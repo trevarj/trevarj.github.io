@@ -1,0 +1,99 @@
+# My Return to a Custom Neovim Config
+<!-- %TIMESTAMP=1704875852% -->
+
+At the end of 2023 I got antsy. I was finally going to do it...again. I was
+about to venture on leaving [LazyVim](https://github.com/LazyVim/LazyVim) and
+create my own Neovim config from scratch using lazy.nvim with inspiration and
+knowledge that I gathered from LazyVim (the greatest Neovim distro to date).
+
+## My Vim Journey
+
+My first exposure to vi/vim was after I installed Linux and needed to edit
+files in the terminal, much like how other people probably find it. I don't
+exactly remember if Ubuntu (my first distro) had Nano enabled as the default
+editor back then, so I think I may have been forced to learn how to edit using
+vi.
+
+I slowly became comfortable editing files using Vim and even doing a little C
+programming with it, but barely scratching the surface of the editor's power.
+
+Once I got into Linux ricing, I saw that people had really cool looking Vim
+configurations. I wanted to make mine look like that too, but I wasn't really
+interested in using the editor for more than editing system files quickly.
+
+Some time went by and I was finally sick of GUI editors being memory hogs and
+slow. I went down the road of trying to configure Vim as a full-fledged IDE
+using CoC and other great plugins from Tpope. I used that for a bit, but
+couldn't really dive into using it permanently at work. It was still fun to
+mess with in my free time.
+
+One day I heard about Neovim and how it was supposedly *blazingly fast* with
+LuaJIT and a faster development cycle. I installed and went down the road of
+migrating over to a Lua-based config. It was early in the plugin days, so
+things were really rough unless you had your ear to the ground and were already
+a Vim/Lua wiz. I was not, so I got a bit overwhelmed.
+
+This is about the time that I found out about Neovim distributions. It was a
+relief from the anxiety of having to maintain my own configuration...or at
+least I thought. Now instead of having to fix a plugin issue, I had to fix a
+distro issue, wait for a fix to get pushed upstream, or disable a plugin that
+they had added. After using my own config again for a bit, I settled on
+AstroNvim, which was a pleasure to use at my job for a while.
+
+Then lazy.nvim was released - a neovim package manager that was supposed to end
+the problem of breaking configurations. Shortly after, lazy.nvim's creator and
+Lua plugin warrior, [Folke](https://github.com/folke) created LazyVim, a distro
+that utilizes lazy.nvim. I immediately installed it and replaced AstroNvim. I
+had been using it full-time up until about a week ago.
+
+I began to get a bit frustrated again with using a distro after I got hit with
+a few breaking changes, since I cannot resist updating all the plugins whenever
+I see there are updates available. Things would break at the beginning of a
+workday and I was too stubborn to rollback, so I neurotically would start
+fixing editor issues instead of working.
+
+*Secretly switched to [Doom Emacs](https://github.com/doomemacs/doomemacs) for a
+bit*
+
+I came to the realization that I had no idea what was going on with my editor
+anymore. I already forgot most of the stuff I learned from doing a custom
+config last time (probably never learned it and copy pasted too much). It was
+time to buckle down and start over.
+
+### Requirements
+
+I made a list of the things that I truly needed to be productive in my editor:
+
+- time
+- LSP
+- autocompletion
+- formatting
+- treesitter
+- statusbar
+- git integration
+- file tree
+- keybindings
+- all plugins and options that I curated using LazyVim
+
+### Config Creation Workflow
+
+In my opinion, getting keybindings, LSP and autocompletion working are the main
+steps to a productive configuration. Basically, I started by reading
+lazy.nvim's docs and hitting each of the requirements above, reading through
+the docs of the plugins and sifting through Github discussions and issues when
+I ran into a problem. Like I said, a lot of my config is taken from LazyVim,
+because I believe it does the bulk of things in the ideal way. I spent a lot of
+time reading through the LazyVim source code, then deciding if I needed to
+extract certain things or could do it myself in a simpler way. I wanted to stay
+minimalist so that when I read the configuration months down the
+line I understand what is going on.
+
+After that it is the grind of reading plugin docs and figuring out what you
+need configured - a daunting task for newcomers and those who don't have the
+time or patience to read docs.
+
+I will still be following LazyVim's development because it has become somewhat
+of a source of truth and the community is still active (even though as I write
+this the project hasn't had a push for two months...)
+
+[My 2024 Neovim Config](https://github.com/trevarj/config.nvim)

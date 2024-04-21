@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>trev's website</title>
+<description>About me</description>
+<language>en-us</language>
+<link>https://trevarj.github.io/rss.xml</link>
+<atom:link href="https://trevarj.github.io/rss.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>A Late Start in Computer Programming</title>
+<guid>https://trevarj.github.io/posts/advice2noob.html</guid>
+<link>https://trevarj.github.io/posts/advice2noob.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# A Late Start in Computer Programming
+<!-- %TIMESTAMP=1702312387% -->
+
+Recently I've been giving advice (sometimes unsolicited) to people who
+want to shift into computer programming as a career.
+
+Being a late bloomer in programming is definitely manageable, but I believe it
+requires careful planning and a specific behavior.
+
+## Overview
+This has been beaten like a dead horse by #learn2code tweets and Youtube
+videos, but these are the main goals to become a general application
+programmer:
+
+1. Learn the fundamentals of programming and the basics of how a computer works
+2. Learn one programming language and write programs in it
+3. Contribute to open source projects and/or have a personal project
+
+## Behavior
+The most difficult undertaking and, what I think, is the most important factor
+for learning programming is the obsession needed to succeed. Unless you are a
+gifted individual, you will need to really buckle down and grind. You don't
+necessarily need to pull all-nighters like a college kid, but you need to have
+a constant motivation to explore and learn about computers and programming.
+Of course, this behavior is relative to how quickly you expect to get a
+programming career. Less obsessed -> longer until you secure a job.
+
+Don't just click around the computer like an idiot, become a power user and
+start [using Linux](https://en.wikipedia.org/wiki/The_Art_of_Unix_Programming)
+and crafting [your own development environment](https://www.lazyvim.org/).
+Start living as a computer nerd even if your hobby is cooking breakfast foods
+and grilling meats or something, forget it for a while. You have to adopt the
+[hacker culture](https://en.wikipedia.org/wiki/Hacker_culture#Programming).
+
+## Fundamentals
+This is the stuff that people spend an undergrad in computer science learning:
+data structures, algorithms, databases, operating systems, computer
+architecture, etc. Unless you are going to actually get a degree and take these
+courses, you will need to use [free and open
+courses](https://github.com/ossu/computer-science) to gather this knowledge.
+
+Stay away from too many video tutorials. Read through course material and do
+the homework and projects as if you were in a class. People love to skip over
+all this "boring" stuff because it doesn't yield immediate results and, well,
+feels like school. This will establish confidence and adaptability.
+
+## Writing Programs
+Nowadays it's trendy to obsess over which programming language to learn and get
+good at, but this is not something a noob dev needs to think about. The most
+important thing is picking one programming language and writing programs in it
+(obvious?). If you are concerned about the job hunt, it may be useful to go
+to a job site and see what languages are being used at companies in your
+area.
+
+1. Pick a language
+2. Read the [official docs](https://doc.rust-lang.org/book/) (or an esteemed
+   [textbook](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs))
+3. Use the language for the courses mentioned above (basics, data structures,
+   algorithms)
+4. Solve [coding challenges](https://adventofcode.com/)
+5. Write small programs (simple games, scripts, utilities, etc)
+
+## Open Source
+The single most important factor to securing a job, in my opinion, is having
+open source contributions. For an employer, nothing screams "I CAN CODE AND I
+LIKE IT!" louder than seeing evidence of you doing it for free and for your own
+leisure. They must envision Jira tickets being closed faster than they can can
+be created (with zero details or requirements).
+
+After you've gotten comfortable in a programming language, you MUST find a
+project written in that language and start diving into the code. Find software
+that is useful to you, or something you find interesting. Read the
+CONTRIBUTING.md and start tinkering or looking at issues and seeing if you can
+be mentored into fixing or adding something. This will also teach the soft
+skills of collaborating on software.
+
+## Personal Project
+It's pretty obvious that you need a portfolio to look employable nowadays.
+There's nothing better than having an open source project that you maintain and
+improve. It's a plus if other people use it or contribute to it.
+
+# The End
+]]></description>
+</item><item>
+<title>Distro-Hopping from Arch to Gentoo</title>
+<guid>https://trevarj.github.io/posts/gentoo.html</guid>
+<link>https://trevarj.github.io/posts/gentoo.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# Distro-Hopping from Arch to Gentoo
+<!-- %TIMESTAMP=1712748767% -->
+
+This past weekend (starting on a Thursday) I decided to scrap my Arch install
+and install [Gentoo](https://wiki.gentoo.org/wiki/Handbook:AMD64). I suppose you
+could say I fell for [the old 4chan
+meme](https://knowyourmeme.com/memes/install-gentoo).
+
+## Distro-hopping History
+| Year      |     |     |
+| ---       | --- | ---
+|~2005      | Ubuntu | Installed on old laptop from a disc I got in a PC Magazine. Smashed the wifi card into the motherboard and that was the end of that install
+|2010       | Ubuntu | On Macbook. This is how I learned to program in a Linux environment
+|2012       | Crunchbang | Deleted Windows for a bit to learn Linux better
+|2013       | Arch | Started "ricing" on the Macbook
+|2019       | Manjaro | KDE + Linux Gaming (daily driving Linux)
+|2020       | PopOS | Searching for better desktop/Nvidia experience
+|2021-2024  | Arch/Artix   | Using Ubuntu full-time at work
+|Apr 2024   | Gentoo |
+
+Arch has probably been the best distro I've experienced. I don't really need to
+explain all its benefits since they have all been answered elsewhere online. For
+me it was a great balance between customization, productivity and minimalism.
+
+## Why not $DISTRO_NAME?
+
+Thanks to the [System Crafter's IRC](https://systemcrafters.net) channel, when
+everyone was discussing distros to try or ones that they use, I began
+contemplating (again) what my perfect distro would be.
+
+The answer that I always land on is not Gentoo -- it's a BSD. After some time
+experimenting with FreeBSD, I really enjoyed the ecosystem and documentation
+that they had. It does come with a few quirks that I can't come to terms with,
+like having to use Linux emulation for some programs. It always seems possible
+to use it full-time but then a program sneaks up on you that only works under
+Linux. Perhaps once my Nvidia hardware dies then I will try out FreeBSD or
+OpenBSD again.
+
+So, for GNU/Linux distributions, it came down to Artix vs Void vs Gentoo.
+Switching to Artix, something I've done before, would be trivial.
+
+I spent a day looking into Void and experimenting in a VM, but I didn't really
+find it to be any better than Arch/Artix or have something beneficial that it
+could sell me. Unless the system has something drastically different to
+offer, like Nix/Guix (and I don't need extreme reproducibility), then it just seems
+not worth the time investment.
+
+## Gentoo Linux
+
+Gentoo seems to tick a lot of boxes for me:
+- [x] Control
+- [x] Customizability
+- [x] Ability to be minimalist (sometimes forced, if you don't want to compile!)
+- [x] Large, knowledgeable community to learn from (forum, IRC)
+- [x] Great documentation (handbook, wiki)
+
+At first, I was intimidated and irritated at the complexity, but the more I read
+the more I was convinced this is a great distro. Things started to make sense
+and I was actually learning and re-learning more about a GNU/Linux system under
+the hood.
+
+It only took me a couple days (without full attention) to get up and running
+back to where I was with Arch. I utilized a few binary packages for large,
+compile intensive programs, like Firefox and a kernel.
+
+Compiling everything might deter a lot of people, but for me it is a way to be
+conscious of what I am installing and how to maintain a system that isn't full
+of random packages. If I see that the dependency list of a package is much too
+large, I'll reconsider using that package and look for an alternative. It was
+annoying when I wanted to install `shellcheck` and saw how many Haskell
+dependencies it uses. I ended up installing the binary for it, which I was
+thankful existed.
+
+I still need some time to adjust to the utilities for maintaining a Gentoo
+system, so I can't really speak about much more yet.
+
+## Will I Hop Again?
+
+Like a lot of people, I tend to go through tech phases. Eventually, I may just
+get tired of compiling stuff, especially if the time comes when I don't have a
+separate PC for work and have to quickly install some tools to be productive.
+
+As I said before, I'd still like to try to work towards daily driving a BSD.
+There is also the possibility of looking for an even more hardcore Linux distro
+like LFS in order to really learn a system in and out. I could even take a
+completely different direction and install Debian and then manually compile
+fresh versions of programs that I frequently use.
+]]></description>
+</item><item>
+<title>The If-Else Programmer</title>
+<guid>https://trevarj.github.io/posts/if_else.html</guid>
+<link>https://trevarj.github.io/posts/if_else.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# The If-Else Programmer
+<!-- %TIMESTAMP=1684184400% -->
+
+I had a half-joke where I would tell people that all I did at a previous job was
+write if-else statements to fix every problem that came up. There are two
+reasons why I evolved into the if-else programmer:
+
+1. Ideas and creativity were ignored. Anything a developer offered to improve the
+  code was rejected and deemed as not needed by management. The value was only
+  found in things that instantly settled client demands.
+
+2. Sometimes all you can do with fragile, legacy, test-less (good luck
+  refactoring), spaghetti code is add +meatballs+ if-statements to check for
+  null or some condition that was found on a production system and needed a
+  hotfix. You'll be faced with no choice but to fix every problem with
+  band-aids.
+
+Even if I was closing a bunch of tickets, it was mind-numbing and made me not
+enjoy programming, which resulted in my skills stagnating during the workday and
+then fading away since I didn't program in my free time.
+
+It was easy for me to get into this situation and then held hostage by a nice
+paycheck and various psychological reasons. Minus the dire circumstances, I
+believe it is a good time to move on when you become an if-else programmer
+instead of risking your skills and falling behind for a (temporary) job.
+]]></description>
+</item><item>
+<title>Mentorship</title>
+<guid>https://trevarj.github.io/posts/mentorship.html</guid>
+<link>https://trevarj.github.io/posts/mentorship.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# Mentorship
+<!-- %TIMESTAMP=1684270800% -->
+
+The most valuable thing I got out of my first job was that I was being mentored
+by a senior guy - something I feel like will never come my way again unless
+someone is willing to mentor a doofus in his thirties with ten years of
+experience. He wasn't a modern "senior" engineer who has five years of
+experience either. He had about 30+ years of experience under his belt. It was
+really helpful to have someone there to guide me in research and to discuss
+things at length when I was stuck. I would much rather take a positive
+mentorship than have an education budget that I can spend how I wish. "Make sure
+you clear it with HR first haha."
+
+From my observation it is becoming more and more uncommon to get mentored at a
+job or even be able to discuss topics at length, but this may be my ignorant
+perception now as a fully remote worker. I haven't heard first hand from anyone
+about being mentored, and only have seen it mentioned rarely on a job
+description.
+
+Another thing I've noticed is how managers don't want to "waste" resources on
+similar methods of knowledge sharing, like pair programming or shadowing. "Jump
+right in and ask for help if you're stuck!"
+
+It seems the industry is only concerned with hiring "self-starters" and people
+who can grind without guidance, instead of properly on-boarding and mentoring a
+person to fit in with the team and actually be successful and useful. The
+companies seem to be focused only on finding these "10X-ers" who won't question
+anything and can just churn out heaps of SLOC.
+
+I don't think this is only a problem with junior devs. Why can't a thirty year
+old doofus like me get mentored too? Is that just called "going back to get a
+master's degree"? That does sound like an option, along with paid mentorships
+that some Github celebrities offer.
+
+One alternative is to find an open source project that is accepting
+contributions, preferably one that you use and want to give back to. Start
+putting up pull-requests on this project and give the maintainers a chance to
+review them. There is a good chance that you will be provided a lot of helpful
+feedback and guidance, perhaps even higher quality than someone at work will
+give you. This has been beneficial to me, especially when the maintainer is
+highly skilled and generous with his time.
+]]></description>
+</item><item>
+<title>My Return to a Custom Neovim Config</title>
+<guid>https://trevarj.github.io/posts/neovim_2024.html</guid>
+<link>https://trevarj.github.io/posts/neovim_2024.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# My Return to a Custom Neovim Config
+<!-- %TIMESTAMP=1704875852% -->
+
+At the end of 2023 I got antsy. I was finally going to do it...again. I was
+about to venture on leaving [LazyVim](https://github.com/LazyVim/LazyVim) and
+create my own Neovim config from scratch using lazy.nvim with inspiration and
+knowledge that I gathered from LazyVim (the greatest Neovim distro to date).
+
+## My Vim Journey
+
+My first exposure to vi/vim was after I installed Linux and needed to edit
+files in the terminal, much like how other people probably find it. I don't
+exactly remember if Ubuntu (my first distro) had Nano enabled as the default
+editor back then, so I think I may have been forced to learn how to edit using
+vi.
+
+I slowly became comfortable editing files using Vim and even doing a little C
+programming with it, but barely scratching the surface of the editor's power.
+
+Once I got into Linux ricing, I saw that people had really cool looking Vim
+configurations. I wanted to make mine look like that too, but I wasn't really
+interested in using the editor for more than editing system files quickly.
+
+Some time went by and I was finally sick of GUI editors being memory hogs and
+slow. I went down the road of trying to configure Vim as a full-fledged IDE
+using CoC and other great plugins from Tpope. I used that for a bit, but
+couldn't really dive into using it permanently at work. It was still fun to
+mess with in my free time.
+
+One day I heard about Neovim and how it was supposedly *blazingly fast* with
+LuaJIT and a faster development cycle. I installed and went down the road of
+migrating over to a Lua-based config. It was early in the plugin days, so
+things were really rough unless you had your ear to the ground and were already
+a Vim/Lua wiz. I was not, so I got a bit overwhelmed.
+
+This is about the time that I found out about Neovim distributions. It was a
+relief from the anxiety of having to maintain my own configuration...or at
+least I thought. Now instead of having to fix a plugin issue, I had to fix a
+distro issue, wait for a fix to get pushed upstream, or disable a plugin that
+they had added. After using my own config again for a bit, I settled on
+AstroNvim, which was a pleasure to use at my job for a while.
+
+Then lazy.nvim was released - a neovim package manager that was supposed to end
+the problem of breaking configurations. Shortly after, lazy.nvim's creator and
+Lua plugin warrior, [Folke](https://github.com/folke) created LazyVim, a distro
+that utilizes lazy.nvim. I immediately installed it and replaced AstroNvim. I
+had been using it full-time up until about a week ago.
+
+I began to get a bit frustrated again with using a distro after I got hit with
+a few breaking changes, since I cannot resist updating all the plugins whenever
+I see there are updates available. Things would break at the beginning of a
+workday and I was too stubborn to rollback, so I neurotically would start
+fixing editor issues instead of working.
+
+*Secretly switched to [Doom Emacs](https://github.com/doomemacs/doomemacs) for a
+bit*
+
+I came to the realization that I had no idea what was going on with my editor
+anymore. I already forgot most of the stuff I learned from doing a custom
+config last time (probably never learned it and copy pasted too much). It was
+time to buckle down and start over.
+
+### Requirements
+
+I made a list of the things that I truly needed to be productive in my editor:
+
+- time
+- LSP
+- autocompletion
+- formatting
+- treesitter
+- statusbar
+- git integration
+- file tree
+- keybindings
+- all plugins and options that I curated using LazyVim
+
+### Config Creation Workflow
+
+In my opinion, getting keybindings, LSP and autocompletion working are the main
+steps to a productive configuration. Basically, I started by reading
+lazy.nvim's docs and hitting each of the requirements above, reading through
+the docs of the plugins and sifting through Github discussions and issues when
+I ran into a problem. Like I said, a lot of my config is taken from LazyVim,
+because I believe it does the bulk of things in the ideal way. I spent a lot of
+time reading through the LazyVim source code, then deciding if I needed to
+extract certain things or could do it myself in a simpler way. I wanted to stay
+minimalist so that when I read the configuration months down the
+line I understand what is going on.
+
+After that it is the grind of reading plugin docs and figuring out what you
+need configured - a daunting task for newcomers and those who don't have the
+time or patience to read docs.
+
+I will still be following LazyVim's development because it has become somewhat
+of a source of truth and the community is still active (even though as I write
+this the project hasn't had a push for two months...)
+
+[My 2024 Neovim Config](https://github.com/trevarj/config.nvim)
+]]></description>
+</item><item>
+<title>The Open Source Influencer</title>
+<guid>https://trevarj.github.io/posts/OSS_influencer.html</guid>
+<link>https://trevarj.github.io/posts/OSS_influencer.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# The Open Source Influencer
+<!-- %TIMESTAMP=1705059975% -->
+
+I've been interested in tech content creation recently and have been trying to
+guess the future of this modern programming career path. I'm constantly
+intrigued by devs who are able to escape wage slave jobs and become self
+sufficient somehow, whether it is by starting a business (the old way) or the
+new ways of social media influencing or content creation. Creating a software
+company definitely seems to be much harder nowadays in software than it was,
+say, 10-15 years ago, and A LOT less enjoyable than the scenarios I present
+below.
+
+Since Github is now a social media site where you can even [look up developers
+by their popularity](https://github.com/trending/developers), is it possible
+that this will become a future career path in programming, just as Youtuber
+became a career path for acting/comedy/cook/whatever else?
+
+## Scenarios
+
+### 1. Open Source Guru
+1. Be a [10X
+   dev](https://www.quora.com/Where-did-the-myth-of-the-10x-software-developer-come-from)
+or expert in some area
+2. Create or contribute to useful projects project(s)
+3. Market project (or have followers/contributors do it) on social media
+4. Start writing blogs, streaming, and/or making videos about that content and
+   more. Optional because these guys are good enough to just get picked up by a
+top company.
+
+### 2. Twitch Programmer
+1. Be entertaining
+2. Make tech videos or stream
+3. Gather a following and sponsors
+4. Create project on video or stream
+5. Use following to boost project
+6. Start selling stuff
+
+These scenarios could lead to the opportunity of quitting your day job and
+starting to earn an income from donations or sponsorships (GH, Patreon, etc). It
+seems like a nerdy version of a beauty blogger teaching how to put on makeup and
+then pushing a cosmetic line...or an artist who streams painting and then sells
+their works to viewers ...or even a battle worn veteran who tells war stories of
+how he killed a bunch of really bad dudes and then starts a coffee company or
+something...I don't know!
+
+## Influence
+
+I'm not entirely sure how I feel about the influence these content creators have
+on young programmers. I have certain opinions about the format in which the
+content is delivered. For example, if done incorrectly, a stream can be a huge
+waste of time for the viewer, even if it is entertaining. Maybe no one wants to
+admit that though and would say that the engagement factor is important for
+learning.
+
+Will young programmers want to just become a tech influencer instead of putting
+in the time working a terrible office job at least once like the rest of us? My
+guess is not on a large scale like with regular social media, since programmers
+tend to keep to themselves and be less outgoing.
+
+Another thing that I think about is how these tech influencers are...influencers
+in the sense that they can be idolized, which in turn can make product (courses,
+merch, promo codes, etc) sales predatory, similar to what it's like on non-tech
+social media.
+
+## A Realistic Scenario
+
+Obviously, the second scenario is not exactly probable or possible for everyone
+to do.
+
+I speculate that the first scenario can become more mainstream in the future, at
+least for a seasoned developer (10+ years, or 10Xer) who prefers to not be in
+the death grip of a software company. I suppose this scenario is analogous to
+being a contractor and accepting a grant to work on an open source project that
+you like, but with the addition of having individuals as supplemental
+sponsorships. Basically, you're working on something you're passionate about and
+people throw money at you for it.
+
+## Tech Influencer Network
+
+A tech influencer from Scenario 1 or 2 builds his brand and decides to convert
+into an organization. Other devs are hired and work on the org's projects, and
+they can even champion their own projects and get marketed through the main
+influencer's clout. You can see this in a lot of popular podcast networks and
+other Youtuber channels. I'm pretty sure this already exists among tech
+streamers, but I haven't looked into it much. It seems like it could be a nice
+boost to open source development. I could be completely wrong though and someone
+would point out all the reasons why this is a bad business model.
+
+I don't know what the heck I'm talking about.
+]]></description>
+</item><item>
+<title>Ten Years a Dev</title>
+<guid>https://trevarj.github.io/posts/ten_years.html</guid>
+<link>https://trevarj.github.io/posts/ten_years.html</link>
+<pubDate>Sun, 21 Apr 2024 16:18:35 +0300</pubDate>
+<description><![CDATA[# Ten Years a Dev
+<!-- %TIMESTAMP=1684530000% -->
+
+## Introduction
+This year will mark my tenth year working as a professional software engineer.
+Lately, I have been contemplating on my experience and my next steps and goals
+that I would like to achieve as a programmer. I also want to be sure that I
+don't fall into the same traps as I did before.
+
+#This post is intended as notes for my future-self.# Hopefully this will help
+me organize my thoughts on what to do in the next ten years.
+
+## First Job (Spring 2013)
+### Positives
+- Had a mentor
+- Exposed to low level programming
+- Learned about GNU/Linux for ARM, custom SBCs
+- R&D experience
+- Fun coworkers
+
+### Negatives
+- Project stagnated
+- Didn't write enough C or learn as much about hardware as I should have
+- Long commute
+- Left job early for Java money and short commute
+
+### Reasons for Joining
+- Recommended by a professor from university
+- Interested in low-level programming and hardware
+
+### Reasons for Leaving
+- Bored and felt like I couldn't learn more from the job
+- Commute was annoying
+- Others were thinking about leaving and one guy already left
+
+## Second Job (Summer 2014)
+### Positives
+- Became comfortable in large, legacy codebase
+- Experienced full-stack for a while
+- Lots of debugging and learned to hunt bugs
+- Multiple salary increases
+- Went full-remote (pre-C#vid, remote hipster)
+- Fun coworkers
+- Five minutes from home and personal freedom
+
+### Negatives
+- Got stuck in legacy code Java 8 hell
+- Didn't focus on career growth enough
+- Stayed way too long
+
+### Reasons for Joining
+- Bought into the mission
+- Seemed like there was room for growth
+- Close to home
+
+### Reasons for Leaving
+- Corporate takeover consequences (relocate or take pay cut)
+- Tired of Java 8, legacy code and product
+- Felt like my programming skills were atrophying
+- Agile is so annoying and never done well
+
+## Third Job (Fall 2020)
+!! Will update later !!
+### Positives
+- Fully Rust codebase
+- New project when I joined
+- Great teammates
+### Negatives
+-
+### Reasons for Joining
+- Wanted to program Rust full-time
+- Interested in the company's industry
+
+### Reasons for Leaving
+N/A
+
+## Conclusions
+After ten years, I hoped that I would be a bit more advanced with programming
+and not a general application developer. I regret not using my young buck energy
+and brain to learn a specific domain or pursue a master's degree to study a
+topic deeply. I've always been fascinated by advanced CS/programming topics like
+compilers and operating systems, but have had trouble self-learning them. This
+makes me wonder if I even have a strong enough passion for programming and
+computer science to go beyond application development.
+
+### Bipolar Statements
+I am extremely grateful to be a programmer during this time period, getting into
+the industry when jobs are aplenty, and earning more than enough to live a very
+comfortable life. Being able to work from anywhere, at any time of the day is a
+luxury that almost all professions lack.
+
+I wish someone told me ten years ago that most of professional programming, and
+maybe software in general nowadays, kind of sucks and you will most likely be
+working on a product that you don't use or isn't yours and that will turn into a
+disgusting mess due to business people getting their hands involved in
+technology and prioritizing profits and timelines over anything else.
+
+## Side Projects
+These are computer-related things that I pursued and will continue to pursue outside
+of work:
+- Contributing to and writing open source software
+- Daily driving Unix-like operating systems and configuring them for fun
+- Learned Rust, Haskell, Idris, and tinkered with other various languages
+- Participating in IRC to learn and help others
+- Refining my development environment and workflow
+- Tinkering, writing simple programs, tools, and games
+- Trying to brush up on and learn other CS topics
+
+## Goals
+The following are goals that I would like to achieve in the next ten years.
+
+| years | goal                                                                          |
+|--     | ---
+| <= 2  | Write more C; at a job or more personal projects.                             |
+| <= 5  | Do a project for OS dev; write a shell, bootloader, Forth, etc.               |
+| <= 5  | Make code contributions to a large open source project - a feature or bugfix. |
+| <= 5  | Do a project with an embedded device.                                         |
+| <= 5  | Reduce time spent on the computer in freetime.                                |
+| <= 5  | Find job in specialized field instead of app dev.                             |
+| <= 10 | Get paid to work on open source software full time.                           |
+| <= 10 | Be self-employed.                                                             |
+| = 10  | Retire...PLEASE                                                               |
+]]></description>
+</item>
+
+</channel>
+</rss>
