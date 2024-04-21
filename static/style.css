@@ -17,7 +17,7 @@
   --accent-hover: #88c0d0;
   --accent-text: var(--bg);
   --code: #d08770;
-  --preformatted: #8fbcbb;
+  --preformatted: #d8dee9;
   --marked: #bf616a;
   --disabled: #efefef;
 }
@@ -35,7 +35,7 @@
     --accent-hover: #d08770;
     --accent-text: var(--bg);
     --code: #a3be8c;
-    --preformatted: #a3be8c;
+    --preformatted: #d8dee9;
     --disabled: #111;
   }
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
@@ -700,4 +700,51 @@ sub {
   border-radius: var(--standard-border-radius);
   padding: 1.5rem;
   margin: 2rem 0;
+}
+
+/* Syntax highlighting */
+.highlight pre, pre {
+    padding: 16px;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #3b4252;
+    border-radius: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: auto;
+}
+
+body pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background: transparent;
+    border: 0;
+    word-break: normal;
+}
+
+.pl-k {
+    color: #a3be8c;
+}
+.pl-smi, .pl-s, .pl-s1 {
+    color: #e5e9f0;
+}
+.pl-en, .pl-e {
+    color: #5e81ac;
+}
+.pl-c {
+    color: #616E88;
+}
+.pl-c1, .pl-s, .pl-v {
+    color: #d08770;
+}
+.pl-v, .pl-smw {
+    color: #bf616a;
+}
+
+.pl-s, .pl-pds, .pl-s, .pl-pse, .pl-s1, .pl-sr, .pl-sr, .pl-cce, .pl-sr, .pl-sre, .pl-sr, .pl-sra {
+    color: #ebcb8b;
+}
+.pl-ent {
+    color: #d08770;
 }
