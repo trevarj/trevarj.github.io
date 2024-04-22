@@ -115,37 +115,42 @@ body > footer {
   font-size: 0.9rem;
   text-align: center;
   border-top: 1px solid var(--border);
+  font-family: monospace;
 }
 
 /* Format headers */
-h1 {
-  font-size: 3rem;
+h1:not(header h1) {
+  font-size: 2rem;
+  padding-bottom: .3em;
+  border-bottom: 1px solid var(--border);
 }
 
 h2 {
-  font-size: 2.6rem;
-  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-size: 2rem;
-  margin-top: 3rem;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h4 {
-  font-size: 1.44rem;
+  font-size: 1.0rem;
 }
 
 h5 {
-  font-size: 1.15rem;
+  font-size: 0.875rem;
 }
 
 h6 {
-  font-size: 0.96rem;
+  font-size: 0.85rem;
 }
 
 p {
-  margin: 1.5rem 0;
+  margin: 1.0rem 0;
 }
 
 /* Prevent long strings from overflowing container */
@@ -185,8 +190,15 @@ a:visited {
   color: var(--accent);
 }
 
+footer a, header a {
+  text-decoration: none;
+  font-family: monospace;
+}
+
 a:hover {
   text-decoration: none;
+  color: var(--accent-text);
+  background-color: var(--accent);
 }
 
 button,
