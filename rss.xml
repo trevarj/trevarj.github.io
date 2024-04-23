@@ -4,7 +4,7 @@
 
 <channel>
 <title>trev's website</title>
-<description>About me</description>
+<description>I am a programmer working with Rust in the crypto industry.</description>
 <language>en-us</language>
 <link>https://trevarj.github.io/rss.xml</link>
 <atom:link href="https://trevarj.github.io/rss.xml" rel="self" type="application/rss+xml" />
