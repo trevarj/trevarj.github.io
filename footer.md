@@ -4,7 +4,7 @@
 
 Trevor Arjeski -
 [git](https://github.com/trevarj)
-[linkedin](https://linkedin.com/arjeski)
+[linkedin](https://www.linkedin.com/in/trevor-arjeski/)
 [mail](mailto:tmarjeski@gmail.com)
 [rss](/rss.xml)
 
