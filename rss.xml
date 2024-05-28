@@ -608,6 +608,28 @@ would point out all the reasons why this is a bad business model.</p>
 <p>I don't know what the heck I'm talking about.</p>
 ]]></description>
 </item><item>
+<title>Pre-Guix System Install Thoughts</title>
+<guid>https://trevarj.github.io/posts/Pre-Guix_System_Install_Thoughts.html</guid>
+<link>https://trevarj.github.io/posts/Pre-Guix_System_Install_Thoughts.html</link>
+<pubDate>Tue, 28 May 2024 16:55:59 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Pre-Guix System Install Thoughts</h1><a id="user-content-pre-guix-system-install-thoughts" class="anchor" aria-label="Permalink: Pre-Guix System Install Thoughts" href="#pre-guix-system-install-thoughts"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Ok, listen. I said a few posts back that I wasn't going to distrohop again after
+Gentoo, but I lied. I just purchased a new Stinkpad, and I am going to give GNU
+Guix System a shot.</p>
+<p>It's an AMD machine, so there should be no need for any Nvidia hassle. In my
+mind, it will go smoothly!</p>
+<p>I'm making a public statement to hold myself accountable -- I shall give Guix a
+fair try, attempt to make some contributions (if they'll have me!), and enjoy
+helping others in the community as a bit of a hobby that will live safely on its
+own hardware.</p>
+<p>If it's really really bad, then I will just install FreeBSD or Debian, as
+promised.</p>
+<p>OR....</p>
+<p>Maybe I will just embrace doing computing "the olds cool" way and have
+everything broken, start smoking cigarettes at the keyboard, and doing a bit of
+online gambling!</p>
+]]></description>
+</item><item>
 <title>Ten Years a Dev</title>
 <guid>https://trevarj.github.io/posts/ten_years.html</guid>
 <link>https://trevarj.github.io/posts/ten_years.html</link>
