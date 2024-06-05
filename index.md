@@ -10,8 +10,8 @@ GPG Key: `A6C20D0C2AD838F949070EA3A52D68794EBED758`
 
 ### Projects
 
-<tt>[ARM Assembly Language with Hardware Experiments](https://github.com/trevarj/ARM)</tt> A textbook that I co-authored.<br>
-<tt>[Arctic 7 Controls](https://github.com/trevarj/Arctic)</tt> Simple CLI to control Steelseries Arctis 7 wireless headset.<br>
+<tt>[ARM Assembly Language with Hardware Experiments](https://link.springer.com/book/10.1007/978-3-319-11704-1)</tt> A textbook that I co-authored.<br>
+<tt>[Arctic 7 Controls](https://github.com/trevarj/arctis7_controls)</tt> Simple CLI to control Steelseries Arctis 7 wireless headset.<br>
 <tt>[dotris](https://github.com/trevarj/dotris)</tt> A ncurses Tetris clone using Braille characters.<br>
 <tt>[tiny](https://github.com/trevarj/tiny)</tt> A terminal IRC client that I contributed to.<br>
 <tt>[roxt](https://github.com/trevarj/roxt)</tt> A toy interpreter and compiler written in Rust from the book Crafting Interpreters.<br>
