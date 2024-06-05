@@ -12,7 +12,7 @@ think the world would be worse without crypto? Not really. I am content with
 Bitcoin and Ethereum, but beyond those I have not actually found a coin that
 offers "life-improving" technology.
 
-# The Technology
+## The Technology
 
 I am going to completely generalize here, so take it with a grain of salt. Keep
 in mind that I am a "nothing-to-show" dev who hasn't created such "successful"
