@@ -59,7 +59,7 @@ all working towards a common goal, yada yada...
 
 The person obsessed with technology is intelligent, but how I see it,
 unwise. They want to implement the latest findings in mathematics, cryptography,
-networking, cfomputer science, etc, but without truly contemplating the question
+networking, computer science, etc, but without truly contemplating the question
 "is this work necessary or beneficial for society?". The amount of funds in the
 crypto industry allows this to be possible. The technologist, investors and
 end-user are all feeding off of each other. They all love extremely complicated
