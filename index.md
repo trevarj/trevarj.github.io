@@ -1,4 +1,3 @@
-I am a programmer working with Rust in the crypto industry.
 
 `trev` on libera.chat IRC
 
