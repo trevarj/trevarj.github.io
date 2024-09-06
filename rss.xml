@@ -693,6 +693,51 @@ of "coins" attached to this technology, and then sell it to people who want to
 enjoy the benefits of snake oil and get RICH! Done!</p>
 ]]></description>
 </item><item>
+<title>Tech Complacency</title>
+<guid>https://trevarj.github.io/posts/Tech_Complacency.html</guid>
+<link>https://trevarj.github.io/posts/Tech_Complacency.html</link>
+<pubDate>Fri, 06 Sep 2024 08:55:35 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Tech Complacency</h1><a id="user-content-tech-complacency" class="anchor" aria-label="Permalink: Tech Complacency" href="#tech-complacency"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This is a short memo about how I have reached complacency with my tech
+usage, namely with my operating system and editor. I have alluded to this in a
+few past posts and probably also contradicted myself. I'm not ashamed of this
+because I believe this is a common issue among computer addicts - at least the
+ones that behave similarly to me.</p>
+<p>When people discuss something like distro-hopping, there are always the people
+who argue that using Ubuntu or Fedora (or even W*ndows) because they enable you
+to be immediately productive. Likewise in the editor wars, where they say to use
+VSCode or a bloated IDE.</p>
+<p>In my case, I'm not coming at it from a place of productivity, but laziness! I
+am in an ebb of the tech enthusiasm graph.</p>
+<pre><code>                     │                                
+         Tech        │        ┌──┐                    
+        Enthusiasm   │      ┌─┘  │                    
+                     │    ┌─┘    │                    
+                     │  ┌─┘      └─────               
+                     │ ─┘                             
+                     └─────────────────────────       
+                          Time                        
+</code></pre>
+<div class="markdown-heading"><h2 class="heading-element">OS</h2><a id="user-content-os" class="anchor" aria-label="Permalink: OS" href="#os"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Ever since I ditched Gentoo (to try to install Guix) I went back to Arch and
+realized it's super comfy and easy to use for me. No need to really tinker since
+I have years of established configs and a stable workflow.</p>
+<p>I have a laptop with Guix on it and I tinkered around on that for a while. Wrote
+a nice config and some Guile tools with it. After I caught the Tech Complacency
+(TC) it's sort of collecting dust, so I might just wipe the drive and put Ubuntu
+or Fedora (probably Arch with Gnome) in it to embrace a JustWorks™️ mentality.</p>
+<div class="markdown-heading"><h2 class="heading-element">Editor</h2><a id="user-content-editor" class="anchor" aria-label="Permalink: Editor" href="#editor"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After I created a fully from scratch Neovim config at the beginning of the year,
+I hopped back to Emacs and then, ut oh, I caught TC and got stuck on Emacs. Too
+lazy to get off cause it is already at the point where it JustWorks™️ for me. I'm
+not trying to optimize my workflow with editing by memorizing crazy keystrokes
+or learning new editing strategies (i.e syntactic editing with TS).</p>
+<div class="markdown-heading"><h2 class="heading-element">Conclusion</h2><a id="user-content-conclusion" class="anchor" aria-label="Permalink: Conclusion" href="#conclusion"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Of course, I will catch the tech obsession bug again...it's just a matter of
+time. Until then, I am chilling with what I obsessively built before I caught
+TC.</p>
+]]></description>
+</item><item>
 <title>Ten Years a Dev</title>
 <guid>https://trevarj.github.io/posts/ten_years.html</guid>
 <link>https://trevarj.github.io/posts/ten_years.html</link>
