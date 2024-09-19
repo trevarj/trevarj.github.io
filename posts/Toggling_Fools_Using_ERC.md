@@ -24,7 +24,7 @@ source since I couldn't find how to do the exact thing online.
 The trick is all in `'erc-match-toggle-hidden-fools`, which will do exactly what
 it says - toggle your hidden fools. A caveat is that I have to add
 `'set-buffer-modified-p` instead of hitting RET after triggering
-`'erc/toggle-fools`so that the messages are shown/hidden.
+`'erc/toggle-fools` so that the messages are shown/hidden.
 
 Within use-package erc `:preface` :
 
@@ -45,7 +45,7 @@ erc-fools '("Marvin2")
 erc-fool-highlight-type 'all
 ```
 
-The hook is necessary for `'erc-match-toggle-hidden-fools`to function properly,
+The hook is necessary for `'erc-match-toggle-hidden-fools` to function properly,
 according to the documentation on the function definition.
 
 ```elisp
