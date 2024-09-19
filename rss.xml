@@ -928,7 +928,7 @@ source since I couldn't find how to do the exact thing online.</p>
 <p>The trick is all in <code>'erc-match-toggle-hidden-fools</code>, which will do exactly what
 it says - toggle your hidden fools. A caveat is that I have to add
 <code>'set-buffer-modified-p</code> instead of hitting RET after triggering
-<code>'erc/toggle-fools</code>so that the messages are shown/hidden.</p>
+<code>'erc/toggle-fools</code> so that the messages are shown/hidden.</p>
 <p>Within use-package erc <code>:preface</code> :</p>
 <div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> (hidden-fools)
   (<span class="pl-k">defun</span> <span class="pl-e">erc/toggle-fools</span> ()
@@ -940,7 +940,7 @@ it says - toggle your hidden fools. A caveat is that I have to add
 <p>Within use-package erc  <code>:config</code>:</p>
 <div class="highlight highlight-source-emacs-lisp"><pre>erc-fools '(<span class="pl-s"><span class="pl-pds">"</span>Marvin2<span class="pl-pds">"</span></span>)
 erc-fool-highlight-type <span class="pl-c1">'all</span></pre></div>
-<p>The hook is necessary for <code>'erc-match-toggle-hidden-fools</code>to function properly,
+<p>The hook is necessary for <code>'erc-match-toggle-hidden-fools</code> to function properly,
 according to the documentation on the function definition.</p>
 <div class="highlight highlight-source-emacs-lisp"><pre><span class="pl-c1">:hook</span>
  ((erc-text-matched <span class="pl-k">.</span> erc-hide-fools))
