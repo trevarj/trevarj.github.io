@@ -29,7 +29,7 @@ it says - toggle your hidden fools. A caveat is that I have to add
 Within use-package erc `:preface` :
 
 ```elisp
-(let (hidden-fools)
+(let ((hidden-fools t))
   (defun erc/toggle-fools ()
     (interactive)
     (setq hidden-fools (not hidden-fools))
