@@ -30,7 +30,7 @@ it says - toggle your hidden fools. A caveat is that I have to add
 <code>'set-buffer-modified-p</code> instead of hitting RET after triggering
 <code>'erc/toggle-fools</code> so that the messages are shown/hidden.</p>
 <p>Within use-package erc <code>:preface</code> :</p>
-<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> (hidden-fools)
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> ((hidden-fools <span class="pl-c1">t</span>))
   (<span class="pl-k">defun</span> <span class="pl-e">erc/toggle-fools</span> ()
     (<span class="pl-k">interactive</span>)
     (<span class="pl-k">setq</span> hidden-fools (<span class="pl-k">not</span> hidden-fools))

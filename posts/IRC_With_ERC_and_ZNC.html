@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+          <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="/static/style.css">
+            <title>Never Miss A Mention With ZNC</title>
+          </head>
+          <body>
+          <header><div class="markdown-heading"><h1 class="heading-element">trev's website</h1><a id="user-content-trevs-website" class="anchor" aria-label="Permalink: trev's website" href="#trevs-website"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><a href="/index.html">Home</a>
+<a href="/posts/index.html">Posts</a>
+<a href="/about/index.html">About</a></p></header>
+            <div class="markdown-heading"><h1 class="heading-element">Never Miss A Mention With ZNC</h1><a id="user-content-never-miss-a-mention-with-znc" class="anchor" aria-label="Permalink: Never Miss A Mention With ZNC" href="#never-miss-a-mention-with-znc"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+
+<p><em>(note for me cause I will forget this)</em></p>
+<p>ZNC allows you to have channel "playback" when you reconnect with your client,
+but it's easy to lose track of mentions, or not be able to see a mention on an
+active channel that surpasses 500 messages (ZNC max buffer) while you're
+away. For this you need to enable a ZNC module.</p>
+<p>First, navigate to the ZNC user, then the network and scroll down to the module
+"<a href="https://wiki.znc.in/Watch" rel="nofollow">watch</a>" and enable it. (web admin url:
+<code>/mods/global/webadmin/editnetwork?user=trev&amp;network=libera</code>).</p>
+<p>Go into your IRC client and enter:</p>
+<pre><code>/msg *watch add * *mentions *%nick%*
+</code></pre>
+<p>Every time your nick is mentioned, it will add that message to a buffer called
+<code>*mentions</code>.</p>
+<p>Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
+(/mods/global/webadmin/edituser?user=trev) and find the Flags section. Uncheck
+"Auto Clear Query Buffer".</p>
+<p>Now, when someone mentions you while you're away, once you log in again you will
+see these mentions in a nice little buffer.</p>
+<hr>
+<p>For some reason people say to also enable the "clearbufferonmsg" module, but it
+doesn't seem necessary for me on ERC.</p>
+          <footer><p><a href="https://craftering.systemcrafters.net/@trev/previous" rel="nofollow">🠜</a>
+<a href="https://craftering.systemcrafters.net/" rel="nofollow">Craftering (System Crafters)</a>
+<a href="https://craftering.systemcrafters.net/@trev/next" rel="nofollow">🠞</a></p>
+<p>Trevor Arjeski -
+<a href="https://github.com/trevarj">git</a>
+<a href="https://www.linkedin.com/in/trevor-arjeski/" rel="nofollow">linkedin</a>
+<a href="mailto:tmarjeski@gmail.com">mail</a>
+<a href="/rss.xml">rss</a></p></footer>
+          </body>
+          </html>
