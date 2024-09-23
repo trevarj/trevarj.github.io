@@ -21,7 +21,7 @@ Every time your nick is mentioned, it will add that message to a buffer called
 `*mentions`.
 
 Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
-(/mods/global/webadmin/edituser?user=trev) and find the Flags section. Uncheck
+(`/mods/global/webadmin/edituser?user=trev`) and find the Flags sectiobn. Uncheck
 "Auto Clear Query Buffer".
 
 Now, when someone mentions you while you're away, once you log in again you will
@@ -29,5 +29,6 @@ see these mentions in a nice little buffer.
 
 -------------------------------------------------------------------------------
 
-For some reason people say to also enable the "clearbufferonmsg" module, but it
+For some reason people say to also enable the
+"[clearbufferonmsg](https://wiki.znc.in/Clearbufferonmsg)" module, but it
 doesn't seem necessary for me on ERC.
