@@ -321,12 +321,13 @@ away. For this you need to enable a ZNC module.</p>
 <p>Every time your nick is mentioned, it will add that message to a buffer called
 <code>*mentions</code>.</p>
 <p>Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
-(/mods/global/webadmin/edituser?user=trev) and find the Flags section. Uncheck
+(<code>/mods/global/webadmin/edituser?user=trev</code>) and find the Flags sectiobn. Uncheck
 "Auto Clear Query Buffer".</p>
 <p>Now, when someone mentions you while you're away, once you log in again you will
 see these mentions in a nice little buffer.</p>
 <hr/>
-<p>For some reason people say to also enable the "clearbufferonmsg" module, but it
+<p>For some reason people say to also enable the
+"<a href="https://wiki.znc.in/Clearbufferonmsg" rel="nofollow">clearbufferonmsg</a>" module, but it
 doesn't seem necessary for me on ERC.</p>
 ]]></description>
 </item><item>
