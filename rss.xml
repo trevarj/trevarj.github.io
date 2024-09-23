@@ -302,6 +302,34 @@ believe it is a good time to move on when you become an if-else programmer
 instead of risking your skills and falling behind for a (temporary) job.</p>
 ]]></description>
 </item><item>
+<title>Never Miss A Mention With ZNC</title>
+<guid>https://trevarj.github.io/posts/IRC_With_ERC_and_ZNC.html</guid>
+<link>https://trevarj.github.io/posts/IRC_With_ERC_and_ZNC.html</link>
+<pubDate>Mon, 23 Sep 2024 13:39:32 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Never Miss A Mention With ZNC</h1><a id="user-content-never-miss-a-mention-with-znc" class="anchor" aria-label="Permalink: Never Miss A Mention With ZNC" href="#never-miss-a-mention-with-znc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p><em>(note for me cause I will forget this)</em></p>
+<p>ZNC allows you to have channel "playback" when you reconnect with your client,
+but it's easy to lose track of mentions, or not be able to see a mention on an
+active channel that surpasses 500 messages (ZNC max buffer) while you're
+away. For this you need to enable a ZNC module.</p>
+<p>First, navigate to the ZNC user, then the network and scroll down to the module
+"<a href="https://wiki.znc.in/Watch" rel="nofollow">watch</a>" and enable it. (web admin url:
+<code>/mods/global/webadmin/editnetwork?user=trev&amp;network=libera</code>).</p>
+<p>Go into your IRC client and enter:</p>
+<pre><code>/msg *watch add * *mentions *%nick%*
+</code></pre>
+<p>Every time your nick is mentioned, it will add that message to a buffer called
+<code>*mentions</code>.</p>
+<p>Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
+(/mods/global/webadmin/edituser?user=trev) and find the Flags section. Uncheck
+"Auto Clear Query Buffer".</p>
+<p>Now, when someone mentions you while you're away, once you log in again you will
+see these mentions in a nice little buffer.</p>
+<hr/>
+<p>For some reason people say to also enable the "clearbufferonmsg" module, but it
+doesn't seem necessary for me on ERC.</p>
+]]></description>
+</item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
 <guid>https://trevarj.github.io/posts/lisp_game_jam_2024.html</guid>
 <link>https://trevarj.github.io/posts/lisp_game_jam_2024.html</link>
@@ -930,7 +958,7 @@ it says - toggle your hidden fools. A caveat is that I have to add
 <code>'set-buffer-modified-p</code> instead of hitting RET after triggering
 <code>'erc/toggle-fools</code> so that the messages are shown/hidden.</p>
 <p>Within use-package erc <code>:preface</code> :</p>
-<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> (hidden-fools)
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> ((hidden-fools <span class="pl-c1">t</span>))
   (<span class="pl-k">defun</span> <span class="pl-e">erc/toggle-fools</span> ()
     (<span class="pl-k">interactive</span>)
     (<span class="pl-k">setq</span> hidden-fools (<span class="pl-k">not</span> hidden-fools))
