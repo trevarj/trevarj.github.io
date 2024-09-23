@@ -326,9 +326,12 @@ away. For this you need to enable a ZNC module.</p>
 <p>Now, when someone mentions you while you're away, once you log in again you will
 see these mentions in a nice little buffer.</p>
 <hr/>
-<p>For some reason people say to also enable the
-"<a href="https://wiki.znc.in/Clearbufferonmsg" rel="nofollow">clearbufferonmsg</a>" module, but it
-doesn't seem necessary for me on ERC.</p>
+<p>Another caveat is that you must enable the
+"<a href="https://wiki.znc.in/Clearbufferonmsg" rel="nofollow">clearbufferonmsg</a>" module or else the
+query buffers (like a private message) will stay open and load when you
+connect. If your client doesn't acquire the znc.in/self-message capability then
+all your messages will disappear from the query buffer, making the playback of a
+1:1 message pointless.</p>
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>

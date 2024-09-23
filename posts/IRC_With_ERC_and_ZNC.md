@@ -29,6 +29,9 @@ see these mentions in a nice little buffer.
 
 -------------------------------------------------------------------------------
 
-For some reason people say to also enable the
-"[clearbufferonmsg](https://wiki.znc.in/Clearbufferonmsg)" module, but it
-doesn't seem necessary for me on ERC.
+Another caveat is that you must enable the
+"[clearbufferonmsg](https://wiki.znc.in/Clearbufferonmsg)" module or else the
+query buffers (like a private message) will stay open and load when you
+connect. If your client doesn't acquire the znc.in/self-message capability then
+all your messages will disappear from the query buffer, making the playback of a
+1:1 message pointless.
