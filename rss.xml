@@ -6,13 +6,13 @@
 <title>trev's website</title>
 <description></description>
 <language>en-us</language>
-<link>https://trevarj.github.io/rss.xml</link>
-<atom:link href="https://trevarj.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://trevs.site/rss.xml</link>
+<atom:link href="https://trevs.site/rss.xml" rel="self" type="application/rss+xml" />
 
 <item>
 <title>A Late Start in Computer Programming</title>
-<guid>https://trevarj.github.io/posts/advice2noob.html</guid>
-<link>https://trevarj.github.io/posts/advice2noob.html</link>
+<guid>https://trevs.site/posts/advice2noob.html</guid>
+<link>https://trevs.site/posts/advice2noob.html</link>
 <pubDate>Mon, 11 Dec 2023 19:33:07 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">A Late Start in Computer Programming</h1><a id="user-content-a-late-start-in-computer-programming" class="anchor" aria-label="Permalink: A Late Start in Computer Programming" href="#a-late-start-in-computer-programming"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Recently I've been giving advice (sometimes unsolicited) to people who
@@ -89,8 +89,8 @@ improve. It's a plus if other people use it or contribute to it.</p>
 ]]></description>
 </item><item>
 <title>RSS/Atom Feed Reader in BASH!</title>
-<guid>https://trevarj.github.io/posts/Feed_Reader_in_BASH!.html</guid>
-<link>https://trevarj.github.io/posts/Feed_Reader_in_BASH!.html</link>
+<guid>https://trevs.site/posts/Feed_Reader_in_BASH!.html</guid>
+<link>https://trevs.site/posts/Feed_Reader_in_BASH!.html</link>
 <pubDate>Fri, 26 Apr 2024 23:21:40 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">RSS/Atom Feed Reader in BASH!</h1><a id="user-content-rssatom-feed-reader-in-bash" class="anchor" aria-label="Permalink: RSS/Atom Feed Reader in BASH!" href="#rssatom-feed-reader-in-bash"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I'm on a Bash spree <a href="./my_new_SSG_and_blog.html">lately</a>, or as some might say,
@@ -154,8 +154,8 @@ things sorted.</p>
 ]]></description>
 </item><item>
 <title>Distro-Hopping from Arch to Gentoo</title>
-<guid>https://trevarj.github.io/posts/gentoo.html</guid>
-<link>https://trevarj.github.io/posts/gentoo.html</link>
+<guid>https://trevs.site/posts/gentoo.html</guid>
+<link>https://trevs.site/posts/gentoo.html</link>
 <pubDate>Wed, 10 Apr 2024 14:32:47 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Distro-Hopping from Arch to Gentoo</h1><a id="user-content-distro-hopping-from-arch-to-gentoo" class="anchor" aria-label="Permalink: Distro-Hopping from Arch to Gentoo" href="#distro-hopping-from-arch-to-gentoo"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>This past weekend (starting on a Thursday) I decided to scrap my Arch install
@@ -272,8 +272,8 @@ fresh versions of programs that I frequently use.</p>
 ]]></description>
 </item><item>
 <title>The If-Else Programmer</title>
-<guid>https://trevarj.github.io/posts/if_else.html</guid>
-<link>https://trevarj.github.io/posts/if_else.html</link>
+<guid>https://trevs.site/posts/if_else.html</guid>
+<link>https://trevs.site/posts/if_else.html</link>
 <pubDate>Tue, 16 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The If-Else Programmer</h1><a id="user-content-the-if-else-programmer" class="anchor" aria-label="Permalink: The If-Else Programmer" href="#the-if-else-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I had a half-joke where I would tell people that all I did at a previous job was
@@ -303,8 +303,8 @@ instead of risking your skills and falling behind for a (temporary) job.</p>
 ]]></description>
 </item><item>
 <title>Never Miss A Mention With ZNC</title>
-<guid>https://trevarj.github.io/posts/IRC_With_ERC_and_ZNC.html</guid>
-<link>https://trevarj.github.io/posts/IRC_With_ERC_and_ZNC.html</link>
+<guid>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</guid>
+<link>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</link>
 <pubDate>Mon, 23 Sep 2024 13:39:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Never Miss A Mention With ZNC</h1><a id="user-content-never-miss-a-mention-with-znc" class="anchor" aria-label="Permalink: Never Miss A Mention With ZNC" href="#never-miss-a-mention-with-znc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p><em>(note for me cause I will forget this)</em></p>
@@ -335,8 +335,8 @@ all your messages will disappear from the query buffer, making the playback of a
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
-<guid>https://trevarj.github.io/posts/lisp_game_jam_2024.html</guid>
-<link>https://trevarj.github.io/posts/lisp_game_jam_2024.html</link>
+<guid>https://trevs.site/posts/lisp_game_jam_2024.html</guid>
+<link>https://trevs.site/posts/lisp_game_jam_2024.html</link>
 <pubDate>Sat, 25 May 2024 16:09:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Learning Guile for Spring Lisp Game Jam 2024</h1><a id="user-content-learning-guile-for-spring-lisp-game-jam-2024" class="anchor" aria-label="Permalink: Learning Guile for Spring Lisp Game Jam 2024" href="#learning-guile-for-spring-lisp-game-jam-2024"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Today I finished <a href="https://github.com/trevarj/gdotris">my entry</a> for the <a href="https://itch.io/jam/spring-lisp-game-jam-2024/entries" rel="nofollow">Spring
@@ -365,8 +365,8 @@ irritating to me, coming from using a language like Rust daily, like no LSP
 ]]></description>
 </item><item>
 <title>Mentorship</title>
-<guid>https://trevarj.github.io/posts/mentorship.html</guid>
-<link>https://trevarj.github.io/posts/mentorship.html</link>
+<guid>https://trevs.site/posts/mentorship.html</guid>
+<link>https://trevs.site/posts/mentorship.html</link>
 <pubDate>Wed, 17 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Mentorship</h1><a id="user-content-mentorship" class="anchor" aria-label="Permalink: Mentorship" href="#mentorship"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>The most valuable thing I got out of my first job was that I was being mentored
@@ -405,8 +405,8 @@ highly skilled and generous with his time.</p>
 ]]></description>
 </item><item>
 <title>My New SSG and Blog</title>
-<guid>https://trevarj.github.io/posts/my_new_SSG_and_blog.html</guid>
-<link>https://trevarj.github.io/posts/my_new_SSG_and_blog.html</link>
+<guid>https://trevs.site/posts/my_new_SSG_and_blog.html</guid>
+<link>https://trevs.site/posts/my_new_SSG_and_blog.html</link>
 <pubDate>Sun, 21 Apr 2024 18:31:31 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My New SSG and Blog</h1><a id="user-content-my-new-ssg-and-blog" class="anchor" aria-label="Permalink: My New SSG and Blog" href="#my-new-ssg-and-blog"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Welcome to my revamped blog that I made with my latest tinker project,
@@ -473,8 +473,8 @@ traditional <code>s/find/replace/options</code>.</p>
 ]]></description>
 </item><item>
 <title>My Return to a Custom Neovim Config</title>
-<guid>https://trevarj.github.io/posts/neovim_2024.html</guid>
-<link>https://trevarj.github.io/posts/neovim_2024.html</link>
+<guid>https://trevs.site/posts/neovim_2024.html</guid>
+<link>https://trevs.site/posts/neovim_2024.html</link>
 <pubDate>Wed, 10 Jan 2024 11:37:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My Return to a Custom Neovim Config</h1><a id="user-content-my-return-to-a-custom-neovim-config" class="anchor" aria-label="Permalink: My Return to a Custom Neovim Config" href="#my-return-to-a-custom-neovim-config"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>At the end of 2023 I got antsy. I was finally going to do it...again. I was
@@ -559,8 +559,8 @@ this the project hasn't had a push for two months...)</p>
 ]]></description>
 </item><item>
 <title>The Open Source Influencer</title>
-<guid>https://trevarj.github.io/posts/OSS_influencer.html</guid>
-<link>https://trevarj.github.io/posts/OSS_influencer.html</link>
+<guid>https://trevs.site/posts/OSS_influencer.html</guid>
+<link>https://trevs.site/posts/OSS_influencer.html</link>
 <pubDate>Fri, 12 Jan 2024 14:46:15 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The Open Source Influencer</h1><a id="user-content-the-open-source-influencer" class="anchor" aria-label="Permalink: The Open Source Influencer" href="#the-open-source-influencer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I've been interested in tech content creation recently and have been trying to
@@ -641,8 +641,8 @@ would point out all the reasons why this is a bad business model.</p>
 ]]></description>
 </item><item>
 <title>Pre-Guix System Install Thoughts</title>
-<guid>https://trevarj.github.io/posts/Pre-Guix_System_Install_Thoughts.html</guid>
-<link>https://trevarj.github.io/posts/Pre-Guix_System_Install_Thoughts.html</link>
+<guid>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</guid>
+<link>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</link>
 <pubDate>Tue, 28 May 2024 16:55:59 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Pre-Guix System Install Thoughts</h1><a id="user-content-pre-guix-system-install-thoughts" class="anchor" aria-label="Permalink: Pre-Guix System Install Thoughts" href="#pre-guix-system-install-thoughts"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Ok, listen. I said a few posts back that I wasn't going to distrohop again after
@@ -663,8 +663,8 @@ online gambling!</p>
 ]]></description>
 </item><item>
 <title>Some Thoughts on the Crypto Industry</title>
-<guid>https://trevarj.github.io/posts/Quick_Thought_on_Cryptocurrency_Technology.html</guid>
-<link>https://trevarj.github.io/posts/Quick_Thought_on_Cryptocurrency_Technology.html</link>
+<guid>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</guid>
+<link>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</link>
 <pubDate>Wed, 05 Jun 2024 10:35:54 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Some Thoughts on the Crypto Industry</h1><a id="user-content-some-thoughts-on-the-crypto-industry" class="anchor" aria-label="Permalink: Some Thoughts on the Crypto Industry" href="#some-thoughts-on-the-crypto-industry"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I've been working closely with numerous cryptocurrencies over the past four
@@ -726,8 +726,8 @@ enjoy the benefits of snake oil and get RICH! Done!</p>
 ]]></description>
 </item><item>
 <title>Tech Complacency</title>
-<guid>https://trevarj.github.io/posts/Tech_Complacency.html</guid>
-<link>https://trevarj.github.io/posts/Tech_Complacency.html</link>
+<guid>https://trevs.site/posts/Tech_Complacency.html</guid>
+<link>https://trevs.site/posts/Tech_Complacency.html</link>
 <pubDate>Fri, 06 Sep 2024 08:55:35 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Tech Complacency</h1><a id="user-content-tech-complacency" class="anchor" aria-label="Permalink: Tech Complacency" href="#tech-complacency"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>This is a short memo about how I have reached complacency with my tech
@@ -771,8 +771,8 @@ TC.</p>
 ]]></description>
 </item><item>
 <title>Ten Years a Dev</title>
-<guid>https://trevarj.github.io/posts/ten_years.html</guid>
-<link>https://trevarj.github.io/posts/ten_years.html</link>
+<guid>https://trevs.site/posts/ten_years.html</guid>
+<link>https://trevs.site/posts/ten_years.html</link>
 <pubDate>Sat, 20 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Ten Years a Dev</h1><a id="user-content-ten-years-a-dev" class="anchor" aria-label="Permalink: Ten Years a Dev" href="#ten-years-a-dev"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <div class="markdown-heading"><h2 class="heading-element">Introduction</h2><a id="user-content-introduction" class="anchor" aria-label="Permalink: Introduction" href="#introduction"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
@@ -939,8 +939,8 @@ of work:</p>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
-<guid>https://trevarj.github.io/posts/Toggling_Fools_Using_ERC.html</guid>
-<link>https://trevarj.github.io/posts/Toggling_Fools_Using_ERC.html</link>
+<guid>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</guid>
+<link>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</link>
 <pubDate>Thu, 19 Sep 2024 22:53:39 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Toggling Fools Using ERC</h1><a id="user-content-toggling-fools-using-erc" class="anchor" aria-label="Permalink: Toggling Fools Using ERC" href="#toggling-fools-using-erc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>To contradict my last post, I recently decided to replicate my Weechat IRC
