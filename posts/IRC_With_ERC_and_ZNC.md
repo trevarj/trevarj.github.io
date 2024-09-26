@@ -35,3 +35,20 @@ query buffers (like a private message) will stay open and load when you
 connect. If your client doesn't acquire the znc.in/self-message capability then
 all your messages will disappear from the query buffer, making the playback of a
 1:1 message pointless.
+
+EDIT:
+
+I found an [issue](https://github.com/sshirokov/ZNC.el/issues/32) on ZNC.el that
+provides a solution to the above caveat.
+
+Simply adding this advice to your erc config does the trick:
+
+```elisp
+(advice-add #'erc-login 
+            :before (lambda ()
+                      (erc-server-send "CAP REQ :znc.in/self-message")
+                      (erc-server-send "CAP END")))
+```
+
+Now query buffers (direct messages) can be restored and your messages will be
+present.

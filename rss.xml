@@ -332,6 +332,16 @@ query buffers (like a private message) will stay open and load when you
 connect. If your client doesn't acquire the znc.in/self-message capability then
 all your messages will disappear from the query buffer, making the playback of a
 1:1 message pointless.</p>
+<p>EDIT:</p>
+<p>I found an <a href="https://github.com/sshirokov/ZNC.el/issues/32">issue</a> on ZNC.el that
+provides a solution to the above caveat.</p>
+<p>Simply adding this advice to your erc config does the trick:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">advice-add</span> <span class="pl-c1">#<span class="pl-c1">'erc-login</span></span> 
+            <span class="pl-c1">:before</span> (<span class="pl-k">lambda</span> ()
+                      (<span class="pl-c1">erc-server-send</span> <span class="pl-s"><span class="pl-pds">"</span>CAP REQ :znc.in/self-message<span class="pl-pds">"</span></span>)
+                      (<span class="pl-c1">erc-server-send</span> <span class="pl-s"><span class="pl-pds">"</span>CAP END<span class="pl-pds">"</span></span>)))</pre></div>
+<p>Now query buffers (direct messages) can be restored and your messages will be
+present.</p>
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
