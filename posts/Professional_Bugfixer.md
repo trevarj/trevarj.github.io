@@ -37,5 +37,5 @@ hit every time I squash one and put up a pull-request. "That guy is really
 keeping the project afloat", they'll say.
 
 "He's the only one who never broke prod...how does he do it?". They will never
-know the best kept secret...just add [if-statements](./if_else.md).
+know the best kept secret...just add [if-statements](./if_else.html).
 
