@@ -1,7 +1,7 @@
 # RSS/Atom Feed Reader in BASH!
 <!-- %TIMESTAMP=1714162900% -->
 
-I'm on a Bash spree [lately](./my_new_SSG_and_blog.html), or as some might say,
+I'm on a Bash spree [lately](/posts/my_new_SSG_and_blog.html), or as some might say,
 "going absolutely bonkers", "getting down with the sickness", "getting a few
 screws knocked loose"...whichever you prefer. I just really had a craving for,
 what I call, "the arts and crafts of programming", AKA gluing a bunch of

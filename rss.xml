@@ -93,7 +93,7 @@ improve. It's a plus if other people use it or contribute to it.</p>
 <link>https://www.trevs.site/posts/Feed_Reader_in_BASH!.html</link>
 <pubDate>Fri, 26 Apr 2024 23:21:40 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">RSS/Atom Feed Reader in BASH!</h1><a id="user-content-rssatom-feed-reader-in-bash" class="anchor" aria-label="Permalink: RSS/Atom Feed Reader in BASH!" href="#rssatom-feed-reader-in-bash"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>I'm on a Bash spree <a href="./my_new_SSG_and_blog.html">lately</a>, or as some might say,
+<p>I'm on a Bash spree <a href="https://www.trevs.site/posts/my_new_SSG_and_blog.html">lately</a>, or as some might say,
 "going absolutely bonkers", "getting down with the sickness", "getting a few
 screws knocked loose"...whichever you prefer. I just really had a craving for,
 what I call, "the arts and crafts of programming", AKA gluing a bunch of
@@ -139,7 +139,7 @@ feed item. Upon startup <code>jq</code> will just parse all the .json files and 
 data to <code>fzf</code>.</p>
 <p>That's pretty much the interesting part. The rest is just configuration and
 glue. It's better just to take a look at this demo:</p>
-<p><a href="https://asciinema.org/a/656386" rel="nofollow"><img src="https://camo.githubusercontent.com/8e387ac362bbaf8b760dea7393988a5859feec089880b8fb5fb25d0a765ee338/68747470733a2f2f61736369696e656d612e6f72672f612f3635363338362e737667" alt="asciicast" data-canonical-src="https://asciinema.org/a/656386.svg" style="max-width: 100%;"/></a></p>
+<p><a href="https://asciinema.org/a/656386" rel="nofollow"><img src="https://camo.githubusercontent.com/2212cf38e43ddcc2361304385e10969ad288deaba06db2689fe8617c7de0f651/68747470733a2f2f61736369696e656d612e6f72672f612f3635363338362e737667" alt="asciicast" data-canonical-src="https://asciinema.org/a/656386.svg" style="max-width: 100%;"/></a></p>
 <div class="markdown-heading"><h2 class="heading-element">Shortcomings</h2><a id="user-content-shortcomings" class="anchor" aria-label="Permalink: Shortcomings" href="#shortcomings"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>After adding around 10 feeds with ~200 posts total, the performance is still
 decent, but you can tell that it isn't as snappy as other readers. This could
@@ -986,6 +986,18 @@ of work:</p>
 </tr>
 </tbody>
 </table>
+]]></description>
+</item><item>
+<title>Test Post With Link [rss bugfix]</title>
+<guid>https://www.trevs.site/posts/Test_Post_With_Link.html</guid>
+<link>https://www.trevs.site/posts/Test_Post_With_Link.html</link>
+<pubDate>Thu, 24 Oct 2024 18:53:49 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Test Post With Link [rss bugfix]</h1><a id="user-content-test-post-with-link-rss-bugfix" class="anchor" aria-label="Permalink: Test Post With Link [rss bugfix]" href="#test-post-with-link-rss-bugfix"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>A <a href="https://www.trevs.site/posts/my_new_SSG_and_blog.html">relative link</a> to another post for RSS
+generation testing.</p>
+<p>Don't mind me, just fixing a bug in <a href="https://github.com/trevarj/poogo">poogo</a>
+(my static site generator) and giving it a test. Relative links, ex. to other
+posts, were working on the web, but broken on RSS.</p>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
