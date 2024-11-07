@@ -88,6 +88,65 @@ improve. It's a plus if other people use it or contribute to it.</p>
 <div class="markdown-heading"><h1 class="heading-element">The End</h1><a id="user-content-the-end" class="anchor" aria-label="Permalink: The End" href="#the-end"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 ]]></description>
 </item><item>
+<title>Emacs Secrets and use-package</title>
+<guid>https://www.trevs.site/posts/Emacs_Secrets_and_use-package.html</guid>
+<link>https://www.trevs.site/posts/Emacs_Secrets_and_use-package.html</link>
+<pubDate>Thu, 07 Nov 2024 15:39:54 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Emacs Secrets and use-package</h1><a id="user-content-emacs-secrets-and-use-package" class="anchor" aria-label="Permalink: Emacs Secrets and use-package" href="#emacs-secrets-and-use-package"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After following an
+<a href="https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources" rel="nofollow">article</a>
+from the author of <a href="https://www.masteringemacs.org/" rel="nofollow">Mastering Emacs</a>, I was
+quite pleased with source controlling some encrypted secrets that I use in
+Emacs regularly, such as my elfeed feeds or IRC password.</p>
+<p>In short, it looks like this:</p>
+<p>A file, <code>secrets.el.gpg</code> that contains:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">setq</span> secret-1 <span class="pl-s"><span class="pl-pds">"</span>foo<span class="pl-pds">"</span></span>
+      my/erc-password <span class="pl-s"><span class="pl-pds">"</span>hunter2<span class="pl-pds">"</span></span>)
+</pre></div>
+<p>From <code>use-package</code> declarations in <code>init.el</code> I would load this file:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> erc
+  <span class="pl-c1">:config</span> (<span class="pl-c1">load-library</span> <span class="pl-s"><span class="pl-pds">"</span>/path/to/secrets.el.gpg<span class="pl-pds">"</span></span>))
+  
+(<span class="pl-c1">use-package</span> elfeed
+  <span class="pl-c1">:config</span> (<span class="pl-c1">load-library</span> <span class="pl-s"><span class="pl-pds">"</span>/path/to/secrets.el.gpg<span class="pl-pds">"</span></span>))
+
+...</pre></div>
+<p>Of course, having to copy this line was disgusting me as I iteratively and
+obsessively try to improve my Emacs config.</p>
+<div class="markdown-heading"><h3 class="heading-element">Failed Attempt</h3><a id="user-content-failed-attempt" class="anchor" aria-label="Permalink: Failed Attempt" href="#failed-attempt"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I decided that I would attempt to define a local package and somehow load it as
+a "dependency" of other packages.</p>
+<div class="highlight highlight-source-emacs-lisp"><pre><span class="pl-c"><span class="pl-c">;</span>; didn't work</span>
+(<span class="pl-c1">use-package</span> my-secrets
+  <span class="pl-c1">:ensure</span> <span class="pl-c1">nil</span>
+  <span class="pl-c1">:load-path</span> <span class="pl-s"><span class="pl-pds">"</span>./secrets.el.gpg<span class="pl-pds">"</span></span>)</pre></div>
+<p>The above didn't work, most likely because it isn't an actual package, even when
+I added <code>(provide 'my-secrets)</code> to the bottom of the encrypted file.</p>
+<div class="markdown-heading"><h3 class="heading-element">Solution</h3><a id="user-content-solution" class="anchor" aria-label="Permalink: Solution" href="#solution"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm not sure if this is the best solution, but it works and is nicer than having
+to call <code>load-library</code> in each package's <code>:config</code>.</p>
+<p>First, I made a simple wrapper package - <code>.emacs.d/lisp/my-secrets.el</code> (in my
+<code>load-path</code>) that just calls that frequently copy-pasted line:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">load-library</span> (<span class="pl-c1">expand-file-name</span> <span class="pl-s"><span class="pl-pds">"</span>secrets.el.gpg<span class="pl-pds">"</span></span> user-emacs-directory))
+(<span class="pl-c1">provide</span> <span class="pl-c1">'my-secrets</span>)</pre></div>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> my-secrets
+  <span class="pl-c1">:ensure</span> <span class="pl-c1">nil</span>)</pre></div>
+<p>After some digging in the <code>use-package</code> source, since this it was undocumented,
+I found there is a keyword <code>:load</code> which seems to do exactly what I want.</p>
+<p>Now, in all dependent packages, I can specify:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> erc
+  <span class="pl-c1">:load</span> my-secrets
+  <span class="pl-c1">:custom</span> (erc-password my/erc-secret)
+  ...)
+
+(<span class="pl-c1">use-package</span> elfeed
+  <span class="pl-c1">:load</span> my-secrets
+  <span class="pl-c1">:custom</span> (elfeed-feeds my/elfeed-feeds)
+  ...)</pre></div>
+<p>A small improvement, but satisfying and feels more idiomatic.</p>
+<p>Maybe some elisp wizards know how to improve this even further, or know a better way!</p>
+]]></description>
+</item><item>
 <title>RSS/Atom Feed Reader in BASH!</title>
 <guid>https://www.trevs.site/posts/Feed_Reader_in_BASH!.html</guid>
 <link>https://www.trevs.site/posts/Feed_Reader_in_BASH!.html</link>
