@@ -27,6 +27,9 @@ Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
 Now, when someone mentions you while you're away, once you log in again you will
 see these mentions in a nice little buffer.
 
+It's nice to set `SetDetachedClientOnly` for the entry as well, so that the
+*mentions buffer only appears when you reattach!
+
 -------------------------------------------------------------------------------
 
 Another caveat is that you must enable the
