@@ -17,6 +17,7 @@ why I am in awe by it -- it mentions a lot of the languages that I currently
 love and SICP! If only I wasn't such a bad student. Anyways, here it is:
 
 -----
+[2011]
 
 I was asked about functional programming in class today. Its an interesting
 topic, and its worth being exposed to, but I could not do it justice in a quick
