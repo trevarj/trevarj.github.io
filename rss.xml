@@ -6,13 +6,53 @@
 <title>trev's website</title>
 <description></description>
 <language>en-us</language>
-<link>https://www.trevs.site/rss.xml</link>
-<atom:link href="https://www.trevs.site/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://trevs.site/rss.xml</link>
+<atom:link href="https://trevs.site/rss.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>3D Printing and Open Source</title>
+<guid>https://trevs.site/posts/3D_Printing_and_Open_Source.html</guid>
+<link>https://trevs.site/posts/3D_Printing_and_Open_Source.html</link>
+<pubDate>Fri, 06 Jun 2025 14:35:09 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">3D Printing and Open Source</h1><a id="user-content-3d-printing-and-open-source" class="anchor" aria-label="Permalink: 3D Printing and Open Source" href="#3d-printing-and-open-source"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I've been dabbling in a bit of DIY project electronics and wanted to design a
+few enclosures, but didn't want to send out to have something printed or mold
+injected and then have it not be what I wanted. So, instead, I decied it made
+more sense to spend a hundreds of dollars on a 3D printer.</p>
+<p>It turns out that my timing was perfect, cause there is a company called Bambu
+Lab that is making 3D printing super accessible for those who are just starting
+out. If you remember ten years ago when 3D printing became popularized, you'll
+remember how difficult it was to get into and maintain a printer. Now, you can
+just buy one and set it up in about 15 minutes and start printing.</p>
+<p>I was having a blast with my Bambu Lab A1 Mini. It printed perfectly¹ with
+barely any tweaking. So many good Benchies.</p>
+<p>One day I was browsing 3D printing videos on Youtube and started noticing that a
+lot of people actually despise Bambu Lab because of their closed-source model
+and other various things that I'm too lazy to type. I sat wondering if I made a
+mistake with buying this printer.</p>
+<p>The quick answer is "no", because the printer does exactly what I want it to
+do. I didn't want to adopt a new hobby of needing to heavily maintain and tweak
+my printer to get it to make a nice print, or spend a whole lot of time learning
+how it actually works. Improving my CAD and being able to print things is enough
+for now, and because I understand the world of open source, I am open to doing
+this in the future. If I decide to go for a larger printer, I will most likely
+try to build my own (Voron?). This could happen sooner than later if Bambu takes
+even more extreme choices with firmware updates and such. Do they want to stare
+at me through the 1fps camera on the printer???</p>
+<p>I imagine that this is how people feel when they look at Linux or other open
+source software. Sometimes you don't have time to dive into another hobby and
+just want the convenient solution, and sadly, the free (as in freedom) path is
+rough. When you're not really invested in the technology of a device, it is a
+bit difficult trying to see the reasons for FOSS/HW. I'm not really an expert at
+all in the 3D printing space, more so an observer, so I can't really give any
+more insight...but it does feel like I'm using the MacOS of 3D printers and a
+Prusa or another DIY would be some Linux distro...<em>shivers</em></p>
+<p>¹ PLA...PETG was stringing hard since I had no dryer.</p>
+]]></description>
+</item><item>
 <title>Advent of Code 2024 - Elisp</title>
-<guid>https://www.trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</guid>
-<link>https://www.trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</link>
+<guid>https://trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</guid>
+<link>https://trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</link>
 <pubDate>Thu, 26 Dec 2024 09:16:34 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Advent of Code 2024 - Elisp</h1><a id="user-content-advent-of-code-2024---elisp" class="anchor" aria-label="Permalink: Advent of Code 2024 - Elisp" href="#advent-of-code-2024---elisp"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>This year I completed <a href="https://adventofcode.com" rel="nofollow">AoC</a> using Emacs Lisp. I would
@@ -50,8 +90,8 @@ low barrier for entry - just open up a buffer and start writing then <code>C-x C
 ]]></description>
 </item><item>
 <title>A Late Start in Computer Programming</title>
-<guid>https://www.trevs.site/posts/advice2noob.html</guid>
-<link>https://www.trevs.site/posts/advice2noob.html</link>
+<guid>https://trevs.site/posts/advice2noob.html</guid>
+<link>https://trevs.site/posts/advice2noob.html</link>
 <pubDate>Mon, 11 Dec 2023 19:33:07 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">A Late Start in Computer Programming</h1><a id="user-content-a-late-start-in-computer-programming" class="anchor" aria-label="Permalink: A Late Start in Computer Programming" href="#a-late-start-in-computer-programming"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Recently I've been giving advice (sometimes unsolicited) to people who
@@ -128,8 +168,8 @@ improve. It's a plus if other people use it or contribute to it.</p>
 ]]></description>
 </item><item>
 <title>Emacs Secrets and use-package</title>
-<guid>https://www.trevs.site/posts/Emacs_Secrets_and_use-package.html</guid>
-<link>https://www.trevs.site/posts/Emacs_Secrets_and_use-package.html</link>
+<guid>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</guid>
+<link>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</link>
 <pubDate>Thu, 07 Nov 2024 15:39:54 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Emacs Secrets and use-package</h1><a id="user-content-emacs-secrets-and-use-package" class="anchor" aria-label="Permalink: Emacs Secrets and use-package" href="#emacs-secrets-and-use-package"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>After following an
@@ -187,11 +227,11 @@ I found there is a keyword <code>:load</code> which seems to do exactly what I w
 ]]></description>
 </item><item>
 <title>RSS/Atom Feed Reader in BASH!</title>
-<guid>https://www.trevs.site/posts/Feed_Reader_in_BASH!.html</guid>
-<link>https://www.trevs.site/posts/Feed_Reader_in_BASH!.html</link>
+<guid>https://trevs.site/posts/Feed_Reader_in_BASH!.html</guid>
+<link>https://trevs.site/posts/Feed_Reader_in_BASH!.html</link>
 <pubDate>Fri, 26 Apr 2024 23:21:40 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">RSS/Atom Feed Reader in BASH!</h1><a id="user-content-rssatom-feed-reader-in-bash" class="anchor" aria-label="Permalink: RSS/Atom Feed Reader in BASH!" href="#rssatom-feed-reader-in-bash"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>I'm on a Bash spree <a href="https://www.trevs.site/posts/my_new_SSG_and_blog.html">lately</a>, or as some might say,
+<p>I'm on a Bash spree <a href="https://trevs.site/posts/my_new_SSG_and_blog.html">lately</a>, or as some might say,
 "going absolutely bonkers", "getting down with the sickness", "getting a few
 screws knocked loose"...whichever you prefer. I just really had a craving for,
 what I call, "the arts and crafts of programming", AKA gluing a bunch of
@@ -252,8 +292,8 @@ things sorted.</p>
 ]]></description>
 </item><item>
 <title>Distro-Hopping from Arch to Gentoo</title>
-<guid>https://www.trevs.site/posts/gentoo.html</guid>
-<link>https://www.trevs.site/posts/gentoo.html</link>
+<guid>https://trevs.site/posts/gentoo.html</guid>
+<link>https://trevs.site/posts/gentoo.html</link>
 <pubDate>Wed, 10 Apr 2024 14:32:47 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Distro-Hopping from Arch to Gentoo</h1><a id="user-content-distro-hopping-from-arch-to-gentoo" class="anchor" aria-label="Permalink: Distro-Hopping from Arch to Gentoo" href="#distro-hopping-from-arch-to-gentoo"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>This past weekend (starting on a Thursday) I decided to scrap my Arch install
@@ -370,8 +410,8 @@ fresh versions of programs that I frequently use.</p>
 ]]></description>
 </item><item>
 <title>The If-Else Programmer</title>
-<guid>https://www.trevs.site/posts/if_else.html</guid>
-<link>https://www.trevs.site/posts/if_else.html</link>
+<guid>https://trevs.site/posts/if_else.html</guid>
+<link>https://trevs.site/posts/if_else.html</link>
 <pubDate>Tue, 16 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The If-Else Programmer</h1><a id="user-content-the-if-else-programmer" class="anchor" aria-label="Permalink: The If-Else Programmer" href="#the-if-else-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I had a half-joke where I would tell people that all I did at a previous job was
@@ -401,8 +441,8 @@ instead of risking your skills and falling behind for a (temporary) job.</p>
 ]]></description>
 </item><item>
 <title>Never Miss A Mention With ZNC</title>
-<guid>https://www.trevs.site/posts/IRC_With_ERC_and_ZNC.html</guid>
-<link>https://www.trevs.site/posts/IRC_With_ERC_and_ZNC.html</link>
+<guid>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</guid>
+<link>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</link>
 <pubDate>Mon, 23 Sep 2024 13:39:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Never Miss A Mention With ZNC</h1><a id="user-content-never-miss-a-mention-with-znc" class="anchor" aria-label="Permalink: Never Miss A Mention With ZNC" href="#never-miss-a-mention-with-znc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p><em>(note for me cause I will forget this)</em></p>
@@ -445,8 +485,8 @@ present.</p>
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
-<guid>https://www.trevs.site/posts/lisp_game_jam_2024.html</guid>
-<link>https://www.trevs.site/posts/lisp_game_jam_2024.html</link>
+<guid>https://trevs.site/posts/lisp_game_jam_2024.html</guid>
+<link>https://trevs.site/posts/lisp_game_jam_2024.html</link>
 <pubDate>Sat, 25 May 2024 16:09:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Learning Guile for Spring Lisp Game Jam 2024</h1><a id="user-content-learning-guile-for-spring-lisp-game-jam-2024" class="anchor" aria-label="Permalink: Learning Guile for Spring Lisp Game Jam 2024" href="#learning-guile-for-spring-lisp-game-jam-2024"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Today I finished <a href="https://github.com/trevarj/gdotris">my entry</a> for the <a href="https://itch.io/jam/spring-lisp-game-jam-2024/entries" rel="nofollow">Spring
@@ -475,8 +515,8 @@ irritating to me, coming from using a language like Rust daily, like no LSP
 ]]></description>
 </item><item>
 <title>Mentorship</title>
-<guid>https://www.trevs.site/posts/mentorship.html</guid>
-<link>https://www.trevs.site/posts/mentorship.html</link>
+<guid>https://trevs.site/posts/mentorship.html</guid>
+<link>https://trevs.site/posts/mentorship.html</link>
 <pubDate>Wed, 17 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Mentorship</h1><a id="user-content-mentorship" class="anchor" aria-label="Permalink: Mentorship" href="#mentorship"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>The most valuable thing I got out of my first job was that I was being mentored
@@ -515,8 +555,8 @@ highly skilled and generous with his time.</p>
 ]]></description>
 </item><item>
 <title>My New SSG and Blog</title>
-<guid>https://www.trevs.site/posts/my_new_SSG_and_blog.html</guid>
-<link>https://www.trevs.site/posts/my_new_SSG_and_blog.html</link>
+<guid>https://trevs.site/posts/my_new_SSG_and_blog.html</guid>
+<link>https://trevs.site/posts/my_new_SSG_and_blog.html</link>
 <pubDate>Sun, 21 Apr 2024 18:31:31 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My New SSG and Blog</h1><a id="user-content-my-new-ssg-and-blog" class="anchor" aria-label="Permalink: My New SSG and Blog" href="#my-new-ssg-and-blog"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Welcome to my revamped blog that I made with my latest tinker project,
@@ -583,8 +623,8 @@ traditional <code>s/find/replace/options</code>.</p>
 ]]></description>
 </item><item>
 <title>My Return to a Custom Neovim Config</title>
-<guid>https://www.trevs.site/posts/neovim_2024.html</guid>
-<link>https://www.trevs.site/posts/neovim_2024.html</link>
+<guid>https://trevs.site/posts/neovim_2024.html</guid>
+<link>https://trevs.site/posts/neovim_2024.html</link>
 <pubDate>Wed, 10 Jan 2024 11:37:32 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My Return to a Custom Neovim Config</h1><a id="user-content-my-return-to-a-custom-neovim-config" class="anchor" aria-label="Permalink: My Return to a Custom Neovim Config" href="#my-return-to-a-custom-neovim-config"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>At the end of 2023 I got antsy. I was finally going to do it...again. I was
@@ -669,8 +709,8 @@ this the project hasn't had a push for two months...)</p>
 ]]></description>
 </item><item>
 <title>Old Functional Programming Email</title>
-<guid>https://www.trevs.site/posts/Old_Functional_Programming_Email.html</guid>
-<link>https://www.trevs.site/posts/Old_Functional_Programming_Email.html</link>
+<guid>https://trevs.site/posts/Old_Functional_Programming_Email.html</guid>
+<link>https://trevs.site/posts/Old_Functional_Programming_Email.html</link>
 <pubDate>Sat, 28 Dec 2024 21:21:36 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Old Functional Programming Email</h1><a id="user-content-old-functional-programming-email" class="anchor" aria-label="Permalink: Old Functional Programming Email" href="#old-functional-programming-email"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I clicked a dead link to Google Groups recently and landed back at a list of my
@@ -800,90 +840,15 @@ paradigms can be enlightening.</p>
 ]]></description>
 </item><item>
 <title>The Open Source Influencer</title>
-<guid>https://www.trevs.site/posts/OSS_influencer.html</guid>
-<link>https://www.trevs.site/posts/OSS_influencer.html</link>
+<guid>https://trevs.site/posts/OSS_influencer.html</guid>
+<link>https://trevs.site/posts/OSS_influencer.html</link>
 <pubDate>Fri, 12 Jan 2024 14:46:15 +0300</pubDate>
-<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The Open Source Influencer</h1><a id="user-content-the-open-source-influencer" class="anchor" aria-label="Permalink: The Open Source Influencer" href="#the-open-source-influencer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>I've been interested in tech content creation recently and have been trying to
-guess the future of this modern programming career path. I'm constantly
-intrigued by devs who are able to escape wage slave jobs and become self
-sufficient somehow, whether it is by starting a business (the old way) or the
-new ways of social media influencing or content creation. Creating a software
-company definitely seems to be much harder nowadays in software than it was,
-say, 10-15 years ago, and A LOT less enjoyable than the scenarios I present
-below.</p>
-<p>Since Github is now a social media site where you can even <a href="https://github.com/trending/developers">look up developers
-by their popularity</a>, is it possible
-that this will become a future career path in programming, just as Youtuber
-became a career path for acting/comedy/cook/whatever else?</p>
-<div class="markdown-heading"><h2 class="heading-element">Scenarios</h2><a id="user-content-scenarios" class="anchor" aria-label="Permalink: Scenarios" href="#scenarios"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<div class="markdown-heading"><h3 class="heading-element">1. Open Source Guru</h3><a id="user-content-1-open-source-guru" class="anchor" aria-label="Permalink: 1. Open Source Guru" href="#1-open-source-guru"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<ol>
-<li>Be a <a href="https://www.quora.com/Where-did-the-myth-of-the-10x-software-developer-come-from" rel="nofollow">10X
-dev</a>
-or expert in some area</li>
-<li>Create or contribute to useful projects project(s)</li>
-<li>Market project (or have followers/contributors do it) on social media</li>
-<li>Start writing blogs, streaming, and/or making videos about that content and
-more. Optional because these guys are good enough to just get picked up by a
-top company.</li>
-</ol>
-<div class="markdown-heading"><h3 class="heading-element">2. Twitch Programmer</h3><a id="user-content-2-twitch-programmer" class="anchor" aria-label="Permalink: 2. Twitch Programmer" href="#2-twitch-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<ol>
-<li>Be entertaining</li>
-<li>Make tech videos or stream</li>
-<li>Gather a following and sponsors</li>
-<li>Create project on video or stream</li>
-<li>Use following to boost project</li>
-<li>Start selling stuff</li>
-</ol>
-<p>These scenarios could lead to the opportunity of quitting your day job and
-starting to earn an income from donations or sponsorships (GH, Patreon, etc). It
-seems like a nerdy version of a beauty blogger teaching how to put on makeup and
-then pushing a cosmetic line...or an artist who streams painting and then sells
-their works to viewers ...or even a battle worn veteran who tells war stories of
-how he killed a bunch of really bad dudes and then starts a coffee company or
-something...I don't know!</p>
-<div class="markdown-heading"><h2 class="heading-element">Influence</h2><a id="user-content-influence" class="anchor" aria-label="Permalink: Influence" href="#influence"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>I'm not entirely sure how I feel about the influence these content creators have
-on young programmers. I have certain opinions about the format in which the
-content is delivered. For example, if done incorrectly, a stream can be a huge
-waste of time for the viewer, even if it is entertaining. Maybe no one wants to
-admit that though and would say that the engagement factor is important for
-learning.</p>
-<p>Will young programmers want to just become a tech influencer instead of putting
-in the time working a terrible office job at least once like the rest of us? My
-guess is not on a large scale like with regular social media, since programmers
-tend to keep to themselves and be less outgoing.</p>
-<p>Another thing that I think about is how these tech influencers are...influencers
-in the sense that they can be idolized, which in turn can make product (courses,
-merch, promo codes, etc) sales predatory, similar to what it's like on non-tech
-social media.</p>
-<div class="markdown-heading"><h2 class="heading-element">A Realistic Scenario</h2><a id="user-content-a-realistic-scenario" class="anchor" aria-label="Permalink: A Realistic Scenario" href="#a-realistic-scenario"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>Obviously, the second scenario is not exactly probable or possible for everyone
-to do.</p>
-<p>I speculate that the first scenario can become more mainstream in the future, at
-least for a seasoned developer (10+ years, or 10Xer) who prefers to not be in
-the death grip of a software company. I suppose this scenario is analogous to
-being a contractor and accepting a grant to work on an open source project that
-you like, but with the addition of having individuals as supplemental
-sponsorships. Basically, you're working on something you're passionate about and
-people throw money at you for it.</p>
-<div class="markdown-heading"><h2 class="heading-element">Tech Influencer Network</h2><a id="user-content-tech-influencer-network" class="anchor" aria-label="Permalink: Tech Influencer Network" href="#tech-influencer-network"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>A tech influencer from Scenario 1 or 2 builds his brand and decides to convert
-into an organization. Other devs are hired and work on the org's projects, and
-they can even champion their own projects and get marketed through the main
-influencer's clout. You can see this in a lot of popular podcast networks and
-other Youtuber channels. I'm pretty sure this already exists among tech
-streamers, but I haven't looked into it much. It seems like it could be a nice
-boost to open source development. I could be completely wrong though and someone
-would point out all the reasons why this is a bad business model.</p>
-<p>I don't know what the heck I'm talking about.</p>
+<description><![CDATA[
 ]]></description>
 </item><item>
 <title>Pre-Guix System Install Thoughts</title>
-<guid>https://www.trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</guid>
-<link>https://www.trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</link>
+<guid>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</guid>
+<link>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</link>
 <pubDate>Tue, 28 May 2024 16:55:59 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Pre-Guix System Install Thoughts</h1><a id="user-content-pre-guix-system-install-thoughts" class="anchor" aria-label="Permalink: Pre-Guix System Install Thoughts" href="#pre-guix-system-install-thoughts"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>Ok, listen. I said a few posts back that I wasn't going to distrohop again after
@@ -904,8 +869,8 @@ online gambling!</p>
 ]]></description>
 </item><item>
 <title>Professional Bugfixer</title>
-<guid>https://www.trevs.site/posts/Professional_Bugfixer.html</guid>
-<link>https://www.trevs.site/posts/Professional_Bugfixer.html</link>
+<guid>https://trevs.site/posts/Professional_Bugfixer.html</guid>
+<link>https://trevs.site/posts/Professional_Bugfixer.html</link>
 <pubDate>Wed, 02 Oct 2024 11:23:15 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Professional Bugfixer</h1><a id="user-content-professional-bugfixer" class="anchor" aria-label="Permalink: Professional Bugfixer" href="#professional-bugfixer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>A semi-satiricle note about professional programming.</p>
@@ -944,8 +909,8 @@ know the best kept secret...just add
 ]]></description>
 </item><item>
 <title>Some Thoughts on the Crypto Industry</title>
-<guid>https://www.trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</guid>
-<link>https://www.trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</link>
+<guid>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</guid>
+<link>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</link>
 <pubDate>Wed, 05 Jun 2024 10:35:54 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Some Thoughts on the Crypto Industry</h1><a id="user-content-some-thoughts-on-the-crypto-industry" class="anchor" aria-label="Permalink: Some Thoughts on the Crypto Industry" href="#some-thoughts-on-the-crypto-industry"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>I've been working closely with numerous cryptocurrencies over the past four
@@ -1007,8 +972,8 @@ enjoy the benefits of snake oil and get RICH! Done!</p>
 ]]></description>
 </item><item>
 <title>Tech Complacency</title>
-<guid>https://www.trevs.site/posts/Tech_Complacency.html</guid>
-<link>https://www.trevs.site/posts/Tech_Complacency.html</link>
+<guid>https://trevs.site/posts/Tech_Complacency.html</guid>
+<link>https://trevs.site/posts/Tech_Complacency.html</link>
 <pubDate>Fri, 06 Sep 2024 08:55:35 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Tech Complacency</h1><a id="user-content-tech-complacency" class="anchor" aria-label="Permalink: Tech Complacency" href="#tech-complacency"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>This is a short memo about how I have reached complacency with my tech
@@ -1052,8 +1017,8 @@ TC.</p>
 ]]></description>
 </item><item>
 <title>Ten Years a Dev</title>
-<guid>https://www.trevs.site/posts/ten_years.html</guid>
-<link>https://www.trevs.site/posts/ten_years.html</link>
+<guid>https://trevs.site/posts/ten_years.html</guid>
+<link>https://trevs.site/posts/ten_years.html</link>
 <pubDate>Sat, 20 May 2023 00:00:00 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Ten Years a Dev</h1><a id="user-content-ten-years-a-dev" class="anchor" aria-label="Permalink: Ten Years a Dev" href="#ten-years-a-dev"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <div class="markdown-heading"><h2 class="heading-element">Introduction</h2><a id="user-content-introduction" class="anchor" aria-label="Permalink: Introduction" href="#introduction"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
@@ -1220,11 +1185,11 @@ of work:</p>
 ]]></description>
 </item><item>
 <title>Test Post With Link [rss bugfix]</title>
-<guid>https://www.trevs.site/posts/Test_Post_With_Link.html</guid>
-<link>https://www.trevs.site/posts/Test_Post_With_Link.html</link>
+<guid>https://trevs.site/posts/Test_Post_With_Link.html</guid>
+<link>https://trevs.site/posts/Test_Post_With_Link.html</link>
 <pubDate>Thu, 24 Oct 2024 18:53:49 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Test Post With Link [rss bugfix]</h1><a id="user-content-test-post-with-link-rss-bugfix" class="anchor" aria-label="Permalink: Test Post With Link [rss bugfix]" href="#test-post-with-link-rss-bugfix"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
-<p>A <a href="https://www.trevs.site/posts/my_new_SSG_and_blog.html">relative link</a> to another post for RSS
+<p>A <a href="https://trevs.site/posts/my_new_SSG_and_blog.html">relative link</a> to another post for RSS
 generation testing.</p>
 <p>Don't mind me, just fixing a bug in <a href="https://github.com/trevarj/poogo">poogo</a>
 (my static site generator) and giving it a test. Relative links, ex. to other
@@ -1232,8 +1197,8 @@ posts, were working on the web, but broken on RSS.</p>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
-<guid>https://www.trevs.site/posts/Toggling_Fools_Using_ERC.html</guid>
-<link>https://www.trevs.site/posts/Toggling_Fools_Using_ERC.html</link>
+<guid>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</guid>
+<link>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</link>
 <pubDate>Thu, 19 Sep 2024 22:53:39 +0300</pubDate>
 <description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Toggling Fools Using ERC</h1><a id="user-content-toggling-fools-using-erc" class="anchor" aria-label="Permalink: Toggling Fools Using ERC" href="#toggling-fools-using-erc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>To contradict my last post, I recently decided to replicate my Weechat IRC
