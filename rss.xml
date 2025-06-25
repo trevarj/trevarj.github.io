@@ -843,7 +843,82 @@ paradigms can be enlightening.</p>
 <guid>https://trevs.site/posts/OSS_influencer.html</guid>
 <link>https://trevs.site/posts/OSS_influencer.html</link>
 <pubDate>Fri, 12 Jan 2024 14:46:15 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The Open Source Influencer</h1><a id="user-content-the-open-source-influencer" class="anchor" aria-label="Permalink: The Open Source Influencer" href="#the-open-source-influencer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I've been interested in tech content creation recently and have been trying to
+guess the future of this modern programming career path. I'm constantly
+intrigued by devs who are able to escape wage slave jobs and become self
+sufficient somehow, whether it is by starting a business (the old way) or the
+new ways of social media influencing or content creation. Creating a software
+company definitely seems to be much harder nowadays in software than it was,
+say, 10-15 years ago, and A LOT less enjoyable than the scenarios I present
+below.</p>
+<p>Since Github is now a social media site where you can even <a href="https://github.com/trending/developers">look up developers
+by their popularity</a>, is it possible
+that this will become a future career path in programming, just as Youtuber
+became a career path for acting/comedy/cook/whatever else?</p>
+<div class="markdown-heading"><h2 class="heading-element">Scenarios</h2><a id="user-content-scenarios" class="anchor" aria-label="Permalink: Scenarios" href="#scenarios"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h3 class="heading-element">1. Open Source Guru</h3><a id="user-content-1-open-source-guru" class="anchor" aria-label="Permalink: 1. Open Source Guru" href="#1-open-source-guru"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ol>
+<li>Be a <a href="https://www.quora.com/Where-did-the-myth-of-the-10x-software-developer-come-from" rel="nofollow">10X
+dev</a>
+or expert in some area</li>
+<li>Create or contribute to useful projects project(s)</li>
+<li>Market project (or have followers/contributors do it) on social media</li>
+<li>Start writing blogs, streaming, and/or making videos about that content and
+more. Optional because these guys are good enough to just get picked up by a
+top company.</li>
+</ol>
+<div class="markdown-heading"><h3 class="heading-element">2. Twitch Programmer</h3><a id="user-content-2-twitch-programmer" class="anchor" aria-label="Permalink: 2. Twitch Programmer" href="#2-twitch-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ol>
+<li>Be entertaining</li>
+<li>Make tech videos or stream</li>
+<li>Gather a following and sponsors</li>
+<li>Create project on video or stream</li>
+<li>Use following to boost project</li>
+<li>Start selling stuff</li>
+</ol>
+<p>These scenarios could lead to the opportunity of quitting your day job and
+starting to earn an income from donations or sponsorships (GH, Patreon, etc). It
+seems like a nerdy version of a beauty blogger teaching how to put on makeup and
+then pushing a cosmetic line...or an artist who streams painting and then sells
+their works to viewers ...or even a battle worn veteran who tells war stories of
+how he killed a bunch of really bad dudes and then starts a coffee company or
+something...I don't know!</p>
+<div class="markdown-heading"><h2 class="heading-element">Influence</h2><a id="user-content-influence" class="anchor" aria-label="Permalink: Influence" href="#influence"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm not entirely sure how I feel about the influence these content creators have
+on young programmers. I have certain opinions about the format in which the
+content is delivered. For example, if done incorrectly, a stream can be a huge
+waste of time for the viewer, even if it is entertaining. Maybe no one wants to
+admit that though and would say that the engagement factor is important for
+learning.</p>
+<p>Will young programmers want to just become a tech influencer instead of putting
+in the time working a terrible office job at least once like the rest of us? My
+guess is not on a large scale like with regular social media, since programmers
+tend to keep to themselves and be less outgoing.</p>
+<p>Another thing that I think about is how these tech influencers are...influencers
+in the sense that they can be idolized, which in turn can make product (courses,
+merch, promo codes, etc) sales predatory, similar to what it's like on non-tech
+social media.</p>
+<div class="markdown-heading"><h2 class="heading-element">A Realistic Scenario</h2><a id="user-content-a-realistic-scenario" class="anchor" aria-label="Permalink: A Realistic Scenario" href="#a-realistic-scenario"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Obviously, the second scenario is not exactly probable or possible for everyone
+to do.</p>
+<p>I speculate that the first scenario can become more mainstream in the future, at
+least for a seasoned developer (10+ years, or 10Xer) who prefers to not be in
+the death grip of a software company. I suppose this scenario is analogous to
+being a contractor and accepting a grant to work on an open source project that
+you like, but with the addition of having individuals as supplemental
+sponsorships. Basically, you're working on something you're passionate about and
+people throw money at you for it.</p>
+<div class="markdown-heading"><h2 class="heading-element">Tech Influencer Network</h2><a id="user-content-tech-influencer-network" class="anchor" aria-label="Permalink: Tech Influencer Network" href="#tech-influencer-network"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>A tech influencer from Scenario 1 or 2 builds his brand and decides to convert
+into an organization. Other devs are hired and work on the org's projects, and
+they can even champion their own projects and get marketed through the main
+influencer's clout. You can see this in a lot of popular podcast networks and
+other Youtuber channels. I'm pretty sure this already exists among tech
+streamers, but I haven't looked into it much. It seems like it could be a nice
+boost to open source development. I could be completely wrong though and someone
+would point out all the reasons why this is a bad business model.</p>
+<p>I don't know what the heck I'm talking about.</p>
 ]]></description>
 </item><item>
 <title>Pre-Guix System Install Thoughts</title>
@@ -1194,6 +1269,99 @@ generation testing.</p>
 <p>Don't mind me, just fixing a bug in <a href="https://github.com/trevarj/poogo">poogo</a>
 (my static site generator) and giving it a test. Relative links, ex. to other
 posts, were working on the web, but broken on RSS.</p>
+]]></description>
+</item><item>
+<title>Revisting My Previous Thoughts on Crypto</title>
+<guid>https://trevs.site/posts/Thoughts_on_previous_thoughts_on_crypto.html</guid>
+<link>https://trevs.site/posts/Thoughts_on_previous_thoughts_on_crypto.html</link>
+<pubDate>Wed, 25 Jun 2025 13:57:16 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Revisting My Previous Thoughts on Crypto</h1><a id="user-content-revisting-my-previous-thoughts-on-crypto" class="anchor" aria-label="Permalink: Revisting My Previous Thoughts on Crypto" href="#revisting-my-previous-thoughts-on-crypto"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Let's just say I've been evangelized as a Bitcoin maximalist. Instead of
+redacting my previous <a href="./Quick_Thought_on_Cryptocurrency_Technology.html">thoughts on the crypto
+industry</a>, I will read
+through and respond to myself from one year ago. A bit of self-reflection, if you
+don't mind.</p>
+<hr/>
+<blockquote>
+<p>I will state that I am not anti-crypto, per se, but I am anti-whatever I am
+about to describe.</p>
+</blockquote>
+<p>I am now anti-crypto, but pro-Bitcoin.</p>
+<blockquote>
+<p>I think crypto can provide a useful utility for people,
+namely transferring funds elecronically without an intermediary (kinda).</p>
+</blockquote>
+<p>I now believe that Bitcoin is a very useful utility, namely one that gives
+people the chance to control their own wealth and transact without the
+interference from a government or bad actor. Beware the money printer and
+war-machine.</p>
+<blockquote>
+<p>Do I think the world would be worse without crypto? Not really.</p>
+</blockquote>
+<p>For some people, possibly. Even a shitcoin, like the one that is widely used in
+South America (forgot the name and don't want to promote it either) could be
+making peoples' lives much better by helping them store dollars while their
+local currency is extremely volatile.</p>
+<blockquote>
+<p>I am content with Bitcoin and Ethereum, but beyond those I have not actually
+found a coin that offers "life-improving" technology.</p>
+</blockquote>
+<p>After spending a lot of time reading up on Bitcoin history, I believe it to be a
+tech and open source phenomenon, similar to Linux, which can definitely improve
+a person's sovereignty. It's organic growth in the beginning is fascinating,
+just like Linux's, and is something to read about even if you aren't invested or
+interested in the technology.</p>
+<p>Ethereum is just the most popular scam platform. Perhaps useful at this current
+time, but not providing anything with real longevity and is bound to be
+replaced. Bitcoin cannot be replaced because of its organic and decentralized
+nature.</p>
+<blockquote>
+<p>I am going to completely generalize here, so take it with a grain of salt. Keep
+in mind that I am a "nothing-to-show" dev who hasn't created such "successful"
+projects before.</p>
+</blockquote>
+<p>Still valid!</p>
+<blockquote>
+<p>After reading through and working with many crypto projects, there are
+practically none that seem impressive anymore. They are either poorly
+documented, hastily written, over-engineered or just faulty. Rarely do they
+promise something life-changing or revolutionary, no matter how much they hype
+it up on social media. With confidence I can say that the majority of them are
+just purely copy-pasted code and ideas that add one extra feature in hopes of
+securing a voluptuous cash grab.</p>
+</blockquote>
+<p>Still valid.</p>
+<blockquote>
+<p>It's gotten to the point where it's laughable to me when a new crypto project
+appears and it's just a fork of Ethereum or some other code with a few changes
+added and a shiny, new website with some marketing.</p>
+</blockquote>
+<p>These are all scams under the surface. Even if they are not blatant rugpulls,
+they are long term scams which work within rules and regulations.</p>
+<blockquote>
+<p>Sometimes I think of all the code written for these projects and man-hours
+wasted. It's comical, actually, especially since the code is just re-written
+over and over or just abandonware at the end! This may be an issue with the
+software industry as a whole, but it's amplified here.</p>
+</blockquote>
+<p>I still believe this and I see it to be true even in Bitcoin. Everyone is
+obsessed with technology, coding and making more disposable fluff
+projects. There is a certain type of dev that cannot sit still or "complete" a
+project. Everything must be rewritten or modified continuously without a clear
+end goal. LLMs have contributed to this, allowing a dev to write even more slop to
+"advance" a project.</p>
+<blockquote>
+<p>Compare these types of projects with real engineering marvels, like a bridge
+or a skyscraper, or even a missile launcher that will end up blowing up some
+hospital far far away.</p>
+</blockquote>
+<p>I think the image of comparison still holds, but I still can't articulate it in
+a poetic way. It's hard to make a value judgment on certain technology. Sadly,
+the latter part of what I said is becoming more true as time goes on.</p>
+<blockquote>
+<p>Money and Tech Obsession</p>
+</blockquote>
+<p>This section still stands true with me.</p>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
