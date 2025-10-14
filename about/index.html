@@ -11,8 +11,12 @@
 <a href="/posts/index.html">Posts</a>
 <a href="/about/index.html">About</a></p></header>
             <div class="markdown-heading"><h1 class="heading-element">About me</h1><a id="user-content-about-me" class="anchor" aria-label="Permalink: About me" href="#about-me"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
-<p><a target="_blank" rel="noopener noreferrer" href="/static/profile.png"><img src="/static/profile.png" width="200" style="max-width: 100%;"></a></p>
-<p>I have 11 years of professional development experience (as of 2024).</p>
+            <p><a target="_blank" rel="noopener noreferrer" href="/static/profile.png"><img src="/static/profile.png" width="200" style="max-width: 100%;"></a></p>
+
+            <p id="experience"></p>
+<script> document.getElementById("experience").textContent = "I have " + (new Date().getFullYear() - 2013) + " years of professional software development experience.";
+</script>
+
 <p>My technological interests include: FOSS, Linux, Unix tools / philosophy, various
 programming languages, text editors, tinkering.</p>
 <p>I am hoping to, one day, work full-time on open source software, or at least on
@@ -26,4 +30,4 @@ a project that is open source.</p>
 <a href="mailto:tmarjeski@gmail.com">mail</a>
 <a href="/rss.xml">rss</a></p></footer>
           </body>
-          </html>
+</html>
