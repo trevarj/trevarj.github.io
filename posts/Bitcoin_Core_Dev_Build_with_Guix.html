@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+          <head>
+            <meta charset="UTF-8">
+            <link rel="shortcut icon" type="image/png" href="/favicon.png">
+            <link rel="stylesheet" href="/static/style.css">
+            <title>[BOSS] Bitcoin Core Dev Build with Guix</title>
+          </head>
+          <body>
+          <header><div class="markdown-heading"><h1 class="heading-element">trev's website</h1><a id="user-content-trevs-website" class="anchor" aria-label="Permalink: trev's website" href="#trevs-website"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><a href="/index.html">Home</a>
+<a href="/posts/index.html">Posts</a>
+<a href="/about/index.html">About</a></p></header>
+            <div class="markdown-heading"><h1 class="heading-element">[BOSS] Bitcoin Core Dev Build with Guix</h1><a id="user-content-boss-bitcoin-core-dev-build-with-guix" class="anchor" aria-label="Permalink: [BOSS] Bitcoin Core Dev Build with Guix" href="#boss-bitcoin-core-dev-build-with-guix"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+
+<p><sub>No AI was used to write this post.</sub></p>
+<div class="markdown-heading"><h2 class="heading-element">Intro</h2><a id="user-content-intro" class="anchor" aria-label="Permalink: Intro" href="#intro"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>I just recently finished up the first month of the 2026 <a href="https://bosschallenge.xyz/" rel="nofollow">BOSS
+Challenge</a>, which is a multi-month initiative,
+hosted by Chaincode Labs, to get people interested in Bitcoin open-source
+software (BOSS) development. It consists of programming challenges and open
+source contributions to projects in the Bitcoin ecosystem.</p>
+<p>In the first challenge, you are required to build Bitcoin Core and run tests. In
+the remaining challenges you need to use Bitcoin Core to complete tasks. I've
+already built it before using Guix, so I was well-prepared, such that I only had
+to copy over a few files from my bitcoin fork.</p>
+<p>Using Guix as a package manager to build Bitcoin Core for development fits
+perfectly, because actual Core builds already <a href="https://github.com/bitcoin/bitcoin/tree/master/contrib/guix">use
+Guix</a> for its
+reproducible nature and
+<a href="https://guix.gnu.org/blog/2023/the-full-source-bootstrap-building-from-source-all-the-way-down/" rel="nofollow">bootstrapability</a>
+(see this <a href="https://www.youtube.com/watch?v=I2iShmUTEl8" rel="nofollow">presentation by Carl
+Dong</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element">Building Bitcoin Core with Guix for development use</h2><a id="user-content-building-bitcoin-core-with-guix-for-development-use" class="anchor" aria-label="Permalink: Building Bitcoin Core with Guix for development use" href="#building-bitcoin-core-with-guix-for-development-use"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Requirements</h3><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ul>
+<li>
+<a href="https://guix.gnu.org/manual/1.4.0/en/html_node/Installation.html" rel="nofollow">Guix</a> - the package manager</li>
+<li>
+<a href="https://direnv.net/docs/installation.html" rel="nofollow">direnv</a> - for per directory environments</li>
+</ul>
+<p>You can ignore <code>direnv</code> and the <code>.envrc</code> file if you just want to use <code>guix shell</code> instead. Direnv will automatically call <code>guix shell</code> for you when you
+enter the directory. This is really useful for editor integration so the editor
+can get the correct environment, or just to set some env vars automatically.</p>
+<div class="markdown-heading"><h3 class="heading-element">Setup Steps</h3><a id="user-content-setup-steps" class="anchor" aria-label="Permalink: Setup Steps" href="#setup-steps"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>We will put the <code>manifest.scm</code> and <code>.envrc</code> in a parent dir "bitcoin-dev", so
+that we don't need to track these files in the <code>bitcoin</code> repo.</p>
+<div class="highlight highlight-source-shell"><pre>$ mkdir bitcoin-dev <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> bitcoin-dev
+$ git clone git@github.com:bitcoin/bitcoin.git
+$ <span class="pl-c1">cd</span> bitcoin</pre></div>
+<p>Create an <code>.envrc</code> (optional)</p>
+<div class="highlight highlight-source-shell"><pre>use guix</pre></div>
+<p>Create <code>manifest.scm</code></p>
+<div class="highlight highlight-source-scheme"><pre>(use-modules (gnu packages))
+
+(specifications-&gt;manifest
+ (<span class="pl-c1">list</span>
+  <span class="pl-c"><span class="pl-c">;</span>; Build tools</span>
+  <span class="pl-s"><span class="pl-pds">"</span>make<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>automake<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>autoconf<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>cmake<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>libtool<span class="pl-pds">"</span></span>
+  <span class="pl-c"><span class="pl-c">;</span>; Toolchains</span>
+  <span class="pl-s"><span class="pl-pds">"</span>gcc-toolchain@14<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>clang<span class="pl-pds">"</span></span>
+  <span class="pl-c"><span class="pl-c">;</span>; Extras</span>
+  <span class="pl-s"><span class="pl-pds">"</span>perl<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>pkg-config<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>python<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>qttools@5.15<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>util-linux<span class="pl-pds">"</span></span>
+
+  <span class="pl-c"><span class="pl-c">;</span>; Bitcoin dependencies</span>
+  <span class="pl-s"><span class="pl-pds">"</span>boost<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>capnproto<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>libevent<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>qtbase@5<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>sqlite<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>zeromq<span class="pl-pds">"</span></span>))</pre></div>
+<p>I'm using clang to build cause it seems to be faster and more efficient with
+memory. Still need gcc for some libs.</p>
+<div class="markdown-heading"><h3 class="heading-element">Direnv</h3><a id="user-content-direnv" class="anchor" aria-label="Permalink: Direnv" href="#direnv"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Press "Enter" and you should see direnv tell you to <code>direnv allow</code> and then
+"Enter" again so it loads the environment. This will take a while the first time
+because Guix will be pulling in dependencies.</p>
+<div class="markdown-heading"><h3 class="heading-element">Guix Shell</h3><a id="user-content-guix-shell" class="anchor" aria-label="Permalink: Guix Shell" href="#guix-shell"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>If you don't have direnv, or don't want to use it, you can just do <code>guix shell</code>
+in the <code>bitcoin-dev/</code> directory and it will give you a shell that has the
+environment from <code>manifest.scm</code>.</p>
+<div class="markdown-heading"><h3 class="heading-element">Building Bitcoin Core</h3><a id="user-content-building-bitcoin-core" class="anchor" aria-label="Permalink: Building Bitcoin Core" href="#building-bitcoin-core"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>For building, you can refer to the <code>doc/build-unix.md</code> file for specific parameters, but I'm using this:</p>
+<div class="highlight highlight-source-shell"><pre>$ cmake -B build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DENABLE_WALLET=ON -DWITH_ZMQ=ON
+$ cmake --build build
+<span class="pl-c"><span class="pl-c">#</span> wait a while for build to complete</span></pre></div>
+<p>After that completes, you will find <code>bitcoind</code>, <code>bitcoin-cli</code> and others inside
+<code>build/bin</code>.</p>
+<p>You can update your PATH variable in an <code>.envrc</code> of another project
+that may require using one of them, like with the BOSS challenges.</p>
+<p>Pretty easy and no hunting for dependencies on your specific distro.</p>
+          <footer><p><a href="https://craftering.systemcrafters.net/@trev/previous" rel="nofollow">🠜</a>
+<a href="https://craftering.systemcrafters.net/" rel="nofollow">Craftering (System Crafters)</a>
+<a href="https://craftering.systemcrafters.net/@trev/next" rel="nofollow">🠞</a></p>
+<p>Trevor Arjeski -
+<a href="https://github.com/trevarj">git</a>
+<a href="https://www.linkedin.com/in/trevor-arjeski/" rel="nofollow">linkedin</a>
+<a href="mailto:tmarjeski@gmail.com">mail</a>
+<a href="/rss.xml">rss</a></p></footer>
+          </body>
+          </html>
