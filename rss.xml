@@ -14,161 +14,1488 @@
 <guid>https://trevs.site/posts/3D_Printing_and_Open_Source.html</guid>
 <link>https://trevs.site/posts/3D_Printing_and_Open_Source.html</link>
 <pubDate>Fri, 06 Jun 2025 14:35:09 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">3D Printing and Open Source</h1><a id="user-content-3d-printing-and-open-source" class="anchor" aria-label="Permalink: 3D Printing and Open Source" href="#3d-printing-and-open-source"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I've been dabbling in a bit of DIY project electronics and wanted to design a
+few enclosures, but didn't want to send out to have something printed or mold
+injected and then have it not be what I wanted. So, instead, I decied it made
+more sense to spend a hundreds of dollars on a 3D printer.</p>
+<p>It turns out that my timing was perfect, cause there is a company called Bambu
+Lab that is making 3D printing super accessible for those who are just starting
+out. If you remember ten years ago when 3D printing became popularized, you'll
+remember how difficult it was to get into and maintain a printer. Now, you can
+just buy one and set it up in about 15 minutes and start printing.</p>
+<p>I was having a blast with my Bambu Lab A1 Mini. It printed perfectly¹ with
+barely any tweaking. So many good Benchies.</p>
+<p>One day I was browsing 3D printing videos on Youtube and started noticing that a
+lot of people actually despise Bambu Lab because of their closed-source model
+and other various things that I'm too lazy to type. I sat wondering if I made a
+mistake with buying this printer.</p>
+<p>The quick answer is "no", because the printer does exactly what I want it to
+do. I didn't want to adopt a new hobby of needing to heavily maintain and tweak
+my printer to get it to make a nice print, or spend a whole lot of time learning
+how it actually works. Improving my CAD and being able to print things is enough
+for now, and because I understand the world of open source, I am open to doing
+this in the future. If I decide to go for a larger printer, I will most likely
+try to build my own (Voron?). This could happen sooner than later if Bambu takes
+even more extreme choices with firmware updates and such. Do they want to stare
+at me through the 1fps camera on the printer???</p>
+<p>I imagine that this is how people feel when they look at Linux or other open
+source software. Sometimes you don't have time to dive into another hobby and
+just want the convenient solution, and sadly, the free (as in freedom) path is
+rough. When you're not really invested in the technology of a device, it is a
+bit difficult trying to see the reasons for FOSS/HW. I'm not really an expert at
+all in the 3D printing space, more so an observer, so I can't really give any
+more insight...but it does feel like I'm using the MacOS of 3D printers and a
+Prusa or another DIY would be some Linux distro...<em>shivers</em></p>
+<p>¹ PLA...PETG was stringing hard since I had no dryer.</p>
 ]]></description>
 </item><item>
 <title>Advent of Code 2024 - Elisp</title>
 <guid>https://trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</guid>
 <link>https://trevs.site/posts/Advent_of_Code_2024_-_Elisp.html</link>
 <pubDate>Thu, 26 Dec 2024 09:16:34 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Advent of Code 2024 - Elisp</h1><a id="user-content-advent-of-code-2024---elisp" class="anchor" aria-label="Permalink: Advent of Code 2024 - Elisp" href="#advent-of-code-2024---elisp"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This year I completed <a href="https://adventofcode.com" rel="nofollow">AoC</a> using Emacs Lisp. I would
+say that this year was a more legitimate completion than last, since I used less
+hints and reference solutions. Here is <a href="https://github.com/trevarj/advent-of-code/tree/master/2024">a
+link</a> to my
+solutions. Sorry that they are uncommented and probably incomprehensible. Also
+<a href="https://github.com/trevarj/emacs.d/blob/master/lisp/aoc.el">a link</a> to my AoC
+helper package which allowed me to read problems, fetch inputs and submit
+answers, all within Emacs.</p>
+<p>Using Elisp was much more comfortable for me than using Haskell and OCaml (my
+previously used languages for AoC). It was a real pleasure to have an instant
+feedback loop using Emacs itself as a REPL, instead of Haskell and OCaml's
+clunky REPL experience. The REPL is important for these types of problems if you
+have a small brain like me and can't use your imagination to render data
+manipulation pipelines.</p>
+<p>The libraries I used were fantastic;
+<a href="https://github.com/magnars/dash.el">dash.el</a>,
+<a href="https://github.com/magnars/s.el">s.el</a> and
+<a href="https://github.com/Wilfred/ht.el">ht.el</a> should be built-in to Elisp. I do
+regret not exploring seq.el (built-in) enough, because it does seem to be very
+useful since it works generically over any type of sequence (lists, vectors,
+etc).</p>
+<p>My only issues were that Emacs completely locks up when running a long
+computation. A few problems I left running for minutes, and one overnight. Maybe
+this is actually charming, since I woke up to a correct answer as if it was
+Christmas morning. I also was a little dissatisfied with iteration in some
+cases. I spent a lot of time bikeshedding how I would do a simple loop -
+<code>cl-loop</code>, <code>named-let</code>, <code>dotimes</code>, <code>while</code>, or just a recursive function.</p>
+<p>Even though I am still not a Lisp expert, I reached my goal of being able to
+whip up a script fairly quickly, and now will use Elisp as my "scratch"
+programming language.</p>
+<p>I really recommend Emacs users to try AoC in Elisp for the cozy experience and
+low barrier for entry - just open up a buffer and start writing then <code>C-x C-e</code>.</p>
 ]]></description>
 </item><item>
 <title>A Late Start in Computer Programming</title>
 <guid>https://trevs.site/posts/advice2noob.html</guid>
 <link>https://trevs.site/posts/advice2noob.html</link>
 <pubDate>Mon, 11 Dec 2023 19:33:07 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">A Late Start in Computer Programming</h1><a id="user-content-a-late-start-in-computer-programming" class="anchor" aria-label="Permalink: A Late Start in Computer Programming" href="#a-late-start-in-computer-programming"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Recently I've been giving advice (sometimes unsolicited) to people who
+want to shift into computer programming as a career.</p>
+<p>Being a late bloomer in programming is definitely manageable, but I believe it
+requires careful planning and a specific behavior.</p>
+<div class="markdown-heading"><h2 class="heading-element">Overview</h2><a id="user-content-overview" class="anchor" aria-label="Permalink: Overview" href="#overview"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This has been beaten like a dead horse by #learn2code tweets and Youtube
+videos, but these are the main goals to become a general application
+programmer:</p>
+<ol>
+<li>Learn the fundamentals of programming and the basics of how a computer works</li>
+<li>Learn one programming language and write programs in it</li>
+<li>Contribute to open source projects and/or have a personal project</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element">Behavior</h2><a id="user-content-behavior" class="anchor" aria-label="Permalink: Behavior" href="#behavior"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The most difficult undertaking and, what I think, is the most important factor
+for learning programming is the obsession needed to succeed. Unless you are a
+gifted individual, you will need to really buckle down and grind. You don't
+necessarily need to pull all-nighters like a college kid, but you need to have
+a constant motivation to explore and learn about computers and programming.
+Of course, this behavior is relative to how quickly you expect to get a
+programming career. Less obsessed -&gt; longer until you secure a job.</p>
+<p>Don't just click around the computer like an idiot, become a power user and
+start <a href="https://en.wikipedia.org/wiki/The_Art_of_Unix_Programming" rel="nofollow">using Linux</a>
+and crafting <a href="https://www.lazyvim.org/" rel="nofollow">your own development environment</a>.
+Start living as a computer nerd even if your hobby is cooking breakfast foods
+and grilling meats or something, forget it for a while. You have to adopt the
+<a href="https://en.wikipedia.org/wiki/Hacker_culture#Programming" rel="nofollow">hacker culture</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element">Fundamentals</h2><a id="user-content-fundamentals" class="anchor" aria-label="Permalink: Fundamentals" href="#fundamentals"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This is the stuff that people spend an undergrad in computer science learning:
+data structures, algorithms, databases, operating systems, computer
+architecture, etc. Unless you are going to actually get a degree and take these
+courses, you will need to use <a href="https://github.com/ossu/computer-science">free and open
+courses</a> to gather this knowledge.</p>
+<p>Stay away from too many video tutorials. Read through course material and do
+the homework and projects as if you were in a class. People love to skip over
+all this "boring" stuff because it doesn't yield immediate results and, well,
+feels like school. This will establish confidence and adaptability.</p>
+<div class="markdown-heading"><h2 class="heading-element">Writing Programs</h2><a id="user-content-writing-programs" class="anchor" aria-label="Permalink: Writing Programs" href="#writing-programs"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Nowadays it's trendy to obsess over which programming language to learn and get
+good at, but this is not something a noob dev needs to think about. The most
+important thing is picking one programming language and writing programs in it
+(obvious?). If you are concerned about the job hunt, it may be useful to go
+to a job site and see what languages are being used at companies in your
+area.</p>
+<ol>
+<li>Pick a language</li>
+<li>Read the <a href="https://doc.rust-lang.org/book/" rel="nofollow">official docs</a> (or an esteemed
+<a href="https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs" rel="nofollow">textbook</a>)</li>
+<li>Use the language for the courses mentioned above (basics, data structures,
+algorithms)</li>
+<li>Solve <a href="https://adventofcode.com/" rel="nofollow">coding challenges</a>
+</li>
+<li>Write small programs (simple games, scripts, utilities, etc)</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element">Open Source</h2><a id="user-content-open-source" class="anchor" aria-label="Permalink: Open Source" href="#open-source"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The single most important factor to securing a job, in my opinion, is having
+open source contributions. For an employer, nothing screams "I CAN CODE AND I
+LIKE IT!" louder than seeing evidence of you doing it for free and for your own
+leisure. They must envision Jira tickets being closed faster than they can can
+be created (with zero details or requirements).</p>
+<p>After you've gotten comfortable in a programming language, you MUST find a
+project written in that language and start diving into the code. Find software
+that is useful to you, or something you find interesting. Read the
+CONTRIBUTING.md and start tinkering or looking at issues and seeing if you can
+be mentored into fixing or adding something. This will also teach the soft
+skills of collaborating on software.</p>
+<div class="markdown-heading"><h2 class="heading-element">Personal Project</h2><a id="user-content-personal-project" class="anchor" aria-label="Permalink: Personal Project" href="#personal-project"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>It's pretty obvious that you need a portfolio to look employable nowadays.
+There's nothing better than having an open source project that you maintain and
+improve. It's a plus if other people use it or contribute to it.</p>
+<div class="markdown-heading"><h1 class="heading-element">The End</h1><a id="user-content-the-end" class="anchor" aria-label="Permalink: The End" href="#the-end"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 ]]></description>
 </item><item>
 <title>[BOSS] Bitcoin Core Dev Build with Guix</title>
 <guid>https://trevs.site/posts/Bitcoin_Core_Dev_Build_with_Guix.html</guid>
 <link>https://trevs.site/posts/Bitcoin_Core_Dev_Build_with_Guix.html</link>
 <pubDate>Sat, 31 Jan 2026 15:58:51 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">[BOSS] Bitcoin Core Dev Build with Guix</h1><a id="user-content-boss-bitcoin-core-dev-build-with-guix" class="anchor" aria-label="Permalink: [BOSS] Bitcoin Core Dev Build with Guix" href="#boss-bitcoin-core-dev-build-with-guix"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p><sub>No AI was used to write this post.</sub></p>
+<div class="markdown-heading"><h2 class="heading-element">Intro</h2><a id="user-content-intro" class="anchor" aria-label="Permalink: Intro" href="#intro"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I just recently finished up the first month of the 2026 <a href="https://bosschallenge.xyz/" rel="nofollow">BOSS
+Challenge</a>, which is a multi-month initiative,
+hosted by Chaincode Labs, to get people interested in Bitcoin open-source
+software (BOSS) development. It consists of programming challenges and open
+source contributions to projects in the Bitcoin ecosystem.</p>
+<p>In the first challenge, you are required to build Bitcoin Core and run tests. In
+the remaining challenges you need to use Bitcoin Core to complete tasks. I've
+already built it before using Guix, so I was well-prepared, such that I only had
+to copy over a few files from my bitcoin fork.</p>
+<p>Using Guix as a package manager to build Bitcoin Core for development fits
+perfectly, because actual Core builds already <a href="https://github.com/bitcoin/bitcoin/tree/master/contrib/guix">use
+Guix</a> for its
+reproducible nature and
+<a href="https://guix.gnu.org/blog/2023/the-full-source-bootstrap-building-from-source-all-the-way-down/" rel="nofollow">bootstrapability</a>
+(see this <a href="https://www.youtube.com/watch?v=I2iShmUTEl8" rel="nofollow">presentation by Carl
+Dong</a>).</p>
+<div class="markdown-heading"><h2 class="heading-element">Building Bitcoin Core with Guix for development use</h2><a id="user-content-building-bitcoin-core-with-guix-for-development-use" class="anchor" aria-label="Permalink: Building Bitcoin Core with Guix for development use" href="#building-bitcoin-core-with-guix-for-development-use"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Requirements</h3><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>
+<a href="https://guix.gnu.org/manual/1.4.0/en/html_node/Installation.html" rel="nofollow">Guix</a> - the package manager</li>
+<li>
+<a href="https://direnv.net/docs/installation.html" rel="nofollow">direnv</a> - for per directory environments</li>
+</ul>
+<p>You can ignore <code>direnv</code> and the <code>.envrc</code> file if you just want to use <code>guix shell</code> instead. Direnv will automatically call <code>guix shell</code> for you when you
+enter the directory. This is really useful for editor integration so the editor
+can get the correct environment, or just to set some env vars automatically.</p>
+<div class="markdown-heading"><h3 class="heading-element">Setup Steps</h3><a id="user-content-setup-steps" class="anchor" aria-label="Permalink: Setup Steps" href="#setup-steps"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>We will put the <code>manifest.scm</code> and <code>.envrc</code> in a parent dir "bitcoin-dev", so
+that we don't need to track these files in the <code>bitcoin</code> repo.</p>
+<div class="highlight highlight-source-shell"><pre>$ mkdir bitcoin-dev <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> bitcoin-dev
+$ git clone git@github.com:bitcoin/bitcoin.git
+$ <span class="pl-c1">cd</span> bitcoin</pre></div>
+<p>Create an <code>.envrc</code> (optional)</p>
+<div class="highlight highlight-source-shell"><pre>use guix</pre></div>
+<p>Create <code>manifest.scm</code></p>
+<div class="highlight highlight-source-scheme"><pre>(use-modules (gnu packages))
+
+(specifications-&gt;manifest
+ (<span class="pl-c1">list</span>
+  <span class="pl-c"><span class="pl-c">;</span>; Build tools</span>
+  <span class="pl-s"><span class="pl-pds">"</span>make<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>automake<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>autoconf<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>cmake<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>libtool<span class="pl-pds">"</span></span>
+  <span class="pl-c"><span class="pl-c">;</span>; Toolchains</span>
+  <span class="pl-s"><span class="pl-pds">"</span>gcc-toolchain@14<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>clang<span class="pl-pds">"</span></span>
+  <span class="pl-c"><span class="pl-c">;</span>; Extras</span>
+  <span class="pl-s"><span class="pl-pds">"</span>perl<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>pkg-config<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>python<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>qttools@5.15<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>util-linux<span class="pl-pds">"</span></span>
+
+  <span class="pl-c"><span class="pl-c">;</span>; Bitcoin dependencies</span>
+  <span class="pl-s"><span class="pl-pds">"</span>boost<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>capnproto<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>libevent<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>qtbase@5<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>sqlite<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>zeromq<span class="pl-pds">"</span></span>))</pre></div>
+<p>I'm using clang to build cause it seems to be faster and more efficient with
+memory. Still need gcc for some libs.</p>
+<div class="markdown-heading"><h3 class="heading-element">Direnv</h3><a id="user-content-direnv" class="anchor" aria-label="Permalink: Direnv" href="#direnv"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Press "Enter" and you should see direnv tell you to <code>direnv allow</code> and then
+"Enter" again so it loads the environment. This will take a while the first time
+because Guix will be pulling in dependencies.</p>
+<div class="markdown-heading"><h3 class="heading-element">Guix Shell</h3><a id="user-content-guix-shell" class="anchor" aria-label="Permalink: Guix Shell" href="#guix-shell"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>If you don't have direnv, or don't want to use it, you can just do <code>guix shell</code>
+in the <code>bitcoin-dev/</code> directory and it will give you a shell that has the
+environment from <code>manifest.scm</code>.</p>
+<div class="markdown-heading"><h3 class="heading-element">Building Bitcoin Core</h3><a id="user-content-building-bitcoin-core" class="anchor" aria-label="Permalink: Building Bitcoin Core" href="#building-bitcoin-core"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>For building, you can refer to the <code>doc/build-unix.md</code> file for specific parameters, but I'm using this:</p>
+<div class="highlight highlight-source-shell"><pre>$ cmake -B build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DENABLE_WALLET=ON -DWITH_ZMQ=ON
+$ cmake --build build
+<span class="pl-c"><span class="pl-c">#</span> wait a while for build to complete</span></pre></div>
+<p>After that completes, you will find <code>bitcoind</code>, <code>bitcoin-cli</code> and others inside
+<code>build/bin</code>.</p>
+<p>You can update your PATH variable in an <code>.envrc</code> of another project
+that may require using one of them, like with the BOSS challenges.</p>
+<p>Pretty easy and no hunting for dependencies on your specific distro.</p>
 ]]></description>
 </item><item>
 <title>Emacs Secrets and use-package</title>
 <guid>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</guid>
 <link>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</link>
 <pubDate>Thu, 07 Nov 2024 15:39:54 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Emacs Secrets and use-package</h1><a id="user-content-emacs-secrets-and-use-package" class="anchor" aria-label="Permalink: Emacs Secrets and use-package" href="#emacs-secrets-and-use-package"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After following an
+<a href="https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources" rel="nofollow">article</a>
+from the author of <a href="https://www.masteringemacs.org/" rel="nofollow">Mastering Emacs</a>, I was
+quite pleased with source controlling some encrypted secrets that I use in
+Emacs regularly, such as my elfeed feeds or IRC password.</p>
+<p>In short, it looks like this:</p>
+<p>A file, <code>secrets.el.gpg</code> that contains:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">setq</span> secret-1 <span class="pl-s"><span class="pl-pds">"</span>foo<span class="pl-pds">"</span></span>
+      my/erc-password <span class="pl-s"><span class="pl-pds">"</span>hunter2<span class="pl-pds">"</span></span>)
+</pre></div>
+<p>From <code>use-package</code> declarations in <code>init.el</code> I would load this file:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> erc
+  <span class="pl-c1">:config</span> (<span class="pl-c1">load-library</span> <span class="pl-s"><span class="pl-pds">"</span>/path/to/secrets.el.gpg<span class="pl-pds">"</span></span>))
+  
+(<span class="pl-c1">use-package</span> elfeed
+  <span class="pl-c1">:config</span> (<span class="pl-c1">load-library</span> <span class="pl-s"><span class="pl-pds">"</span>/path/to/secrets.el.gpg<span class="pl-pds">"</span></span>))
+
+...</pre></div>
+<p>Of course, having to copy this line was disgusting me as I iteratively and
+obsessively try to improve my Emacs config.</p>
+<div class="markdown-heading"><h3 class="heading-element">Failed Attempt</h3><a id="user-content-failed-attempt" class="anchor" aria-label="Permalink: Failed Attempt" href="#failed-attempt"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I decided that I would attempt to define a local package and somehow load it as
+a "dependency" of other packages.</p>
+<div class="highlight highlight-source-emacs-lisp"><pre><span class="pl-c"><span class="pl-c">;</span>; didn't work</span>
+(<span class="pl-c1">use-package</span> my-secrets
+  <span class="pl-c1">:ensure</span> <span class="pl-c1">nil</span>
+  <span class="pl-c1">:load-path</span> <span class="pl-s"><span class="pl-pds">"</span>./secrets.el.gpg<span class="pl-pds">"</span></span>)</pre></div>
+<p>The above didn't work, most likely because it isn't an actual package, even when
+I added <code>(provide 'my-secrets)</code> to the bottom of the encrypted file.</p>
+<div class="markdown-heading"><h3 class="heading-element">Solution</h3><a id="user-content-solution" class="anchor" aria-label="Permalink: Solution" href="#solution"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm not sure if this is the best solution, but it works and is nicer than having
+to call <code>load-library</code> in each package's <code>:config</code>.</p>
+<p>First, I made a simple wrapper package - <code>.emacs.d/lisp/my-secrets.el</code> (in my
+<code>load-path</code>) that just calls that frequently copy-pasted line:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">load-library</span> (<span class="pl-c1">expand-file-name</span> <span class="pl-s"><span class="pl-pds">"</span>secrets.el.gpg<span class="pl-pds">"</span></span> user-emacs-directory))
+(<span class="pl-c1">provide</span> <span class="pl-c1">'my-secrets</span>)</pre></div>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> my-secrets
+  <span class="pl-c1">:ensure</span> <span class="pl-c1">nil</span>)</pre></div>
+<p>After some digging in the <code>use-package</code> source, since this it was undocumented,
+I found there is a keyword <code>:load</code> which seems to do exactly what I want.</p>
+<p>Now, in all dependent packages, I can specify:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">use-package</span> erc
+  <span class="pl-c1">:load</span> my-secrets
+  <span class="pl-c1">:custom</span> (erc-password my/erc-secret)
+  ...)
+
+(<span class="pl-c1">use-package</span> elfeed
+  <span class="pl-c1">:load</span> my-secrets
+  <span class="pl-c1">:custom</span> (elfeed-feeds my/elfeed-feeds)
+  ...)</pre></div>
+<p>A small improvement, but satisfying and feels more idiomatic.</p>
+<p>Maybe some elisp wizards know how to improve this even further, or know a better way!</p>
 ]]></description>
 </item><item>
 <title>RSS/Atom Feed Reader in BASH!</title>
 <guid>https://trevs.site/posts/Feed_Reader_in_BASH!.html</guid>
 <link>https://trevs.site/posts/Feed_Reader_in_BASH!.html</link>
 <pubDate>Fri, 26 Apr 2024 23:21:40 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">RSS/Atom Feed Reader in BASH!</h1><a id="user-content-rssatom-feed-reader-in-bash" class="anchor" aria-label="Permalink: RSS/Atom Feed Reader in BASH!" href="#rssatom-feed-reader-in-bash"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm on a Bash spree <a href="https://trevs.site/posts/my_new_SSG_and_blog.html">lately</a>, or as some might say,
+"going absolutely bonkers", "getting down with the sickness", "getting a few
+screws knocked loose"...whichever you prefer. I just really had a craving for,
+what I call, "the arts and crafts of programming", AKA gluing a bunch of
+Unix/CLI tools together until you have something that kind of works. Imagine
+sitting in an insane asylum all day and making <a href="https://en.wikipedia.org/wiki/Macaroni_art" rel="nofollow">art from
+macaroni</a>, but you connect the
+macaroni (elbows) to each other so it forms a kind of pipe system. Or maybe you
+remember <a href="https://www.youtube.com/watch?v=Uzx9ArZ7MUU" rel="nofollow">that screensaver</a> from
+the 90's with the pipes -- that's basically writing Bash!</p>
+<div class="markdown-heading"><h2 class="heading-element">Rationale</h2><a id="user-content-rationale" class="anchor" aria-label="Permalink: Rationale" href="#rationale"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>None of that makes any sense, but all you need to know is that I really wanted
+to read some RSS feeds and couldn't settle on a reader. They either seemed too
+complicated or just a pain to learn. I had used some of the suckless ones. I
+think <a href="https://github.com/skeeto/elfeed">elfeed</a> is really nice and used that
+one for a while, even though I make fun of emacs all the time and don't even use
+it as an editor. I was thinking about it and I was able to break down what I
+needed into a few high level steps:</p>
+<ol>
+<li>Download the feed files (XML)</li>
+<li>Parse the XML</li>
+<li>Store the parsed data</li>
+<li>Display the necessary fields to the user</li>
+<li>Have some minimal controls, like marking as read and opening in a browser</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element">Getting to Work</h2><a id="user-content-getting-to-work" class="anchor" aria-label="Permalink: Getting to Work" href="#getting-to-work"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Immediately, I knew I wanted to use <a href="https://github.com/junegunn/fzf">fzf</a> for
+displaying and previewing the feed items, and providing some navigation and
+controls. XML is really annoying to me and an unintuitive format for querying
+data, in my opinion. This is why I decided quickly that I was going to write a
+small tool to parse XML into JSON, using the Rust
+<a href="https://crates.io/crates/rss" rel="nofollow"><code>rss</code></a>. It uses minimal libraries and was <a href="https://github.com/trevarj/rss2json">only
+34 lines</a> to slap together. It was also
+really easy to support Atom alongside RSS and just move them into JSON as soon
+as possible. This will probably make the reader less accessible because now
+people will need to install this unpopular tool I made, which isn't widely
+available unless you have Rust installed.</p>
+<p>With the feeds in a nice JSON format, I could use the powerful tool
+<a href="https://github.com/jqlang/jq">jq</a> to not only extract what I needed, but to
+chunk up the feed into individual files per feed item. This made it easy to just
+store everything on the filesystem and avoid having to use a database. Each feed
+has it's own folder with read/ and unread/ subfolders containing JSON files per
+feed item. Upon startup <code>jq</code> will just parse all the .json files and feed the
+data to <code>fzf</code>.</p>
+<p>That's pretty much the interesting part. The rest is just configuration and
+glue. It's better just to take a look at this demo:</p>
+<p><a href="https://asciinema.org/a/656386" rel="nofollow"><img src="https://camo.githubusercontent.com/2212cf38e43ddcc2361304385e10969ad288deaba06db2689fe8617c7de0f651/68747470733a2f2f61736369696e656d612e6f72672f612f3635363338362e737667" alt="asciicast" data-canonical-src="https://asciinema.org/a/656386.svg" style="max-width: 100%;"/></a></p>
+<div class="markdown-heading"><h2 class="heading-element">Shortcomings</h2><a id="user-content-shortcomings" class="anchor" aria-label="Permalink: Shortcomings" href="#shortcomings"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After adding around 10 feeds with ~200 posts total, the performance is still
+decent, but you can tell that it isn't as snappy as other readers. This could
+probably be resolved with a sqlite database.</p>
+<p>Another thing is the mechanism to load the posts. Right now, on startup the
+feeds are asynchronously downloaded and the user has to manual refresh for them
+to appear in the list. I'm not sure if there is a way to somehow "push" the
+posts in using a pipe or something. I don't think there is a way for them to
+maintain their order though, since <code>fzf</code> doesn't seem to have a way to keep
+things sorted.</p>
+<p><a href="https://github.com/trevarj/frdr">frdr (feed reader)</a></p>
 ]]></description>
 </item><item>
 <title>Distro-Hopping from Arch to Gentoo</title>
 <guid>https://trevs.site/posts/gentoo.html</guid>
 <link>https://trevs.site/posts/gentoo.html</link>
 <pubDate>Wed, 10 Apr 2024 14:32:47 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Distro-Hopping from Arch to Gentoo</h1><a id="user-content-distro-hopping-from-arch-to-gentoo" class="anchor" aria-label="Permalink: Distro-Hopping from Arch to Gentoo" href="#distro-hopping-from-arch-to-gentoo"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This past weekend (starting on a Thursday) I decided to scrap my Arch install
+and install <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64" rel="nofollow">Gentoo</a>. I suppose you
+could say I fell for <a href="https://knowyourmeme.com/memes/install-gentoo" rel="nofollow">the old 4chan
+meme</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element">Distro-hopping History</h2><a id="user-content-distro-hopping-history" class="anchor" aria-label="Permalink: Distro-hopping History" href="#distro-hopping-history"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th/>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~2005</td>
+<td>Ubuntu</td>
+<td>Installed on old laptop from a disc I got in a PC Magazine. Smashed the wifi card into the motherboard and that was the end of that install</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>Ubuntu</td>
+<td>On Macbook. This is how I learned to program in a Linux environment</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>Crunchbang</td>
+<td>Deleted Windows for a bit to learn Linux better</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>Arch</td>
+<td>Started "ricing" on the Macbook</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>Manjaro</td>
+<td>KDE + Linux Gaming (daily driving Linux)</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>PopOS</td>
+<td>Searching for better desktop/Nvidia experience</td>
+</tr>
+<tr>
+<td>2021-2024</td>
+<td>Arch/Artix</td>
+<td>Using Ubuntu full-time at work</td>
+</tr>
+<tr>
+<td>Apr 2024</td>
+<td>Gentoo</td>
+<td/>
+</tr>
+</tbody>
+</table>
+<p>Arch has probably been the best distro I've experienced. I don't really need to
+explain all its benefits since they have all been answered elsewhere online. For
+me it was a great balance between customization, productivity and minimalism.</p>
+<div class="markdown-heading"><h2 class="heading-element">Why not $DISTRO_NAME?</h2><a id="user-content-why-not-distro_name" class="anchor" aria-label="Permalink: Why not $DISTRO_NAME?" href="#why-not-distro_name"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Thanks to the <a href="https://systemcrafters.net" rel="nofollow">System Crafter's IRC</a> channel, when
+everyone was discussing distros to try or ones that they use, I began
+contemplating (again) what my perfect distro would be.</p>
+<p>The answer that I always land on is not Gentoo -- it's a BSD. After some time
+experimenting with FreeBSD, I really enjoyed the ecosystem and documentation
+that they had. It does come with a few quirks that I can't come to terms with,
+like having to use Linux emulation for some programs. It always seems possible
+to use it full-time but then a program sneaks up on you that only works under
+Linux. Perhaps once my Nvidia hardware dies then I will try out FreeBSD or
+OpenBSD again.</p>
+<p>So, for GNU/Linux distributions, it came down to Artix vs Void vs Gentoo.
+Switching to Artix, something I've done before, would be trivial.</p>
+<p>I spent a day looking into Void and experimenting in a VM, but I didn't really
+find it to be any better than Arch/Artix or have something beneficial that it
+could sell me. Unless the system has something drastically different to
+offer, like Nix/Guix (and I don't need extreme reproducibility), then it just seems
+not worth the time investment.</p>
+<div class="markdown-heading"><h2 class="heading-element">Gentoo Linux</h2><a id="user-content-gentoo-linux" class="anchor" aria-label="Permalink: Gentoo Linux" href="#gentoo-linux"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Gentoo seems to tick a lot of boxes for me:</p>
+<ul>
+<li>[x] Control</li>
+<li>[x] Customizability</li>
+<li>[x] Ability to be minimalist (sometimes forced, if you don't want to compile!)</li>
+<li>[x] Large, knowledgeable community to learn from (forum, IRC)</li>
+<li>[x] Great documentation (handbook, wiki)</li>
+</ul>
+<p>At first, I was intimidated and irritated at the complexity, but the more I read
+the more I was convinced this is a great distro. Things started to make sense
+and I was actually learning and re-learning more about a GNU/Linux system under
+the hood.</p>
+<p>It only took me a couple days (without full attention) to get up and running
+back to where I was with Arch. I utilized a few binary packages for large,
+compile intensive programs, like Firefox and a kernel.</p>
+<p>Compiling everything might deter a lot of people, but for me it is a way to be
+conscious of what I am installing and how to maintain a system that isn't full
+of random packages. If I see that the dependency list of a package is much too
+large, I'll reconsider using that package and look for an alternative. It was
+annoying when I wanted to install <code>shellcheck</code> and saw how many Haskell
+dependencies it uses. I ended up installing the binary for it, which I was
+thankful existed.</p>
+<p>I still need some time to adjust to the utilities for maintaining a Gentoo
+system, so I can't really speak about much more yet.</p>
+<div class="markdown-heading"><h2 class="heading-element">Will I Hop Again?</h2><a id="user-content-will-i-hop-again" class="anchor" aria-label="Permalink: Will I Hop Again?" href="#will-i-hop-again"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Like a lot of people, I tend to go through tech phases. Eventually, I may just
+get tired of compiling stuff, especially if the time comes when I don't have a
+separate PC for work and have to quickly install some tools to be productive.</p>
+<p>As I said before, I'd still like to try to work towards daily driving a BSD.
+There is also the possibility of looking for an even more hardcore Linux distro
+like LFS in order to really learn a system in and out. I could even take a
+completely different direction and install Debian and then manually compile
+fresh versions of programs that I frequently use.</p>
 ]]></description>
 </item><item>
 <title>The If-Else Programmer</title>
 <guid>https://trevs.site/posts/if_else.html</guid>
 <link>https://trevs.site/posts/if_else.html</link>
 <pubDate>Tue, 16 May 2023 00:00:00 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The If-Else Programmer</h1><a id="user-content-the-if-else-programmer" class="anchor" aria-label="Permalink: The If-Else Programmer" href="#the-if-else-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I had a half-joke where I would tell people that all I did at a previous job was
+write if-else statements to fix every problem that came up. There are two
+reasons why I evolved into the if-else programmer:</p>
+<ol>
+<li>
+<p>Ideas and creativity were ignored. Anything a developer offered to improve the
+code was rejected and deemed as not needed by management. The value was only
+found in things that instantly settled client demands.</p>
+</li>
+<li>
+<p>Sometimes all you can do with fragile, legacy, test-less (good luck
+refactoring), spaghetti code is add +meatballs+ if-statements to check for
+null or some condition that was found on a production system and needed a
+hotfix. You'll be faced with no choice but to fix every problem with
+band-aids.</p>
+</li>
+</ol>
+<p>Even if I was closing a bunch of tickets, it was mind-numbing and made me not
+enjoy programming, which resulted in my skills stagnating during the workday and
+then fading away since I didn't program in my free time.</p>
+<p>It was easy for me to get into this situation and then held hostage by a nice
+paycheck and various psychological reasons. Minus the dire circumstances, I
+believe it is a good time to move on when you become an if-else programmer
+instead of risking your skills and falling behind for a (temporary) job.</p>
 ]]></description>
 </item><item>
 <title>Never Miss A Mention With ZNC</title>
 <guid>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</guid>
 <link>https://trevs.site/posts/IRC_With_ERC_and_ZNC.html</link>
 <pubDate>Mon, 23 Sep 2024 13:39:32 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Never Miss A Mention With ZNC</h1><a id="user-content-never-miss-a-mention-with-znc" class="anchor" aria-label="Permalink: Never Miss A Mention With ZNC" href="#never-miss-a-mention-with-znc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p><em>(note for me cause I will forget this)</em></p>
+<p>ZNC allows you to have channel "playback" when you reconnect with your client,
+but it's easy to lose track of mentions, or not be able to see a mention on an
+active channel that surpasses 500 messages (ZNC max buffer) while you're
+away. For this you need to enable a ZNC module.</p>
+<p>First, navigate to the ZNC user, then the network and scroll down to the module
+"<a href="https://wiki.znc.in/Watch" rel="nofollow">watch</a>" and enable it. (web admin url:
+<code>/mods/global/webadmin/editnetwork?user=trev&amp;network=libera</code>).</p>
+<p>Go into your IRC client and enter:</p>
+<pre><code>/msg *watch add * *mentions *%nick%*
+</code></pre>
+<p>Every time your nick is mentioned, it will add that message to a buffer called
+<code>*mentions</code>.</p>
+<p>Next, we need this buffer to persist in ZNC. Navigate to your ZNC user
+(<code>/mods/global/webadmin/edituser?user=trev</code>) and find the Flags sectiobn. Uncheck
+"Auto Clear Query Buffer".</p>
+<p>Now, when someone mentions you while you're away, once you log in again you will
+see these mentions in a nice little buffer.</p>
+<p>It's nice to set <code>SetDetachedClientOnly</code> for the entry as well, so that the
+*mentions buffer only appears when you reattach!</p>
+<hr/>
+<p>Another caveat is that you must enable the
+"<a href="https://wiki.znc.in/Clearbufferonmsg" rel="nofollow">clearbufferonmsg</a>" module or else the
+query buffers (like a private message) will stay open and load when you
+connect. If your client doesn't acquire the znc.in/self-message capability then
+all your messages will disappear from the query buffer, making the playback of a
+1:1 message pointless.</p>
+<p>EDIT:</p>
+<p>I found an <a href="https://github.com/sshirokov/ZNC.el/issues/32">issue</a> on ZNC.el that
+provides a solution to the above caveat.</p>
+<p>Simply adding this advice to your erc config does the trick:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-c1">advice-add</span> <span class="pl-c1">#<span class="pl-c1">'erc-login</span></span> 
+            <span class="pl-c1">:before</span> (<span class="pl-k">lambda</span> ()
+                      (<span class="pl-c1">erc-server-send</span> <span class="pl-s"><span class="pl-pds">"</span>CAP REQ :znc.in/self-message<span class="pl-pds">"</span></span>)
+                      (<span class="pl-c1">erc-server-send</span> <span class="pl-s"><span class="pl-pds">"</span>CAP END<span class="pl-pds">"</span></span>)))</pre></div>
+<p>Now query buffers (direct messages) can be restored and your messages will be
+present.</p>
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
 <guid>https://trevs.site/posts/lisp_game_jam_2024.html</guid>
 <link>https://trevs.site/posts/lisp_game_jam_2024.html</link>
 <pubDate>Sat, 25 May 2024 16:09:32 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Learning Guile for Spring Lisp Game Jam 2024</h1><a id="user-content-learning-guile-for-spring-lisp-game-jam-2024" class="anchor" aria-label="Permalink: Learning Guile for Spring Lisp Game Jam 2024" href="#learning-guile-for-spring-lisp-game-jam-2024"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Today I finished <a href="https://github.com/trevarj/gdotris">my entry</a> for the <a href="https://itch.io/jam/spring-lisp-game-jam-2024/entries" rel="nofollow">Spring
+Lisp Game Jam 2024</a>. It's
+nothing really special, just a conversion of my Tetris clone, dotris, written in
+Guile Scheme.</p>
+<p>I wanted to use the game jam to learn Guile while being held accountable for
+actually doing something. I've been looking at Guile and reading the manual for
+a few months, toying with simple scripts, and even taking an attempt at writing
+a Guix System config (AND FAILING!). Converting my ncurses game written in C
+over to Guile seemed doable in this timeframe.</p>
+<p>I started off trying to write everything purely functional, and writing like I
+would write Haskell, but that was short lived. After that I just starting doing
+more "casual" programming where I just wanted to get the job done and have a
+functional game. I would say the code ended up looking more like how I would
+write Ocaml. I'm not actually sure if it resembles idiomatic Scheme at all!</p>
+<p>After a few days, Guile became comfortable to work with and appears to be really
+powerful. I haven't even scratched the surface on the powers of Scheme, but it
+seems extremely flexible. Using the REPL was quite useful and more engaging than
+writing boring unit tests. I'd like to become more proficient in REPL-driven
+development and maybe find some resources on how to be productive with a
+REPL. Right now, I can't really see how it would be used in a very large project
+or whether it is actually faster than writing some unit tests. Some things were
+irritating to me, coming from using a language like Rust daily, like no LSP
+(Geiser is OK) and hardcore type system.</p>
 ]]></description>
 </item><item>
 <title>Mentorship</title>
 <guid>https://trevs.site/posts/mentorship.html</guid>
 <link>https://trevs.site/posts/mentorship.html</link>
 <pubDate>Wed, 17 May 2023 00:00:00 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Mentorship</h1><a id="user-content-mentorship" class="anchor" aria-label="Permalink: Mentorship" href="#mentorship"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The most valuable thing I got out of my first job was that I was being mentored
+by a senior guy - something I feel like will never come my way again unless
+someone is willing to mentor a doofus in his thirties with ten years of
+experience. He wasn't a modern "senior" engineer who has five years of
+experience either. He had about 30+ years of experience under his belt. It was
+really helpful to have someone there to guide me in research and to discuss
+things at length when I was stuck. I would much rather take a positive
+mentorship than have an education budget that I can spend how I wish. "Make sure
+you clear it with HR first haha."</p>
+<p>From my observation it is becoming more and more uncommon to get mentored at a
+job or even be able to discuss topics at length, but this may be my ignorant
+perception now as a fully remote worker. I haven't heard first hand from anyone
+about being mentored, and only have seen it mentioned rarely on a job
+description.</p>
+<p>Another thing I've noticed is how managers don't want to "waste" resources on
+similar methods of knowledge sharing, like pair programming or shadowing. "Jump
+right in and ask for help if you're stuck!"</p>
+<p>It seems the industry is only concerned with hiring "self-starters" and people
+who can grind without guidance, instead of properly on-boarding and mentoring a
+person to fit in with the team and actually be successful and useful. The
+companies seem to be focused only on finding these "10X-ers" who won't question
+anything and can just churn out heaps of SLOC.</p>
+<p>I don't think this is only a problem with junior devs. Why can't a thirty year
+old doofus like me get mentored too? Is that just called "going back to get a
+master's degree"? That does sound like an option, along with paid mentorships
+that some Github celebrities offer.</p>
+<p>One alternative is to find an open source project that is accepting
+contributions, preferably one that you use and want to give back to. Start
+putting up pull-requests on this project and give the maintainers a chance to
+review them. There is a good chance that you will be provided a lot of helpful
+feedback and guidance, perhaps even higher quality than someone at work will
+give you. This has been beneficial to me, especially when the maintainer is
+highly skilled and generous with his time.</p>
 ]]></description>
 </item><item>
 <title>My New SSG and Blog</title>
 <guid>https://trevs.site/posts/my_new_SSG_and_blog.html</guid>
 <link>https://trevs.site/posts/my_new_SSG_and_blog.html</link>
 <pubDate>Sun, 21 Apr 2024 18:31:31 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My New SSG and Blog</h1><a id="user-content-my-new-ssg-and-blog" class="anchor" aria-label="Permalink: My New SSG and Blog" href="#my-new-ssg-and-blog"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Welcome to my revamped blog that I made with my latest tinker project,
+<a href="https://github.com/trevarj/poogo">poogo</a>.</p>
+<p>Poogo is a static-site generator written in bash, which utilizes the <a href="https://docs.github.com/en/rest/markdown">Github
+markdown API</a> to convert Markdown into
+HTML.</p>
+<div class="markdown-heading"><h2 class="heading-element">Hugo -&gt; Poogo</h2><a id="user-content-hugo---poogo" class="anchor" aria-label="Permalink: Hugo -&gt; Poogo" href="#hugo---poogo"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>With this I can say goodbye to <a href="https://gohugo.io/" rel="nofollow">Hugo</a> (<code>sudo emerge --unmerge hugo</code>) and stop complaining about how I don't want to learn Hugo
+themes or figure out how to work it. I will say that Hugo is quite nice and
+simple enough, but I don't even need such power for my blog that has zero
+readers and is hosted on Github Pages. So, I finally convinced myself to
+frantically slap together a single <code>bash(1)</code> script that can do everything I
+need.</p>
+<div class="markdown-heading"><h2 class="heading-element">Requirements</h2><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I wanted to create a simple tool for a simple blog. Also, it's pretty fun to
+push Unix tools to the limit and scour StackOverflow looking for the coolest
+one-liners and tricks.</p>
+<p>Here is what I needed:</p>
+<ol>
+<li>Take Markdown files and convert them to HTML</li>
+<li>Ability to regenerate on new Markdown changes</li>
+<li>Generate a RSS feed for all the posts</li>
+<li>Minimal CSS that works with the generated HTML</li>
+</ol>
+<p>Solutions:</p>
+<ol>
+<li>Github's Markdown API to convert MD-&gt;HTML. Instead of using GH Pages built-in
+MD-&gt;Jekyll, this allows me to be able to take my site anywhere else.</li>
+<li>Bash <code>-ot / -nt</code> on files</li>
+<li>Simple substitution stuff and inspiration from
+<a href="https://github.com/LukeSmithxyz/lb/blob/master/sup"><code>lb</code></a>
+</li>
+<li>A quick search for minimal CSS led me to <a href="https://github.com/kevquirk/simple.css">Simple
+CSS</a>, and of course <a href="https://nordtheme.com" rel="nofollow">Nord color
+palette</a>
+</li>
+</ol>
+<div class="markdown-heading"><h2 class="heading-element">Reflections</h2><a id="user-content-reflections" class="anchor" aria-label="Permalink: Reflections" href="#reflections"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I got to the MVP after only tinkering on and off for a few days. Basically using
+shell-driven development (not as cool as a REPL, but pretty good!) and hacking
+stuff together until it works. I am not super proud of the code itself, but I
+didn't set out to write the most beautiful and robust bash SSG (one probably
+exists).</p>
+<p>It was really relaxing to not have to to care about code cleanliness or whether
+or not someone else can read it. Just coding to get something done. Perhaps this
+is a side effect of using a language that lets you bend the rules and do wacky
+stuff.</p>
+<p>There is also something satisfying about solving something using
+a Unix Philosophy way instead of just installing some new tool and having to
+learn the ecosystem. Spending time learning more <code>sed(1)</code> is pretty amazing,
+even if it sometimes feels inelegant or the solution is cryptic at first glance.</p>
+<p>Here's a weird <code>sed</code> line that I learned:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> extract the "title" of a post for a HTML &lt;title&gt;, a markdown '#' header from a</span>
+<span class="pl-c"><span class="pl-c">#</span> file, or fallback to the title found in the &lt;header&gt; markdown file</span>
+<span class="pl-en">extract_title</span>() {
+	s=<span class="pl-s"><span class="pl-pds">'</span>/# .*/{s/# (.*)/\1/p;Q};q1<span class="pl-pds">'</span></span> <span class="pl-c"><span class="pl-c">#</span> returns 1 on a non-match</span>
+    <span class="pl-c"><span class="pl-c">#</span> now we can fallback if the first match fails</span>
+	sed -rn <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$s</span><span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$1</span><span class="pl-pds">"</span></span> <span class="pl-k">||</span> sed -rn <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$s</span><span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$HEADER_MD</span><span class="pl-pds">"</span></span>
+}</pre></div>
+<p>Since <code>sed</code> doesn't have a return code of <code>1</code> when there is no match, you have
+to do a little trick using <code>/matchRegex/s command/options</code> instead of the
+traditional <code>s/find/replace/options</code>.</p>
 ]]></description>
 </item><item>
 <title>My Return to a Custom Neovim Config</title>
 <guid>https://trevs.site/posts/neovim_2024.html</guid>
 <link>https://trevs.site/posts/neovim_2024.html</link>
 <pubDate>Wed, 10 Jan 2024 11:37:32 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">My Return to a Custom Neovim Config</h1><a id="user-content-my-return-to-a-custom-neovim-config" class="anchor" aria-label="Permalink: My Return to a Custom Neovim Config" href="#my-return-to-a-custom-neovim-config"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>At the end of 2023 I got antsy. I was finally going to do it...again. I was
+about to venture on leaving <a href="https://github.com/LazyVim/LazyVim">LazyVim</a> and
+create my own Neovim config from scratch using lazy.nvim with inspiration and
+knowledge that I gathered from LazyVim (the greatest Neovim distro to date).</p>
+<div class="markdown-heading"><h2 class="heading-element">My Vim Journey</h2><a id="user-content-my-vim-journey" class="anchor" aria-label="Permalink: My Vim Journey" href="#my-vim-journey"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>My first exposure to vi/vim was after I installed Linux and needed to edit
+files in the terminal, much like how other people probably find it. I don't
+exactly remember if Ubuntu (my first distro) had Nano enabled as the default
+editor back then, so I think I may have been forced to learn how to edit using
+vi.</p>
+<p>I slowly became comfortable editing files using Vim and even doing a little C
+programming with it, but barely scratching the surface of the editor's power.</p>
+<p>Once I got into Linux ricing, I saw that people had really cool looking Vim
+configurations. I wanted to make mine look like that too, but I wasn't really
+interested in using the editor for more than editing system files quickly.</p>
+<p>Some time went by and I was finally sick of GUI editors being memory hogs and
+slow. I went down the road of trying to configure Vim as a full-fledged IDE
+using CoC and other great plugins from Tpope. I used that for a bit, but
+couldn't really dive into using it permanently at work. It was still fun to
+mess with in my free time.</p>
+<p>One day I heard about Neovim and how it was supposedly <em>blazingly fast</em> with
+LuaJIT and a faster development cycle. I installed and went down the road of
+migrating over to a Lua-based config. It was early in the plugin days, so
+things were really rough unless you had your ear to the ground and were already
+a Vim/Lua wiz. I was not, so I got a bit overwhelmed.</p>
+<p>This is about the time that I found out about Neovim distributions. It was a
+relief from the anxiety of having to maintain my own configuration...or at
+least I thought. Now instead of having to fix a plugin issue, I had to fix a
+distro issue, wait for a fix to get pushed upstream, or disable a plugin that
+they had added. After using my own config again for a bit, I settled on
+AstroNvim, which was a pleasure to use at my job for a while.</p>
+<p>Then lazy.nvim was released - a neovim package manager that was supposed to end
+the problem of breaking configurations. Shortly after, lazy.nvim's creator and
+Lua plugin warrior, <a href="https://github.com/folke">Folke</a> created LazyVim, a distro
+that utilizes lazy.nvim. I immediately installed it and replaced AstroNvim. I
+had been using it full-time up until about a week ago.</p>
+<p>I began to get a bit frustrated again with using a distro after I got hit with
+a few breaking changes, since I cannot resist updating all the plugins whenever
+I see there are updates available. Things would break at the beginning of a
+workday and I was too stubborn to rollback, so I neurotically would start
+fixing editor issues instead of working.</p>
+<p><em>Secretly switched to <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> for a
+bit</em></p>
+<p>I came to the realization that I had no idea what was going on with my editor
+anymore. I already forgot most of the stuff I learned from doing a custom
+config last time (probably never learned it and copy pasted too much). It was
+time to buckle down and start over.</p>
+<div class="markdown-heading"><h3 class="heading-element">Requirements</h3><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I made a list of the things that I truly needed to be productive in my editor:</p>
+<ul>
+<li>time</li>
+<li>LSP</li>
+<li>autocompletion</li>
+<li>formatting</li>
+<li>treesitter</li>
+<li>statusbar</li>
+<li>git integration</li>
+<li>file tree</li>
+<li>keybindings</li>
+<li>all plugins and options that I curated using LazyVim</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Config Creation Workflow</h3><a id="user-content-config-creation-workflow" class="anchor" aria-label="Permalink: Config Creation Workflow" href="#config-creation-workflow"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>In my opinion, getting keybindings, LSP and autocompletion working are the main
+steps to a productive configuration. Basically, I started by reading
+lazy.nvim's docs and hitting each of the requirements above, reading through
+the docs of the plugins and sifting through Github discussions and issues when
+I ran into a problem. Like I said, a lot of my config is taken from LazyVim,
+because I believe it does the bulk of things in the ideal way. I spent a lot of
+time reading through the LazyVim source code, then deciding if I needed to
+extract certain things or could do it myself in a simpler way. I wanted to stay
+minimalist so that when I read the configuration months down the
+line I understand what is going on.</p>
+<p>After that it is the grind of reading plugin docs and figuring out what you
+need configured - a daunting task for newcomers and those who don't have the
+time or patience to read docs.</p>
+<p>I will still be following LazyVim's development because it has become somewhat
+of a source of truth and the community is still active (even though as I write
+this the project hasn't had a push for two months...)</p>
+<p><a href="https://github.com/trevarj/config.nvim">My 2024 Neovim Config</a></p>
 ]]></description>
 </item><item>
 <title>Old Functional Programming Email</title>
 <guid>https://trevs.site/posts/Old_Functional_Programming_Email.html</guid>
 <link>https://trevs.site/posts/Old_Functional_Programming_Email.html</link>
 <pubDate>Sat, 28 Dec 2024 21:21:36 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Old Functional Programming Email</h1><a id="user-content-old-functional-programming-email" class="anchor" aria-label="Permalink: Old Functional Programming Email" href="#old-functional-programming-email"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I clicked a dead link to Google Groups recently and landed back at a list of my
+old groups which happen to be for university classes that I was in. After
+browsing around for a while I found a post titled "Functional Programming" from
+a teaching assistant named "R". I recalled the context of this post immediately
+and it was basically dumb (actually dumb cause the CS program was not very good)
+university kids thinking Javascript was a functional programming language, only
+to be corrected ("ackkshully!!..") by a sage Haskeller.</p>
+<p>The post is an excellent explanation of FP to university students who would
+never hear of it since the main archetype of the CS program was either a video
+game nerd or read online that programming was a top paying career. Sadly, it
+only had a single, one sentence reply. I most likely ignored it too, which is
+why I am in awe by it -- it mentions a lot of the languages that I currently
+love and SICP! If only I wasn't such a bad student. Anyways, here it is:</p>
+<hr/>
+<p>[2011]</p>
+<p>I was asked about functional programming in class today. Its an interesting
+topic, and its worth being exposed to, but I could not do it justice in a quick
+mention in class. I'm not sure this missive can do it justice either, but it
+seemed that some people were interested in it, and it has applications to the
+topic we've recently been discussing in class (dynamic programming), and playing
+around in them is an interest of mine, so I thought I'd throw this together, and
+send it out in case anyone is interested.</p>
+<p>What you have to understand at the get go is that there are several models of
+computation, but we can prove that they are all equivalent, i.e. that anything
+that can be done in one model can be done in another. This is know as the Church
+Turing Thesis, named after Alan Turing, the mathematician who "invented" the
+computer as we know it (or, at least, a theoretical model of it), and Alanzo
+Church, a logician who developed what is called the lambda calculus. I'll spare
+you the gory details. Sufficient to say that some algorithms are easier to
+implement in one paradigm or another, but any algorithm can be implemented in
+any paradigm.</p>
+<p>There are three different models of computation that you are probably familiar
+with or have heard of(though all of them are equivalent, i.e. what can be
+computed in one can be computed in the others). The three you are most likely to
+encounter are:</p>
+<p>Procedural: Computation as a sequence of machine states.  Object Oriented:
+Computation as the interaction of objects.  Functional: Computation as the
+application of functions (in the mathematical sense) to data.</p>
+<p>Note that the boundaries between these types is very fuzzy. Java can be very
+procedural if you just have a single object with a main function.</p>
+<p>When we talk about functional programming, we don't mean functions as in
+procedures or object methods, we mean functions in the mathematical sense. The
+primary difference between function (programming language) and function
+(mathematical) is that mathematical functions are not allowed to have side
+effects. In a procedural language, calling a function can change the program
+state, and calling the function at different times with the same arguments can
+have different results, if it depends on the state of global variables. In a
+functional language, a function call cannot alter the state of the program, and
+calling a function with the same arguments always has the same result.</p>
+<p>Another difference between the functional paradigm and others is that functions
+are first class objects. This means that functions can be treated the same way
+as variables, i.e. anywhere a variable is syntactically correct, a function is
+too. I want to stress here that I do not mean a function call, or a function
+pointer, I mean the function itself. This can be hard to get your head
+around. For example, in lisp, no distinction is made between data and
+code. Everything in lisp is a list, including a lisp program itself. So, all the
+arguments to functions are actually lists, and functions are just lists (the
+first member of the list is the function name, the second item in the list is a
+list of the arguments, the remaining members of the list are the statements of
+the function), so we can pass a function X to a function Y along with some other
+arguments, and Y can then apply the passed function to the other arguments,
+returning the result or another function. For a small example, this is the
+factorial function in lisp:</p>
+<div class="highlight highlight-source-commonlisp"><pre>(<span class="pl-k">defun</span> <span class="pl-en">factorial</span> (n)
+   (<span class="pl-k">if</span> (<span class="pl-c1">&lt;=</span> n <span class="pl-c1">1</span>)
+       <span class="pl-c1">1</span>
+       (<span class="pl-c1">*</span> n (factorial (<span class="pl-c1">-</span> n <span class="pl-c1">1</span>))))
+)</pre></div>
+<p>This function declaration is a list, the first member of which is a call to the
+function defun, which defines functions. The second item is the name of the new
+function, the third is the arguments the new function will take, and the fourth
+is a list of statements that make up the new function.</p>
+<p>Having functions as first class objects also allows us to curry the arguments
+of the function. This means that the function as written would be applied to
+the first argument, in the course of which it would create a new function (at
+run time) to be applied to the second argument, which would create a new
+function to be applied to the third argument...</p>
+<p>Among functional languages, we make a distinction between languages which are
+purely functional, and those that are not. Purely functional languages, such as
+Haskell, do not allow you to violate the functional paradigm. This brings with
+it certain benefits. For example, if the language is constructed in such a way
+that side effects are impossible, then the order of evaluation of a program, to
+a certain extent, doesn't matter; the result of two independent function calls
+is invariant over the order of the calls. This allows the compiler to re-arrange
+the code as it sees fit to optimize it. Another benefit is that the dynamic
+programming we were looking at today is, essentially, free; its built into the
+language. If you call a function with the same arguments, we don't need to
+re-compute the function, because we know that the result will be the same. We
+can just return it. Even wielder, from the point of view of imperative
+programming, is the possibility for "lazy evaluation." This means that we don't
+have to evaluate all values of an expression; we just need to evaluate enough to
+return the value we are interested in. Wikipedia offers this as an example:</p>
+<pre><code>                print length([2+1, 3*2, 1/0, 5-4])
+</code></pre>
+<p>All we want is it to print the length of the list in question, i.e. how many
+elements it has. In an imperative language, the order of evaluation is rigidly
+defined: the value of the expressions in the list would be evaluated and added
+to the list, then the length of the list would be computed and returned. At
+least, in theory. What would actually happen is that the program would crash
+because of the division by 0 in the 3rd element. Haskell, on the other hand,
+with lazy evaluation, doesn't bother to evaluate the expressions that make up
+the list, it just notes that if you evaluated the list, it would have 4 members,
+so it just returns 4.</p>
+<p>You might have noticed that I mentioned that data is immutable. This means we
+cannot alter the value of a variable in a scope in which it has been
+defined. This means that loops are difficult to defined: data is immutable so
+cannot have a loop counter with a changing value. Instead, looping is achieved
+through recursive calls. Suffice it to say that any loop can be implemented as a
+recursive call. This can be proven rigorously, but I'm not going to do so here,
+as this is probably already long enough.</p>
+<p>If you are interested in learning more, the Wikipedia article on functional
+programming is a good start. The Microsoft .NET framework has a functional
+language called F# you can look into. [University] Library has a book called
+"The Structure and Interpretation of Computer Programs", which is a text book on
+Scheme that was used and written at M.I.T. Python and Ruby have functional
+aspects, though they are mostly imperative.</p>
+<p>Haskell is a modern, open source purely functional language with a large install
+base and many tutorials. It has a good explanation of functional programming on
+its web page, along with this example of quicksort written in Haskell:</p>
+<div class="highlight highlight-source-haskell"><pre>qsort <span class="pl-c1">[]</span>     <span class="pl-k">=</span> <span class="pl-c1">[]</span>
+qsort (x<span class="pl-k">:</span>xs) <span class="pl-k">=</span> qsort (<span class="pl-c1">filter</span> (<span class="pl-k">&lt;</span> x) xs) <span class="pl-k">++</span> [x] <span class="pl-k">++</span> qsort (<span class="pl-c1">filter</span> (<span class="pl-k">&gt;=</span> x) xs)</pre></div>
+<p>I hope you all have found this interesting. There is a lot more to computer
+science than just churning out code, and exposing yourself to other programming
+paradigms can be enlightening.</p>
 ]]></description>
 </item><item>
 <title>The Open Source Influencer</title>
 <guid>https://trevs.site/posts/OSS_influencer.html</guid>
 <link>https://trevs.site/posts/OSS_influencer.html</link>
 <pubDate>Fri, 12 Jan 2024 14:46:15 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">The Open Source Influencer</h1><a id="user-content-the-open-source-influencer" class="anchor" aria-label="Permalink: The Open Source Influencer" href="#the-open-source-influencer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I've been interested in tech content creation recently and have been trying to
+guess the future of this modern programming career path. I'm constantly
+intrigued by devs who are able to escape wage slave jobs and become self
+sufficient somehow, whether it is by starting a business (the old way) or the
+new ways of social media influencing or content creation. Creating a software
+company definitely seems to be much harder nowadays in software than it was,
+say, 10-15 years ago, and A LOT less enjoyable than the scenarios I present
+below.</p>
+<p>Since Github is now a social media site where you can even <a href="https://github.com/trending/developers">look up developers
+by their popularity</a>, is it possible
+that this will become a future career path in programming, just as Youtuber
+became a career path for acting/comedy/cook/whatever else?</p>
+<div class="markdown-heading"><h2 class="heading-element">Scenarios</h2><a id="user-content-scenarios" class="anchor" aria-label="Permalink: Scenarios" href="#scenarios"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h3 class="heading-element">1. Open Source Guru</h3><a id="user-content-1-open-source-guru" class="anchor" aria-label="Permalink: 1. Open Source Guru" href="#1-open-source-guru"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ol>
+<li>Be a <a href="https://www.quora.com/Where-did-the-myth-of-the-10x-software-developer-come-from" rel="nofollow">10X
+dev</a>
+or expert in some area</li>
+<li>Create or contribute to useful projects project(s)</li>
+<li>Market project (or have followers/contributors do it) on social media</li>
+<li>Start writing blogs, streaming, and/or making videos about that content and
+more. Optional because these guys are good enough to just get picked up by a
+top company.</li>
+</ol>
+<div class="markdown-heading"><h3 class="heading-element">2. Twitch Programmer</h3><a id="user-content-2-twitch-programmer" class="anchor" aria-label="Permalink: 2. Twitch Programmer" href="#2-twitch-programmer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ol>
+<li>Be entertaining</li>
+<li>Make tech videos or stream</li>
+<li>Gather a following and sponsors</li>
+<li>Create project on video or stream</li>
+<li>Use following to boost project</li>
+<li>Start selling stuff</li>
+</ol>
+<p>These scenarios could lead to the opportunity of quitting your day job and
+starting to earn an income from donations or sponsorships (GH, Patreon, etc). It
+seems like a nerdy version of a beauty blogger teaching how to put on makeup and
+then pushing a cosmetic line...or an artist who streams painting and then sells
+their works to viewers ...or even a battle worn veteran who tells war stories of
+how he killed a bunch of really bad dudes and then starts a coffee company or
+something...I don't know!</p>
+<div class="markdown-heading"><h2 class="heading-element">Influence</h2><a id="user-content-influence" class="anchor" aria-label="Permalink: Influence" href="#influence"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm not entirely sure how I feel about the influence these content creators have
+on young programmers. I have certain opinions about the format in which the
+content is delivered. For example, if done incorrectly, a stream can be a huge
+waste of time for the viewer, even if it is entertaining. Maybe no one wants to
+admit that though and would say that the engagement factor is important for
+learning.</p>
+<p>Will young programmers want to just become a tech influencer instead of putting
+in the time working a terrible office job at least once like the rest of us? My
+guess is not on a large scale like with regular social media, since programmers
+tend to keep to themselves and be less outgoing.</p>
+<p>Another thing that I think about is how these tech influencers are...influencers
+in the sense that they can be idolized, which in turn can make product (courses,
+merch, promo codes, etc) sales predatory, similar to what it's like on non-tech
+social media.</p>
+<div class="markdown-heading"><h2 class="heading-element">A Realistic Scenario</h2><a id="user-content-a-realistic-scenario" class="anchor" aria-label="Permalink: A Realistic Scenario" href="#a-realistic-scenario"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Obviously, the second scenario is not exactly probable or possible for everyone
+to do.</p>
+<p>I speculate that the first scenario can become more mainstream in the future, at
+least for a seasoned developer (10+ years, or 10Xer) who prefers to not be in
+the death grip of a software company. I suppose this scenario is analogous to
+being a contractor and accepting a grant to work on an open source project that
+you like, but with the addition of having individuals as supplemental
+sponsorships. Basically, you're working on something you're passionate about and
+people throw money at you for it.</p>
+<div class="markdown-heading"><h2 class="heading-element">Tech Influencer Network</h2><a id="user-content-tech-influencer-network" class="anchor" aria-label="Permalink: Tech Influencer Network" href="#tech-influencer-network"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>A tech influencer from Scenario 1 or 2 builds his brand and decides to convert
+into an organization. Other devs are hired and work on the org's projects, and
+they can even champion their own projects and get marketed through the main
+influencer's clout. You can see this in a lot of popular podcast networks and
+other Youtuber channels. I'm pretty sure this already exists among tech
+streamers, but I haven't looked into it much. It seems like it could be a nice
+boost to open source development. I could be completely wrong though and someone
+would point out all the reasons why this is a bad business model.</p>
+<p>I don't know what the heck I'm talking about.</p>
 ]]></description>
 </item><item>
 <title>Pre-Guix System Install Thoughts</title>
 <guid>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</guid>
 <link>https://trevs.site/posts/Pre-Guix_System_Install_Thoughts.html</link>
 <pubDate>Tue, 28 May 2024 16:55:59 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Pre-Guix System Install Thoughts</h1><a id="user-content-pre-guix-system-install-thoughts" class="anchor" aria-label="Permalink: Pre-Guix System Install Thoughts" href="#pre-guix-system-install-thoughts"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Ok, listen. I said a few posts back that I wasn't going to distrohop again after
+Gentoo, but I lied. I just purchased a new Stinkpad, and I am going to give GNU
+Guix System a shot.</p>
+<p>It's an AMD machine, so there should be no need for any Nvidia hassle. In my
+mind, it will go smoothly!</p>
+<p>I'm making a public statement to hold myself accountable -- I shall give Guix a
+fair try, attempt to make some contributions (if they'll have me!), and enjoy
+helping others in the community as a bit of a hobby that will live safely on its
+own hardware.</p>
+<p>If it's really really bad, then I will just install FreeBSD or Debian, as
+promised.</p>
+<p>OR....</p>
+<p>Maybe I will just embrace doing computing "the olds cool" way and have
+everything broken, start smoking cigarettes at the keyboard, and doing a bit of
+online gambling!</p>
 ]]></description>
 </item><item>
 <title>Professional Bugfixer</title>
 <guid>https://trevs.site/posts/Professional_Bugfixer.html</guid>
 <link>https://trevs.site/posts/Professional_Bugfixer.html</link>
 <pubDate>Wed, 02 Oct 2024 11:23:15 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Professional Bugfixer</h1><a id="user-content-professional-bugfixer" class="anchor" aria-label="Permalink: Professional Bugfixer" href="#professional-bugfixer"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>A semi-satiricle note about professional programming.</p>
+<hr/>
+<p>When your time becomes limited in life, for instance, when you are no longer a
+child (maybe still a manchild) or student, it becomes a lot harder to be the
+type of programmer that companies want. Putting in long hours, designing complex
+systems, leading a team of developers - I constantly wonder how much this is
+actually worth to me. In fact, I am actively looking to reduce my
+responsibilities under someone else so much that I am willing to reduce my
+lifestyle to the point where I only have money for food and
+health. Entertainment? I will look at the sky, read the news or tell myself
+jokes.</p>
+<p>It's much nicer to be a Professional Bugfixer and spend your entire day hunting
+down bugs and creating concise, non-obtrusive fixes for them. I'm talking about
+really sexy fixes that look like you're doing absolutely nothing when you put up
+a +7/-250 pull-request. +6000/0'ers shake their heads or fume when they see it,
+but then they quickly get back to their extremely valuable features and
+refactors.</p>
+<blockquote>
+<p>But I want to design really cool picoservices that sync up all their logs
+(with analytics and weather prediction backed by AI technology) and uses AWS's
+Cobgobbler service!</p>
+</blockquote>
+<p>OK, you can do that. Have fun doing it for Them till ya rot! It will be really
+cool when everything works so well then everyone is cheering your name and
+throwing roses at you. Too bad your back will be so crooked up by 45 years of
+age that you will look like you fell off a chairlift in Aspen at the company
+retreat (no one called 911 cause they were too drunk to dial).</p>
+<p>I will be listening to podcasts and hunting buggies, receiving a small dopamine
+hit every time I squash one and put up a pull-request. "That guy is really
+keeping the project afloat", they'll say.</p>
+<p>"He's the only one who never broke prod...how does he do it?". They will never
+know the best kept secret...just add
+<a href="https://trevarj.github.io/posts/if_else.html" rel="nofollow">if-statements</a>.</p>
 ]]></description>
 </item><item>
 <title>Some Thoughts on the Crypto Industry</title>
 <guid>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</guid>
 <link>https://trevs.site/posts/Quick_Thought_on_Cryptocurrency_Technology.html</link>
 <pubDate>Wed, 05 Jun 2024 10:35:54 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Some Thoughts on the Crypto Industry</h1><a id="user-content-some-thoughts-on-the-crypto-industry" class="anchor" aria-label="Permalink: Some Thoughts on the Crypto Industry" href="#some-thoughts-on-the-crypto-industry"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I've been working closely with numerous cryptocurrencies over the past four
+years and I cannot get past an observation (maybe limited by my own perception)
+of the industry and its technology.</p>
+<p>I will state that I am not anti-crypto, per se, but I am anti-whatever I am
+about to describe. I think crypto can provide a useful utility for people,
+namely transferring funds elecronically without an intermediary (kinda). Do I
+think the world would be worse without crypto? Not really. I am content with
+Bitcoin and Ethereum, but beyond those I have not actually found a coin that
+offers "life-improving" technology.</p>
+<div class="markdown-heading"><h2 class="heading-element">The Technology</h2><a id="user-content-the-technology" class="anchor" aria-label="Permalink: The Technology" href="#the-technology"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I am going to completely generalize here, so take it with a grain of salt. Keep
+in mind that I am a "nothing-to-show" dev who hasn't created such "successful"
+projects before.</p>
+<p>After reading through and working with many crypto projects, there are
+practically none that seem impressive anymore. They are either poorly
+documented, hastily written, over-engineered or just faulty. Rarely do they
+promise something life-changing or revolutionary, no matter how much they hype
+it up on social media. With confidence I can say that the majority of them are
+just purely copy-pasted code and ideas that add one extra feature in hopes of
+securing a voluptuous cash grab.</p>
+<p>It's gotten to the point where it's laughable to me when a new crypto project
+appears and it's just a fork of Ethereum or some other code with a few changes
+added and a shiny, new website with some marketing.</p>
+<p>Sometimes I think of all the code written for these projects and man-hours
+wasted. It's comical, actually, especially since the code is just re-written
+over and over or just abandonware at the end! This may be an issue with the
+software industry as a whole, but it's amplified here.</p>
+<p>Compare these types of projects with real engineering marvels, like a bridge or
+a skyscraper, or even a missile launcher that will end up blowing up some
+hospital far far away. Where is the utility in GooberCoin? Where is the
+longevity? It's nowhere to be found, because it doesn't actually matter -- it's
+FakeTech and it exists on web5 only.</p>
+<div class="markdown-heading"><h2 class="heading-element">Money and Tech Obsession</h2><a id="user-content-money-and-tech-obsession" class="anchor" aria-label="Permalink: Money and Tech Obsession" href="#money-and-tech-obsession"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Here are the most extreme archetypes of people in the crypto industry: those
+obsessed with money, and those obsessed with technology. Probably sometimes
+both. This may also apply to all industries, but I can see it very clearly here.</p>
+<p>The person obsessed with money is an opportunist who wants to use technology to
+lure in investors (big and small). They want the end product as fast as possible
+so that the money flows in and the project says relevant. They will claim that
+the project provides something more or is revolutionary. For the record, I don't
+have anything against someone earning a lot of money through business, but it
+appears to me that these projects are commonly deceptive and don't actually
+provide anything useful (and sometimes don't even work well!). They will tell
+you that these projects boost the entire industry as a whole and that they're
+all working towards a common goal, yada yada...</p>
+<p>The person obsessed with technology is intelligent, but how I see it,
+unwise. They want to implement the latest findings in mathematics, cryptography,
+networking, computer science, etc, but without truly contemplating the question
+"is this work necessary or beneficial for society?". The amount of funds in the
+crypto industry allows this to be possible. The technologist, investors and
+end-user are all feeding off of each other. They all love extremely complicated
+systems that are almost esoteric, when all we probably need is something simple
+that serves a good purpose and does it well.</p>
+<p>Take the latest paper in cryptography and implement it, then generate a surplus
+of "coins" attached to this technology, and then sell it to people who want to
+enjoy the benefits of snake oil and get RICH! Done!</p>
 ]]></description>
 </item><item>
 <title>Tech Complacency</title>
 <guid>https://trevs.site/posts/Tech_Complacency.html</guid>
 <link>https://trevs.site/posts/Tech_Complacency.html</link>
 <pubDate>Fri, 06 Sep 2024 08:55:35 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Tech Complacency</h1><a id="user-content-tech-complacency" class="anchor" aria-label="Permalink: Tech Complacency" href="#tech-complacency"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This is a short memo about how I have reached complacency with my tech
+usage, namely with my operating system and editor. I have alluded to this in a
+few past posts and probably also contradicted myself. I'm not ashamed of this
+because I believe this is a common issue among computer addicts - at least the
+ones that behave similarly to me.</p>
+<p>When people discuss something like distro-hopping, there are always the people
+who argue that using Ubuntu or Fedora (or even W*ndows) because they enable you
+to be immediately productive. Likewise in the editor wars, where they say to use
+VSCode or a bloated IDE.</p>
+<p>In my case, I'm not coming at it from a place of productivity, but laziness! I
+am in an ebb of the tech enthusiasm graph.</p>
+<pre><code>                     │                                
+         Tech        │        ┌──┐                    
+        Enthusiasm   │      ┌─┘  │                    
+                     │    ┌─┘    │                    
+                     │  ┌─┘      └─────               
+                     │ ─┘                             
+                     └─────────────────────────       
+                          Time                        
+</code></pre>
+<div class="markdown-heading"><h2 class="heading-element">OS</h2><a id="user-content-os" class="anchor" aria-label="Permalink: OS" href="#os"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Ever since I ditched Gentoo (to try to install Guix) I went back to Arch and
+realized it's super comfy and easy to use for me. No need to really tinker since
+I have years of established configs and a stable workflow.</p>
+<p>I have a laptop with Guix on it and I tinkered around on that for a while. Wrote
+a nice config and some Guile tools with it. After I caught the Tech Complacency
+(TC) it's sort of collecting dust, so I might just wipe the drive and put Ubuntu
+or Fedora (probably Arch with Gnome) in it to embrace a JustWorks™️ mentality.</p>
+<div class="markdown-heading"><h2 class="heading-element">Editor</h2><a id="user-content-editor" class="anchor" aria-label="Permalink: Editor" href="#editor"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After I created a fully from scratch Neovim config at the beginning of the year,
+I hopped back to Emacs and then, ut oh, I caught TC and got stuck on Emacs. Too
+lazy to get off cause it is already at the point where it JustWorks™️ for me. I'm
+not trying to optimize my workflow with editing by memorizing crazy keystrokes
+or learning new editing strategies (i.e syntactic editing with TS).</p>
+<div class="markdown-heading"><h2 class="heading-element">Conclusion</h2><a id="user-content-conclusion" class="anchor" aria-label="Permalink: Conclusion" href="#conclusion"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Of course, I will catch the tech obsession bug again...it's just a matter of
+time. Until then, I am chilling with what I obsessively built before I caught
+TC.</p>
 ]]></description>
 </item><item>
 <title>Ten Years a Dev</title>
 <guid>https://trevs.site/posts/ten_years.html</guid>
 <link>https://trevs.site/posts/ten_years.html</link>
 <pubDate>Sat, 20 May 2023 00:00:00 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Ten Years a Dev</h1><a id="user-content-ten-years-a-dev" class="anchor" aria-label="Permalink: Ten Years a Dev" href="#ten-years-a-dev"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h2 class="heading-element">Introduction</h2><a id="user-content-introduction" class="anchor" aria-label="Permalink: Introduction" href="#introduction"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>This year will mark my tenth year working as a professional software engineer.
+Lately, I have been contemplating on my experience and my next steps and goals
+that I would like to achieve as a programmer. I also want to be sure that I
+don't fall into the same traps as I did before.</p>
+<p>#This post is intended as notes for my future-self.# Hopefully this will help
+me organize my thoughts on what to do in the next ten years.</p>
+<div class="markdown-heading"><h2 class="heading-element">First Job (Spring 2013)</h2><a id="user-content-first-job-spring-2013" class="anchor" aria-label="Permalink: First Job (Spring 2013)" href="#first-job-spring-2013"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Positives</h3><a id="user-content-positives" class="anchor" aria-label="Permalink: Positives" href="#positives"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Had a mentor</li>
+<li>Exposed to low level programming</li>
+<li>Learned about GNU/Linux for ARM, custom SBCs</li>
+<li>R&amp;D experience</li>
+<li>Fun coworkers</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Negatives</h3><a id="user-content-negatives" class="anchor" aria-label="Permalink: Negatives" href="#negatives"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Project stagnated</li>
+<li>Didn't write enough C or learn as much about hardware as I should have</li>
+<li>Long commute</li>
+<li>Left job early for Java money and short commute</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Joining</h3><a id="user-content-reasons-for-joining" class="anchor" aria-label="Permalink: Reasons for Joining" href="#reasons-for-joining"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Recommended by a professor from university</li>
+<li>Interested in low-level programming and hardware</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Leaving</h3><a id="user-content-reasons-for-leaving" class="anchor" aria-label="Permalink: Reasons for Leaving" href="#reasons-for-leaving"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Bored and felt like I couldn't learn more from the job</li>
+<li>Commute was annoying</li>
+<li>Others were thinking about leaving and one guy already left</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Second Job (Summer 2014)</h2><a id="user-content-second-job-summer-2014" class="anchor" aria-label="Permalink: Second Job (Summer 2014)" href="#second-job-summer-2014"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<div class="markdown-heading"><h3 class="heading-element">Positives</h3><a id="user-content-positives-1" class="anchor" aria-label="Permalink: Positives" href="#positives-1"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Became comfortable in large, legacy codebase</li>
+<li>Experienced full-stack for a while</li>
+<li>Lots of debugging and learned to hunt bugs</li>
+<li>Multiple salary increases</li>
+<li>Went full-remote (pre-C#vid, remote hipster)</li>
+<li>Fun coworkers</li>
+<li>Five minutes from home and personal freedom</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Negatives</h3><a id="user-content-negatives-1" class="anchor" aria-label="Permalink: Negatives" href="#negatives-1"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Got stuck in legacy code Java 8 hell</li>
+<li>Didn't focus on career growth enough</li>
+<li>Stayed way too long</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Joining</h3><a id="user-content-reasons-for-joining-1" class="anchor" aria-label="Permalink: Reasons for Joining" href="#reasons-for-joining-1"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Bought into the mission</li>
+<li>Seemed like there was room for growth</li>
+<li>Close to home</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Leaving</h3><a id="user-content-reasons-for-leaving-1" class="anchor" aria-label="Permalink: Reasons for Leaving" href="#reasons-for-leaving-1"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Corporate takeover consequences (relocate or take pay cut)</li>
+<li>Tired of Java 8, legacy code and product</li>
+<li>Felt like my programming skills were atrophying</li>
+<li>Agile is so annoying and never done well</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Third Job (Fall 2020)</h2><a id="user-content-third-job-fall-2020" class="anchor" aria-label="Permalink: Third Job (Fall 2020)" href="#third-job-fall-2020"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>!! Will update later !!</p>
+<div class="markdown-heading"><h3 class="heading-element">Positives</h3><a id="user-content-positives-2" class="anchor" aria-label="Permalink: Positives" href="#positives-2"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Fully Rust codebase</li>
+<li>New project when I joined</li>
+<li>Great teammates</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Negatives</h3><a id="user-content-negatives-2" class="anchor" aria-label="Permalink: Negatives" href="#negatives-2"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>
+</li></ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Joining</h3><a id="user-content-reasons-for-joining-2" class="anchor" aria-label="Permalink: Reasons for Joining" href="#reasons-for-joining-2"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<ul>
+<li>Wanted to program Rust full-time</li>
+<li>Interested in the company's industry</li>
+</ul>
+<div class="markdown-heading"><h3 class="heading-element">Reasons for Leaving</h3><a id="user-content-reasons-for-leaving-2" class="anchor" aria-label="Permalink: Reasons for Leaving" href="#reasons-for-leaving-2"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>N/A</p>
+<div class="markdown-heading"><h2 class="heading-element">Conclusions</h2><a id="user-content-conclusions" class="anchor" aria-label="Permalink: Conclusions" href="#conclusions"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After ten years, I hoped that I would be a bit more advanced with programming
+and not a general application developer. I regret not using my young buck energy
+and brain to learn a specific domain or pursue a master's degree to study a
+topic deeply. I've always been fascinated by advanced CS/programming topics like
+compilers and operating systems, but have had trouble self-learning them. This
+makes me wonder if I even have a strong enough passion for programming and
+computer science to go beyond application development.</p>
+<div class="markdown-heading"><h3 class="heading-element">Bipolar Statements</h3><a id="user-content-bipolar-statements" class="anchor" aria-label="Permalink: Bipolar Statements" href="#bipolar-statements"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I am extremely grateful to be a programmer during this time period, getting into
+the industry when jobs are aplenty, and earning more than enough to live a very
+comfortable life. Being able to work from anywhere, at any time of the day is a
+luxury that almost all professions lack.</p>
+<p>I wish someone told me ten years ago that most of professional programming, and
+maybe software in general nowadays, kind of sucks and you will most likely be
+working on a product that you don't use or isn't yours and that will turn into a
+disgusting mess due to business people getting their hands involved in
+technology and prioritizing profits and timelines over anything else.</p>
+<div class="markdown-heading"><h2 class="heading-element">Side Projects</h2><a id="user-content-side-projects" class="anchor" aria-label="Permalink: Side Projects" href="#side-projects"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>These are computer-related things that I pursued and will continue to pursue outside
+of work:</p>
+<ul>
+<li>Contributing to and writing open source software</li>
+<li>Daily driving Unix-like operating systems and configuring them for fun</li>
+<li>Learned Rust, Haskell, Idris, and tinkered with other various languages</li>
+<li>Participating in IRC to learn and help others</li>
+<li>Refining my development environment and workflow</li>
+<li>Tinkering, writing simple programs, tools, and games</li>
+<li>Trying to brush up on and learn other CS topics</li>
+</ul>
+<div class="markdown-heading"><h2 class="heading-element">Goals</h2><a id="user-content-goals" class="anchor" aria-label="Permalink: Goals" href="#goals"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The following are goals that I would like to achieve in the next ten years.</p>
+<table>
+<thead>
+<tr>
+<th>years</th>
+<th>goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;= 2</td>
+<td>Write more C; at a job or more personal projects.</td>
+</tr>
+<tr>
+<td>&lt;= 5</td>
+<td>Do a project for OS dev; write a shell, bootloader, Forth, etc.</td>
+</tr>
+<tr>
+<td>&lt;= 5</td>
+<td>Make code contributions to a large open source project - a feature or bugfix.</td>
+</tr>
+<tr>
+<td>&lt;= 5</td>
+<td>Do a project with an embedded device.</td>
+</tr>
+<tr>
+<td>&lt;= 5</td>
+<td>Reduce time spent on the computer in freetime.</td>
+</tr>
+<tr>
+<td>&lt;= 5</td>
+<td>Find job in specialized field instead of app dev.</td>
+</tr>
+<tr>
+<td>&lt;= 10</td>
+<td>Get paid to work on open source software full time.</td>
+</tr>
+<tr>
+<td>&lt;= 10</td>
+<td>Be self-employed.</td>
+</tr>
+<tr>
+<td>= 10</td>
+<td>Retire...PLEASE</td>
+</tr>
+</tbody>
+</table>
 ]]></description>
 </item><item>
 <title>Test Post With Link [rss bugfix]</title>
 <guid>https://trevs.site/posts/Test_Post_With_Link.html</guid>
 <link>https://trevs.site/posts/Test_Post_With_Link.html</link>
 <pubDate>Thu, 24 Oct 2024 18:53:49 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Test Post With Link [rss bugfix]</h1><a id="user-content-test-post-with-link-rss-bugfix" class="anchor" aria-label="Permalink: Test Post With Link [rss bugfix]" href="#test-post-with-link-rss-bugfix"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>A <a href="https://trevs.site/posts/my_new_SSG_and_blog.html">relative link</a> to another post for RSS
+generation testing.</p>
+<p>Don't mind me, just fixing a bug in <a href="https://github.com/trevarj/poogo">poogo</a>
+(my static site generator) and giving it a test. Relative links, ex. to other
+posts, were working on the web, but broken on RSS.</p>
 ]]></description>
 </item><item>
 <title>Revisting My Previous Thoughts on Crypto</title>
 <guid>https://trevs.site/posts/Thoughts_on_previous_thoughts_on_crypto.html</guid>
 <link>https://trevs.site/posts/Thoughts_on_previous_thoughts_on_crypto.html</link>
 <pubDate>Wed, 25 Jun 2025 13:57:16 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Revisting My Previous Thoughts on Crypto</h1><a id="user-content-revisting-my-previous-thoughts-on-crypto" class="anchor" aria-label="Permalink: Revisting My Previous Thoughts on Crypto" href="#revisting-my-previous-thoughts-on-crypto"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>Let's just say I've been evangelized as a Bitcoin maximalist. Instead of
+redacting my previous <a href="./Quick_Thought_on_Cryptocurrency_Technology.html">thoughts on the crypto
+industry</a>, I will read
+through and respond to myself from one year ago. A bit of self-reflection, if you
+don't mind.</p>
+<hr/>
+<blockquote>
+<p>I will state that I am not anti-crypto, per se, but I am anti-whatever I am
+about to describe.</p>
+</blockquote>
+<p>I am now anti-crypto, but pro-Bitcoin.</p>
+<blockquote>
+<p>I think crypto can provide a useful utility for people,
+namely transferring funds elecronically without an intermediary (kinda).</p>
+</blockquote>
+<p>I now believe that Bitcoin is a very useful utility, namely one that gives
+people the chance to control their own wealth and transact without the
+interference from a government or bad actor. Beware the money printer and
+war-machine.</p>
+<blockquote>
+<p>Do I think the world would be worse without crypto? Not really.</p>
+</blockquote>
+<p>For some people, possibly. Even a shitcoin, like the one that is widely used in
+South America (forgot the name and don't want to promote it either) could be
+making peoples' lives much better by helping them store dollars while their
+local currency is extremely volatile.</p>
+<blockquote>
+<p>I am content with Bitcoin and Ethereum, but beyond those I have not actually
+found a coin that offers "life-improving" technology.</p>
+</blockquote>
+<p>After spending a lot of time reading up on Bitcoin history, I believe it to be a
+tech and open source phenomenon, similar to Linux, which can definitely improve
+a person's sovereignty. It's organic growth in the beginning is fascinating,
+just like Linux's, and is something to read about even if you aren't invested or
+interested in the technology.</p>
+<p>Ethereum is just the most popular scam platform. Perhaps useful at this current
+time, but not providing anything with real longevity and is bound to be
+replaced. Bitcoin cannot be replaced because of its organic and decentralized
+nature.</p>
+<blockquote>
+<p>I am going to completely generalize here, so take it with a grain of salt. Keep
+in mind that I am a "nothing-to-show" dev who hasn't created such "successful"
+projects before.</p>
+</blockquote>
+<p>Still valid!</p>
+<blockquote>
+<p>After reading through and working with many crypto projects, there are
+practically none that seem impressive anymore. They are either poorly
+documented, hastily written, over-engineered or just faulty. Rarely do they
+promise something life-changing or revolutionary, no matter how much they hype
+it up on social media. With confidence I can say that the majority of them are
+just purely copy-pasted code and ideas that add one extra feature in hopes of
+securing a voluptuous cash grab.</p>
+</blockquote>
+<p>Still valid.</p>
+<blockquote>
+<p>It's gotten to the point where it's laughable to me when a new crypto project
+appears and it's just a fork of Ethereum or some other code with a few changes
+added and a shiny, new website with some marketing.</p>
+</blockquote>
+<p>These are all scams under the surface. Even if they are not blatant rugpulls,
+they are long term scams which work within rules and regulations.</p>
+<blockquote>
+<p>Sometimes I think of all the code written for these projects and man-hours
+wasted. It's comical, actually, especially since the code is just re-written
+over and over or just abandonware at the end! This may be an issue with the
+software industry as a whole, but it's amplified here.</p>
+</blockquote>
+<p>I still believe this and I see it to be true even in Bitcoin. Everyone is
+obsessed with technology, coding and making more disposable fluff
+projects. There is a certain type of dev that cannot sit still or "complete" a
+project. Everything must be rewritten or modified continuously without a clear
+end goal. LLMs have contributed to this, allowing a dev to write even more slop to
+"advance" a project.</p>
+<blockquote>
+<p>Compare these types of projects with real engineering marvels, like a bridge
+or a skyscraper, or even a missile launcher that will end up blowing up some
+hospital far far away.</p>
+</blockquote>
+<p>I think the image of comparison still holds, but I still can't articulate it in
+a poetic way. It's hard to make a value judgment on certain technology. Sadly,
+the latter part of what I said is becoming more true as time goes on.</p>
+<blockquote>
+<p>Money and Tech Obsession</p>
+</blockquote>
+<p>This section still stands true with me.</p>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
 <guid>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</guid>
 <link>https://trevs.site/posts/Toggling_Fools_Using_ERC.html</link>
 <pubDate>Thu, 19 Sep 2024 22:53:39 +0300</pubDate>
-<description><![CDATA[
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Toggling Fools Using ERC</h1><a id="user-content-toggling-fools-using-erc" class="anchor" aria-label="Permalink: Toggling Fools Using ERC" href="#toggling-fools-using-erc"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>To contradict my last post, I recently decided to replicate my Weechat IRC
+config in Emacs' ERC.</p>
+<div class="markdown-heading"><h2 class="heading-element">Problem</h2><a id="user-content-problem" class="anchor" aria-label="Permalink: Problem" href="#problem"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>There is a nice Weechat feature that allows you to modify the message color for
+messages sent by nicks that match a given regex. ERC can easily do this as well
+and the easiest way to do this is by adding some nicks to a list of "pals" and
+"fools".</p>
+<p>After making fools' messages appear in a dimmed font, the next feature that I
+was missing was the ability to show/hide messages from fools at the click of a
+button. Basically, I like to collapse all fools' messages so I can catch up on
+the real chat and then maybe see what the fools had to say later.</p>
+<p>Here's what I came up with after peeking into the erc.el file in the emacs
+source since I couldn't find how to do the exact thing online.</p>
+<div class="markdown-heading"><h2 class="heading-element">Solution</h2><a id="user-content-solution" class="anchor" aria-label="Permalink: Solution" href="#solution"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The trick is all in <code>'erc-match-toggle-hidden-fools</code>, which will do exactly what
+it says - toggle your hidden fools. A caveat is that I have to add
+<code>'set-buffer-modified-p</code> instead of hitting RET after triggering
+<code>'erc/toggle-fools</code> so that the messages are shown/hidden.</p>
+<p>Within use-package erc <code>:preface</code> :</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>(<span class="pl-k">let</span> ((hidden-fools <span class="pl-c1">t</span>))
+  (<span class="pl-k">defun</span> <span class="pl-e">erc/toggle-fools</span> ()
+    (<span class="pl-k">interactive</span>)
+    (<span class="pl-k">setq</span> hidden-fools (<span class="pl-k">not</span> hidden-fools))
+    (erc-match-toggle-hidden-fools hidden-fools)
+    (<span class="pl-c1">message</span> <span class="pl-pds">"</span><span class="pl-s">hidden fools: <span class="pl-c1">%s</span></span><span class="pl-pds">"</span> (<span class="pl-k">if</span> hidden-fools <span class="pl-s"><span class="pl-pds">"</span>on<span class="pl-pds">"</span></span> <span class="pl-s"><span class="pl-pds">"</span>off<span class="pl-pds">"</span></span>))
+    (<span class="pl-c1">set-buffer-modified-p</span> <span class="pl-c1">t</span>)))</pre></div>
+<p>Within use-package erc  <code>:config</code>:</p>
+<div class="highlight highlight-source-emacs-lisp"><pre>erc-fools '(<span class="pl-s"><span class="pl-pds">"</span>Marvin2<span class="pl-pds">"</span></span>)
+erc-fool-highlight-type <span class="pl-c1">'all</span></pre></div>
+<p>The hook is necessary for <code>'erc-match-toggle-hidden-fools</code> to function properly,
+according to the documentation on the function definition.</p>
+<div class="highlight highlight-source-emacs-lisp"><pre><span class="pl-c1">:hook</span>
+ ((erc-text-matched <span class="pl-k">.</span> erc-hide-fools))
+<span class="pl-c1">:bind</span>
+ <span class="pl-c1">:map</span> erc-mode-map
+ (<span class="pl-s"><span class="pl-pds">"</span>C-c -<span class="pl-pds">"</span></span> <span class="pl-k">.</span> <span class="pl-c1">'erc/toggle-fools</span>)))</pre></div>
+<div class="markdown-heading"><h2 class="heading-element">Result</h2><a id="user-content-result" class="anchor" aria-label="Permalink: Result" href="#result"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>(Marvin2 is shown/hidden)</p>
+<p><a target="_blank" rel="noopener noreferrer" href="../static/assets/erc_fools.gif"><img src="../static/assets/erc_fools.gif" alt="Toggle fools" style="max-width: 100%;"/></a></p>
 ]]></description>
 </item>
 
