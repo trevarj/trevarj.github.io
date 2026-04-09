@@ -255,6 +255,65 @@ that may require using one of them, like with the BOSS challenges.</p>
 <p>Pretty easy and no hunting for dependencies on your specific distro.</p>
 ]]></description>
 </item><item>
+<title>Bitcoin Open Source: My Introductory Contributions</title>
+<guid>https://trevs.site/posts/Bitcoin_Open_Source:_My_Introductory_Contributions.html</guid>
+<link>https://trevs.site/posts/Bitcoin_Open_Source:_My_Introductory_Contributions.html</link>
+<pubDate>Thu, 09 Apr 2026 11:43:04 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Bitcoin Open Source: My Introductory Contributions</h1><a id="user-content-bitcoin-open-source-my-introductory-contributions" class="anchor" aria-label="Permalink: Bitcoin Open Source: My Introductory Contributions" href="#bitcoin-open-source-my-introductory-contributions"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>It's almost the end of month 3 of the <a href="./Bitcoin_Core_Dev_Build_with_Guix.html">BOSS
+Challenge</a> and I want to go over my
+contributions and thoughts on my work.</p>
+<p>Note: this isn't really for anyone uninterested in Bitcoin, so it can be safely
+ignored if you, for some odd reason, subscribe to this blog.</p>
+<div class="markdown-heading"><h2 class="heading-element">Projects</h2><a id="user-content-projects" class="anchor" aria-label="Permalink: Projects" href="#projects"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I was given a list of open source projects in the Bitcoin space to choose from
+with the goal of becoming a contributor and immersing oneself into the project's
+community.</p>
+<p>I'm not a stranger to open source projects and being a contributor, but I have
+not contributed to anything in Bitcoin before so I was a bit nervous. I didn't
+know if I could balance work and home life while attempting to become a valuable
+contributor.</p>
+<p>Also, I should state that I decided to not use any LLM tools for my
+contributions. For some reason, I kept assuming that everyone would be using
+LLMs and acting as 10x devs and I would be overshadowed in the program. But then
+I remembered two things: how slow open source can be and how I myself hate
+reviewing LLM contributions. Prioritizing small, quality changes always seems
+better as a first-time contributor anyways.</p>
+<div class="markdown-heading"><h3 class="heading-element">bhwi</h3><a id="user-content-bhwi" class="anchor" aria-label="Permalink: bhwi" href="#bhwi"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>The project that I chose was <a href="https://github.com/wizardsardine/bhwi">bhwi</a>,
+which is a re-implementation of <a href="https://github.com/bitcoin-core/HWI">HWI</a>
+(hardware wallet interface) written in Rust and with an interesting architecture
+that takes advantage of the Rust type system and allows for easy extensibility
+and transport-level flexibility for consumers of the library. It's a young
+project and there is a lot of room for contributions. I happen to be the first
+contributor other than its author, so it's quite cozy and I receive almost
+immediate feedback on my PRs. On top of that, I love hardware wallets and have
+written some code for them in the past, so it was a perfect choice for me.</p>
+<div class="markdown-heading"><h4 class="heading-element">Status</h4><a id="user-content-status" class="anchor" aria-label="Permalink: Status" href="#status"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I'm going to be slowly piecing together the features of this project to reach
+parity with the Python HWI project. I have a list of functionalities to
+implement, so it should keep me busy for a while. There isn't much urgency to
+get the project finished, so I will be taking my time and making mindful
+contributions with no clanker helping me.</p>
+<div class="markdown-heading"><h3 class="heading-element">rust-miniscript</h3><a id="user-content-rust-miniscript" class="anchor" aria-label="Permalink: rust-miniscript" href="#rust-miniscript"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>After tinkering with the hardware wallet interface, it led me to needing the
+<a href="https://github.com/rust-bitcoin/rust-miniscript">rust-miniscript</a> crate so that
+I could use output descriptors and miniscript. Somewhere along the line, I
+decided to check the github issues and found something that was related to
+hardware wallets that I thought was interesting to implement. This took up a lot
+of my time because the library is pretty complex to grok at first. After
+starting this side quest, I realized I was spending more time on it than the
+main storyline (bhwi) for the second half of the month. Contributing to an
+established project with many users and contributors drives more interest for
+me.</p>
+<div class="markdown-heading"><h4 class="heading-element">Status</h4><a id="user-content-status-1" class="anchor" aria-label="Permalink: Status" href="#status-1"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I have already gotten a couple PRs merged and have another one open. There are a
+few existing issues on my radar that I would like to take a stab at, which will
+make it easier and more robust to use in bhwi. I've also started reviewing PRs
+to help learn the codebase more and gain knowledge from observing Andrew
+Poelstra and other maintainers/contributors.</p>
+]]></description>
+</item><item>
 <title>Emacs Secrets and use-package</title>
 <guid>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</guid>
 <link>https://trevs.site/posts/Emacs_Secrets_and_use-package.html</link>

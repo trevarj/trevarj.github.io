@@ -3,4 +3,5 @@
   "curl"
   "jq"
   "libxml2"
-  "wget"))
+  "wget"
+  "python"))
