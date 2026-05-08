@@ -1411,3 +1411,15 @@ sub {
     text-shadow: none;
   }
 }
+
+.skifree-embed {
+  display: block;
+  width: min(480px, 100%);
+  height: auto;
+  aspect-ratio: 3 / 4;
+  margin: var(--space-md) 0 var(--space-xl);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  background: #f5f7ff;
+  box-shadow: var(--crt-panel-shadow);
+}
