@@ -83,8 +83,15 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 176, 0, 0.11), transparent 32rem),
-    radial-gradient(circle at 50% 115%, rgba(255, 176, 0, 0.08), transparent 30rem),
+    radial-gradient(circle at 50% 0%, rgba(255, 176, 0, 0.09), transparent 32rem),
+    radial-gradient(circle at 50% 115%, rgba(255, 176, 0, 0.06), transparent 30rem),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 176, 0, 0.012) 0,
+      rgba(255, 176, 0, 0.012) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
     linear-gradient(180deg, #170d00 0%, #100800 46%, #070400 100%);
   display: grid;
   grid-template-columns:
@@ -124,7 +131,7 @@ body::before {
       rgba(0, 0, 0, 0.018)
     );
   mix-blend-mode: screen;
-  opacity: 0.36;
+  opacity: 0.24;
 }
 
 /* Subtle grain layer. */
@@ -134,10 +141,10 @@ body::after {
   inset: -20%;
   z-index: 2147483647;
   pointer-events: none;
-  opacity: 0.06;
+  opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.75'/%3E%3C/svg%3E");
-  background-size: 180px 180px;
-  animation: crt-grain 0.7s steps(2, end) infinite;
+  background-size: 260px 260px;
+  animation: none;
 }
 
 @keyframes crt-grain {
@@ -253,11 +260,23 @@ body > header > .markdown-heading {
 }
 
 body > header h1 {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding-bottom: 0;
   border-bottom: none;
   font-size: 1.35rem;
   line-height: 1;
+}
+
+body > header h1::before {
+  content: "";
+  flex: 0 0 auto;
+  inline-size: 1.35rem;
+  block-size: 1.35rem;
+  margin-inline-end: 0.45rem;
+  background: url("/static/logo.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 0.28rem rgba(255, 176, 0, 0.3));
 }
 
 body > header p {
@@ -367,6 +386,11 @@ p {
     block-size: auto;
     min-block-size: 5.1rem;
     overflow: visible;
+  }
+
+  body > header h1::before {
+    inline-size: 1.2rem;
+    block-size: 1.2rem;
   }
 
   h1 {
