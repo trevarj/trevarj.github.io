@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="trev terminal badge">
+  <rect x="5" y="5" width="54" height="54" rx="12" fill="#120900"/>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="10.5" fill="none" stroke="#ffb000" stroke-width="2"/>
+  <rect x="12" y="14" width="40" height="1.5" rx="0.75" fill="#ffcf7a" opacity="0.18"/>
+  <rect x="12" y="48" width="28" height="1.5" rx="0.75" fill="#ffb000" opacity="0.1"/>
+  <path d="M18 23 L28 32 L18 41" fill="none" stroke="#ffd58a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="31" y="37" width="14" height="4" rx="2" fill="#ffd58a"/>
+  <rect x="46" y="35" width="4" height="8" rx="1.5" fill="#ffd58a"/>
+</svg>
