@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>trev's website</title>
+<title>trev'apos;s website</title>
 <description></description>
 <language>en-us</language>
 <link>https://trevs.site/rss.xml</link>
@@ -48,6 +48,7 @@ all in the 3D printing space, more so an observer, so I can't really give any
 more insight...but it does feel like I'm using the MacOS of 3D printers and a
 Prusa or another DIY would be some Linux distro...<em>shivers</em></p>
 <p>¹ PLA...PETG was stringing hard since I had no dryer.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Advent of Code 2024 - Elisp</title>
@@ -87,6 +88,7 @@ whip up a script fairly quickly, and now will use Elisp as my "scratch"
 programming language.</p>
 <p>I really recommend Emacs users to try AoC in Elisp for the cozy experience and
 low barrier for entry - just open up a buffer and start writing then <code>C-x C-e</code>.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>A Late Start in Computer Programming</title>
@@ -165,6 +167,7 @@ skills of collaborating on software.</p>
 There's nothing better than having an open source project that you maintain and
 improve. It's a plus if other people use it or contribute to it.</p>
 <div class="markdown-heading"><h1 class="heading-element">The End</h1><a id="user-content-the-end" class="anchor" aria-label="Permalink: The End" href="#the-end"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>[BOSS] Bitcoin Core Dev Build with Guix</title>
@@ -253,6 +256,7 @@ $ cmake --build build
 <p>You can update your PATH variable in an <code>.envrc</code> of another project
 that may require using one of them, like with the BOSS challenges.</p>
 <p>Pretty easy and no hunting for dependencies on your specific distro.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Bitcoin Open Source: My Introductory Contributions</title>
@@ -312,6 +316,7 @@ few existing issues on my radar that I would like to take a stab at, which will
 make it easier and more robust to use in bhwi. I've also started reviewing PRs
 to help learn the codebase more and gain knowledge from observing Andrew
 Poelstra and other maintainers/contributors.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Emacs Secrets and use-package</title>
@@ -371,6 +376,7 @@ I found there is a keyword <code>:load</code> which seems to do exactly what I w
   ...)</pre></div>
 <p>A small improvement, but satisfying and feels more idiomatic.</p>
 <p>Maybe some elisp wizards know how to improve this even further, or know a better way!</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>RSS/Atom Feed Reader in BASH!</title>
@@ -424,7 +430,7 @@ feed item. Upon startup <code>jq</code> will just parse all the .json files and 
 data to <code>fzf</code>.</p>
 <p>That's pretty much the interesting part. The rest is just configuration and
 glue. It's better just to take a look at this demo:</p>
-<p><a href="https://asciinema.org/a/656386" rel="nofollow"><img src="https://camo.githubusercontent.com/2212cf38e43ddcc2361304385e10969ad288deaba06db2689fe8617c7de0f651/68747470733a2f2f61736369696e656d612e6f72672f612f3635363338362e737667" alt="asciicast" data-canonical-src="https://asciinema.org/a/656386.svg" style="max-width: 100%;"/></a></p>
+<p><a href="https://asciinema.org/a/656386" rel="nofollow"><img src="https://camo.githubusercontent.com/45607071d07cf0f4e4f2be7eabe11dddd3642b848ad4895d3d9d774469070236/68747470733a2f2f61736369696e656d612e6f72672f612f3635363338362e737667" alt="asciicast" data-canonical-src="https://asciinema.org/a/656386.svg" style="max-width: 100%;"/></a></p>
 <div class="markdown-heading"><h2 class="heading-element">Shortcomings</h2><a id="user-content-shortcomings" class="anchor" aria-label="Permalink: Shortcomings" href="#shortcomings"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>After adding around 10 feeds with ~200 posts total, the performance is still
 decent, but you can tell that it isn't as snappy as other readers. This could
@@ -436,6 +442,7 @@ posts in using a pipe or something. I don't think there is a way for them to
 maintain their order though, since <code>fzf</code> doesn't seem to have a way to keep
 things sorted.</p>
 <p><a href="https://github.com/trevarj/frdr">frdr (feed reader)</a></p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Distro-Hopping from Arch to Gentoo</title>
@@ -554,6 +561,7 @@ There is also the possibility of looking for an even more hardcore Linux distro
 like LFS in order to really learn a system in and out. I could even take a
 completely different direction and install Debian and then manually compile
 fresh versions of programs that I frequently use.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>The If-Else Programmer</title>
@@ -585,6 +593,7 @@ then fading away since I didn't program in my free time.</p>
 paycheck and various psychological reasons. Minus the dire circumstances, I
 believe it is a good time to move on when you become an if-else programmer
 instead of risking your skills and falling behind for a (temporary) job.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Never Miss A Mention With ZNC</title>
@@ -629,6 +638,7 @@ provides a solution to the above caveat.</p>
                       (<span class="pl-c1">erc-server-send</span> <span class="pl-s"><span class="pl-pds">"</span>CAP END<span class="pl-pds">"</span></span>)))</pre></div>
 <p>Now query buffers (direct messages) can be restored and your messages will be
 present.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Learning Guile for Spring Lisp Game Jam 2024</title>
@@ -659,6 +669,7 @@ REPL. Right now, I can't really see how it would be used in a very large project
 or whether it is actually faster than writing some unit tests. Some things were
 irritating to me, coming from using a language like Rust daily, like no LSP
 (Geiser is OK) and hardcore type system.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Mentorship</title>
@@ -699,6 +710,7 @@ review them. There is a good chance that you will be provided a lot of helpful
 feedback and guidance, perhaps even higher quality than someone at work will
 give you. This has been beneficial to me, especially when the maintainer is
 highly skilled and generous with his time.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>My New SSG and Blog</title>
@@ -767,6 +779,7 @@ even if it sometimes feels inelegant or the solution is cryptic at first glance.
 <p>Since <code>sed</code> doesn't have a return code of <code>1</code> when there is no match, you have
 to do a little trick using <code>/matchRegex/s command/options</code> instead of the
 traditional <code>s/find/replace/options</code>.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>My Return to a Custom Neovim Config</title>
@@ -853,6 +866,7 @@ time or patience to read docs.</p>
 of a source of truth and the community is still active (even though as I write
 this the project hasn't had a push for two months...)</p>
 <p><a href="https://github.com/trevarj/config.nvim">My 2024 Neovim Config</a></p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Old Functional Programming Email</title>
@@ -984,6 +998,7 @@ qsort (x<span class="pl-k">:</span>xs) <span class="pl-k">=</span> qsort (<span 
 <p>I hope you all have found this interesting. There is a lot more to computer
 science than just churning out code, and exposing yourself to other programming
 paradigms can be enlightening.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>The Open Source Influencer</title>
@@ -1066,6 +1081,7 @@ streamers, but I haven't looked into it much. It seems like it could be a nice
 boost to open source development. I could be completely wrong though and someone
 would point out all the reasons why this is a bad business model.</p>
 <p>I don't know what the heck I'm talking about.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Pre-Guix System Install Thoughts</title>
@@ -1088,6 +1104,7 @@ promised.</p>
 <p>Maybe I will just embrace doing computing "the olds cool" way and have
 everything broken, start smoking cigarettes at the keyboard, and doing a bit of
 online gambling!</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Professional Bugfixer</title>
@@ -1128,6 +1145,7 @@ keeping the project afloat", they'll say.</p>
 <p>"He's the only one who never broke prod...how does he do it?". They will never
 know the best kept secret...just add
 <a href="https://trevarj.github.io/posts/if_else.html" rel="nofollow">if-statements</a>.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Some Thoughts on the Crypto Industry</title>
@@ -1191,6 +1209,7 @@ that serves a good purpose and does it well.</p>
 <p>Take the latest paper in cryptography and implement it, then generate a surplus
 of "coins" attached to this technology, and then sell it to people who want to
 enjoy the benefits of snake oil and get RICH! Done!</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Tech Complacency</title>
@@ -1236,6 +1255,7 @@ or learning new editing strategies (i.e syntactic editing with TS).</p>
 <p>Of course, I will catch the tech obsession bug again...it's just a matter of
 time. Until then, I am chilling with what I obsessively built before I caught
 TC.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Ten Years a Dev</title>
@@ -1404,6 +1424,7 @@ of work:</p>
 </tr>
 </tbody>
 </table>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Test Post With Link [rss bugfix]</title>
@@ -1416,6 +1437,7 @@ generation testing.</p>
 <p>Don't mind me, just fixing a bug in <a href="https://github.com/trevarj/poogo">poogo</a>
 (my static site generator) and giving it a test. Relative links, ex. to other
 posts, were working on the web, but broken on RSS.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Revisting My Previous Thoughts on Crypto</title>
@@ -1509,6 +1531,7 @@ the latter part of what I said is becoming more true as time goes on.</p>
 <p>Money and Tech Obsession</p>
 </blockquote>
 <p>This section still stands true with me.</p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
 <title>Toggling Fools Using ERC</title>
@@ -1555,6 +1578,7 @@ according to the documentation on the function definition.</p>
 <div class="markdown-heading"><h2 class="heading-element">Result</h2><a id="user-content-result" class="anchor" aria-label="Permalink: Result" href="#result"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
 <p>(Marvin2 is shown/hidden)</p>
 <p><a target="_blank" rel="noopener noreferrer" href="../static/assets/erc_fools.gif"><img src="../static/assets/erc_fools.gif" alt="Toggle fools" style="max-width: 100%;"/></a></p>
+<script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item>
 

@@ -1,0 +1,79 @@
+html[data-theme="jade"],
+html[data-theme="jade"]::backdrop {
+  color-scheme: dark;
+  --bg: #10271f;
+  --bg-deep: #0b1f18;
+  --accent-bg: #15372b;
+  --panel-bg: rgba(16, 41, 33, 0.88);
+  --panel-bg-strong: rgba(19, 52, 40, 0.94);
+  --text: #c6f8d7;
+  --text-light: #a9e5bd;
+  --text-muted: #7fb78f;
+  --border: #4b8f63;
+  --border-soft: rgba(80, 190, 130, 0.26);
+  --accent: #61d58f;
+  --accent-hover: #85ebb0;
+  --accent-text: #10271f;
+  --code: #9af3b0;
+  --preformatted: #97e1b8;
+  --marked: #8ff4a6;
+  --disabled: #2f4d3e;
+  --selection-text: #ecfff3;
+  --selection-bg: rgba(97, 213, 143, 0.27);
+  --body-bg-start: #132f25;
+  --body-bg-mid: #10271f;
+  --body-bg-end: #0b231a;
+  --body-ambient-top: rgba(97, 213, 143, 0.07);
+  --body-ambient-bottom: rgba(72, 182, 116, 0.06);
+  --body-grain-line: rgba(80, 190, 130, 0.012);
+  --scanline-dark: rgba(0, 0, 0, 0.2);
+  --scanline-bright: rgba(97, 213, 143, 0.024);
+  --scanline-sweep-a: rgba(97, 213, 143, 0.018);
+  --scanline-sweep-b: rgba(97, 213, 143, 0.006);
+  --scanline-sweep-c: rgba(0, 0, 0, 0.1);
+  --header-veil-top: rgba(97, 213, 143, 0.09);
+  --header-veil-bottom: rgba(97, 213, 143, 0.02);
+  --header-shadow: rgba(97, 213, 143, 0.08);
+  --header-divider-soft: rgba(97, 213, 143, 0.2);
+  --header-divider-core: rgba(97, 213, 143, 0.24);
+  --main-vignette: rgba(97, 213, 143, 0.09);
+  --footer-divider: rgba(97, 213, 143, 0.46);
+  --heading-color: #d2ffe2;
+  --link-decoration: rgba(97, 213, 143, 0.65);
+  --link-hover-shadow: 0 0 0.85rem rgba(97, 213, 143, 0.34);
+  --link-focus-inner: 0 0 0 2px rgba(97, 213, 143, 0.28);
+  --link-focus-outer: 0 0 0.95rem rgba(97, 213, 143, 0.48);
+  --button-top: #7ddc95;
+  --button-bottom: #4eb272;
+  --button-hover-shadow: 0 0 1.2rem rgba(97, 213, 143, 0.42);
+  --button-focus-shadow: 0 0 0.95rem rgba(97, 213, 143, 0.5);
+  --select-overlay-top: rgba(97, 213, 143, 0.1);
+  --select-overlay-bottom: rgba(97, 213, 143, 0.018);
+  --select-surface: rgba(16, 39, 31, 0.62);
+  --select-border: rgba(97, 213, 143, 0.64);
+  --select-focus: 0 0 0 2px rgba(97, 213, 143, 0.2),
+    0 0 0.7rem rgba(97, 213, 143, 0.45);
+  --link-glow: 0 0 0.16rem rgba(130, 250, 160, 0.6),
+    0 0 0.38rem rgba(75, 220, 125, 0.36),
+    0 0 0.62rem rgba(65, 180, 110, 0.2);
+  --link-glow-strong: 0 0 0.22rem rgba(173, 255, 190, 0.82),
+    0 0 0.56rem rgba(97, 213, 143, 0.58),
+    0 0 1.05rem rgba(80, 160, 110, 0.34);
+  --crt-glow: 0 0 0.16rem rgba(97, 213, 143, 0.26),
+    0 0 0.8rem rgba(97, 213, 143, 0.14);
+  --crt-glow-strong: 0 0 0.22rem rgba(173, 255, 190, 0.64),
+    0 0 1.1rem rgba(97, 213, 143, 0.34);
+  --crt-panel-shadow: inset 0 0 0 1px rgba(97, 213, 143, 0.14),
+    0 0 1.15rem rgba(97, 213, 143, 0.08);
+
+  --grain-strength: 0.075;
+  --grain-size: 103px;
+  --grain-animation-speed: 2.4s;
+  --grain-contrast: 300%;
+  --snow-layers: none;
+  --snow-size: auto;
+  --snow-position: 0 0;
+  --snow-position-end: 0 0;
+  --snow-opacity: 0;
+  --snow-animation: none;
+}
