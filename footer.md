@@ -8,3 +8,5 @@ Trevor Arjeski -
 [linkedin](https://www.linkedin.com/in/trevor-arjeski/)
 [mail](mailto:tmarjeski@gmail.com)
 [rss](/rss.xml)
+
+<div class="theme-selector" data-theme-picker></div>
