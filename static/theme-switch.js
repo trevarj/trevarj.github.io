@@ -117,28 +117,15 @@
     });
   };
 
-  const promotePlayLinks = () => {
-    const playLinks = document.querySelectorAll("a[href*='/skifree-rs/'], a[href*='/skifree-rs']");
-    for (const link of playLinks) {
-      const text = link.textContent.trim().toLowerCase();
-      if (text === "play here" || text.includes("play here")) {
-        link.classList.add("button");
-      }
-    }
-  };
-
   const initialTheme = getCurrentTheme();
   applyTheme(initialTheme);
   persistTheme(initialTheme);
-  promotePlayLinks();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
-      promotePlayLinks();
       buildSelect();
     }, { once: true });
   } else {
-    promotePlayLinks();
     buildSelect();
   }
 })();
