@@ -800,7 +800,6 @@ a:focus-visible {
 }
 
 .button,
-a[href*="/skifree-rs"],
 button,
 a.button,
 input[type="submit"],
@@ -829,7 +828,6 @@ label[type="button"] {
 
 button:enabled:hover,
 .button:not([aria-disabled="true"]):hover,
-a[href*="/skifree-rs"]:hover,
 input[type="submit"]:enabled:hover,
 input[type="reset"]:enabled:hover,
 input[type="button"]:enabled:hover,
@@ -843,7 +841,6 @@ label[type="button"]:hover {
 
 button:enabled:active,
 .button:not([aria-disabled="true"]):active,
-a[href*="/skifree-rs"]:active,
 input[type="submit"]:enabled:active,
 input[type="reset"]:enabled:active,
 input[type="button"]:enabled:active {
@@ -851,7 +848,6 @@ input[type="button"]:enabled:active {
 }
 
 .button[aria-disabled="true"],
-a[href*="/skifree-rs"][aria-disabled="true"],
 input:disabled,
 textarea:disabled,
 select:disabled,
@@ -874,7 +870,6 @@ abbr[title] {
 }
 
 .button:focus-visible,
-a[href*="/skifree-rs"]:focus-visible,
 button:focus-visible:where(:enabled),
 input:enabled:focus-visible:where([type="submit"], [type="reset"], [type="button"]) {
   outline: 2px solid var(--accent-hover);
