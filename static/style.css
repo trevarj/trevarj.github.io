@@ -756,6 +756,39 @@ a:focus-visible {
   animation: none;
 }
 
+.easter-egg-link,
+.easter-egg-link:visited {
+  color: var(--text-muted);
+  display: inline-block;
+  opacity: 0.42;
+  text-decoration: none;
+  text-shadow: none;
+  transform: none;
+  animation: easter-egg-pulse 2.8s ease-in-out infinite;
+}
+
+.easter-egg-link:hover,
+.easter-egg-link:focus-visible {
+  color: var(--accent);
+  background: transparent;
+  opacity: 1;
+  box-shadow: none;
+  text-shadow: var(--link-glow);
+}
+
+@keyframes easter-egg-pulse {
+  0%,
+  100% {
+    opacity: 0.32;
+    filter: brightness(0.9);
+  }
+
+  50% {
+    opacity: 0.72;
+    filter: brightness(1.25);
+  }
+}
+
 @keyframes link-static-flicker {
   0%,
   100% {

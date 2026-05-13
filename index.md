@@ -22,4 +22,4 @@ used to make this site.<br>
 <tt>[dotfiles](https://github.com/trevarj/dotfiles)</tt> My Linux dotfiles.<br>
 
 All my other side projects can be found on [github](https://github.com/trevarj?tab=repositories&q=&type=&language=&sort=stargazers)
-and [codeberg](https://codeberg.org/trevarj)
+and [codeberg](https://codeberg.org/trevarj)<a class="easter-egg-link" href="/game/" aria-label="secret room">.</a>
