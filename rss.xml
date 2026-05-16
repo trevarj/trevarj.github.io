@@ -259,6 +259,24 @@ that may require using one of them, like with the BOSS challenges.</p>
 <script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
 </item><item>
+<title>Bitcoin Open Source: Contribution Tracker [AI SLOP]</title>
+<guid>https://trevs.site/posts/Bitcoin_Open_Source:_Contribution_Tracker_[AI_SLOP].html</guid>
+<link>https://trevs.site/posts/Bitcoin_Open_Source:_Contribution_Tracker_[AI_SLOP].html</link>
+<pubDate>Sat, 16 May 2026 08:48:51 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Bitcoin Open Source: Contribution Tracker [AI SLOP]</h1><a id="user-content-bitcoin-open-source-contribution-tracker-ai-slop" class="anchor" aria-label="Permalink: Bitcoin Open Source: Contribution Tracker [AI SLOP]" href="#bitcoin-open-source-contribution-tracker-ai-slop"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I bought one month of an evil-corps LLM model usage and have been "vibe-coding"
+like the cool kids. Mostly it's because I can write a bunch of instructions,
+leave the computer and wash dishes and then come back and there's something done
+and I say "oooh! a present! it's slop!!! YUM".</p>
+<p>Anyway, I vibe-coded a tracker that runs nightly using Github actions and
+gathers up my contributions to Bitcoin open source software. These contributions
+are <strong>NOT</strong> using LLMs (unless specifically stated otherwise in the PRs).</p>
+<p>It's for my own usage and perhaps for others who are interested in my
+contributions in this space.</p>
+<p><a href="https://trevs.site/btc_foss" rel="nofollow">https://trevs.site/btc_foss</a></p>
+<script defer="defer" src="/static/theme-switch.js"/>
+]]></description>
+</item><item>
 <title>Bitcoin Open Source: My Introductory Contributions</title>
 <guid>https://trevs.site/posts/Bitcoin_Open_Source:_My_Introductory_Contributions.html</guid>
 <link>https://trevs.site/posts/Bitcoin_Open_Source:_My_Introductory_Contributions.html</link>
