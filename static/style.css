@@ -204,10 +204,6 @@ body::after {
   background-size: var(--snow-size), var(--grain-size) var(--grain-size);
   background-position: var(--snow-position), 0 0;
   background-repeat: repeat;
-  mix-blend-mode: soft-light;
-  filter: contrast(var(--grain-contrast));
-  animation: crt-grain var(--grain-animation-speed) steps(3) infinite,
-    var(--snow-animation);
 }
 
 @keyframes crt-grain {
@@ -352,8 +348,8 @@ body::after {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  body {
-    animation: crt-flicker 9s infinite;
+  body::after {
+    animation: var(--snow-animation);
   }
 }
 
@@ -723,8 +719,8 @@ a:visited {
   text-decoration-color: var(--link-decoration);
   text-underline-offset: 0.2em;
   text-shadow: var(--link-glow);
-  transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
-  will-change: transform, box-shadow, filter;
+  transition: color 120ms ease, background-color 120ms ease, box-shadow 120ms ease,
+    transform 120ms ease;
 }
 
 footer a,
