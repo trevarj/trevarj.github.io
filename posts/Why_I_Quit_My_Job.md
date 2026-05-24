@@ -5,12 +5,12 @@ I finally quit my third professional programming job.
 
 You must be thinking I'm insane for quitting a nice, easy job in the endtimes of
 LLMs and professional programming as we know it. The fact is, I've been planning
-this exit for a few years and I'll describe below why. This is a continuation of
+this exit for a few years and I'll list below why. This is a continuation of
 [this post](/posts/ten_years.html) that I made when I became a decade old
 programmer.
 
-I'm already feeling too lazy to be elaborate in this post, but I will just jot
-down the main reasons in bulleted form:
+I'm already feeling too lazy to be elaborate here, but I will just jot down the
+main reasons in bulleted form:
 
 - Ethics of cryptocurrencies (minus Bitcoin)
 - Working on/with "fake tech"<sup>✝</sup> (term coined by me) and lack of human
