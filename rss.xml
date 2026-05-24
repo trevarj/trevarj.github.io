@@ -1598,6 +1598,51 @@ according to the documentation on the function definition.</p>
 <p><a target="_blank" rel="noopener noreferrer" href="../static/assets/erc_fools.gif"><img src="../static/assets/erc_fools.gif" alt="Toggle fools" style="max-width: 100%;"/></a></p>
 <script defer="defer" src="/static/theme-switch.js"/>
 ]]></description>
+</item><item>
+<title>Why I Quit My Job</title>
+<guid>https://trevs.site/posts/Why_I_Quit_My_Job.html</guid>
+<link>https://trevs.site/posts/Why_I_Quit_My_Job.html</link>
+<pubDate>Sun, 24 May 2026 09:47:08 +0300</pubDate>
+<description><![CDATA[<div class="markdown-heading"><h1 class="heading-element">Why I Quit My Job</h1><a id="user-content-why-i-quit-my-job" class="anchor" aria-label="Permalink: Why I Quit My Job" href="#why-i-quit-my-job"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I finally quit my third professional programming job.</p>
+<p>You must be thinking I'm insane for quitting a nice, easy job in the endtimes of
+LLMs and professional programming as we know it. The fact is, I've been planning
+this exit for a few years and I'll describe below why. This is a continuation of
+<a href="https://trevs.site/posts/ten_years.html">this post</a> that I made when I became a decade old
+programmer.</p>
+<p>I'm already feeling too lazy to be elaborate in this post, but I will just jot
+down the main reasons in bulleted form:</p>
+<ul>
+<li>Ethics of cryptocurrencies (minus Bitcoin)</li>
+<li>Working on/with "fake tech"<sup>✝</sup> (term coined by me) and lack of human
+purpose</li>
+<li>Large project exhaustion (around half a million lines and growing)</li>
+<li>LLM usage in the workplace (nail in the coffin)</li>
+</ul>
+<p>If anyone happens to see this and wants to hear me blabber about any of those
+points, email me or find me on IRC and I will ramble for hours.</p>
+<div class="markdown-heading"><h3 class="heading-element">Next</h3><a id="user-content-next" class="anchor" aria-label="Permalink: Next" href="#next"><span aria-hidden="true" class="octicon octicon-link"/></a></div>
+<p>I have nothing definite lined up. Still trying to navigate and set my mind
+right. Trying to focus on family and health.</p>
+<p>I'm working on Bitcoin open source <a href="https://trevs.site/btc_foss" rel="nofollow">contributions</a>
+in my free time. This is keeping my brain working and I enjoy the challenges and
+community.</p>
+<p>I've been experimenting with LLM agentic programming to decide if this is the
+end of professional programming for me and before it becomes too expensive for
+an individual to afford. Mostly generating fun slop, proof of concepts like
+<a href="https://trevs.site/guix-p2p/" rel="nofollow">guix-p2p</a>. LLMs are NOT keeping my brain working
+and I don't think I'd even take a new job that requires doing this. I already
+didn't want to work on what a job wanted me to, so even using an LLM to do that
+would give me double the sinking feeling of stagnation and skill atrophy. Maybe
+it's hypocritical of me for using LLMs, but I consider it an evaluation of a
+tool that will help decide on my career's future.</p>
+<p><sup>✝</sup>: When some piece of technology is overly-engineered but pointless
+in the grand scheme of things, i.e no one actually uses it, provides no real
+value to people, but tons of engineering hours went into it; only exists to
+excite a tech-lover (the devs working on it) or scam users into thinking it's
+useful (hardcore complexity bias).</p>
+<script defer="defer" src="/static/theme-switch.js"/>
+]]></description>
 </item>
 
 </channel>
