@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap");
 @import url("./theme-nord.css");
 @import url("./theme-jade.css");
 @import url("./theme-monochrome.css");
@@ -15,6 +16,7 @@
   --sans-font: "IBM Plex Mono", "JetBrains Mono", "Fira Code", "SF Mono",
     "Cascadia Mono", Consolas, "Liberation Mono", Menlo, Monaco, monospace;
   --mono-font: var(--sans-font);
+  --heading-font: "Quantico", var(--sans-font);
 
   /* Core amber CRT palette */
   --bg: #100800;
@@ -626,6 +628,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
   color: var(--heading-color);
   line-height: 1.12;
   overflow-wrap: break-word;
@@ -725,7 +729,7 @@ a:visited {
 
 footer a,
 header a {
-  font-family: var(--mono-font);
+  font-family: var(--heading-font);
   text-decoration: none;
 }
 
