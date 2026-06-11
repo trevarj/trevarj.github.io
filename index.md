@@ -24,6 +24,8 @@ used to make this site.<br>
 All my other side projects can be found on [github](https://github.com/trevarj?tab=repositories&q=&type=&language=&sort=stargazers)
 and [codeberg](https://codeberg.org/trevarj)<a class="easter-egg-link" href="/game/" aria-label="secret room">.</a>
 
+<!-- raw -->
 <a class="btc-foss-badge" href="/btc_foss" aria-label="BTC FOSS">
   <img src="/static/assets/btc_foss.png" alt="BTC FOSS" width="90">
 </a>
+<!-- endraw -->
